@@ -1,0 +1,121 @@
+.container.login, .container.regContainer, .container.registerSuccess{
+  background-size: 100% 100%;
+  overflow: auto;
+  background-attachment: fixed;
+  #g-code{
+    .input{
+      border-radius: 90px;
+      input{
+        padding-left: 0;
+        &::placeholder{
+          color: #bbb;
+        }
+      }
+    }
+
+    .send-sms{
+      color: #fff;
+      height: 40px;
+      line-height: 40px;
+      top: 50% !important;
+      margin-top: -20px!important;
+      margin-right: 0;
+      padding: 0;
+    }
+  }
+  .aagames-button{
+    width: 100%;
+    border-radius: 90px!important;
+  }
+  .main#register{
+    .register{
+      background: rgba(0,0,0,0.5);
+      border-radius:24px 0px 0px 24px;
+    }
+    .home-regist-btn{
+      background:rgba(255,255,255,.35);
+    }
+    .aagames-form .input{
+      margin-bottom: 20px;
+    }
+    .ship,.circle:before, .circle:after{
+      background-color: @bg-gradient-color;
+    }
+    .ship{
+      background-image: url('../../img3_0/login/onekey_bg@2x.png');
+      background-size: 100% auto;
+    }
+    .fill{
+      .aagames-form{
+        padding:0;
+        .areaNum{
+          padding: 0!important;
+          color: #fff!important;
+          border-right-color: rgba(255,255,255,.3)!important;
+          width: 150px;
+          img{margin: 0!important;}
+        }
+        .input{
+          border-radius: 90px;
+          background: rgba(255,255,255,0.2)!important;
+          input{
+            background: none!important;
+          }
+          img{
+            margin-left: 26px;
+          }
+        }
+        .right-button{
+          right:0;
+          top: 55%;
+          background: none!important;
+          border-left: 2px solid #bbb!important;
+          border-radius: 0;
+          height: auto;
+          line-height: 1;
+          // top:10px;
+        }
+      }
+    }
+    .onekeyText{
+      text-align: center;
+      color: #fff;
+    }
+    .funDiv {
+      margin-top: 20px;
+      color: #bbb;
+      font-size: 20px;
+      span {
+        display: inline-block;
+        height: 100%;
+      }
+      i {
+        width: 30px;
+        height: 30px;
+        margin-right: 14px;
+        display: inline-block;
+        transform: translateY(20%);
+        &.checkOff{
+          border: 2px solid #fff;
+          border-radius: 50%;
+        }
+      }
+      a {
+        color: #bbb;
+      }
+    }
+  }
+  .customer .wait, .customer .kefu{
+    color: #fff;
+  }
+}
+/deep/ .bg-login{
+  top: 0;
+  padding-top: 100px!important;
+  .logo{
+    width: 260px;
+  }
+  .cooperation{
+    width: 320px;
+  }
+}

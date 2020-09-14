@@ -1,0 +1,97 @@
+#app{
+    .Join{
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        padding-top: 780px !important;
+        h2,h3{
+            color: #000 !important;
+        }
+        h2{
+            text-align: center;
+            width: 100% !important;
+        }
+    }
+    .statistics:not(.proxy){
+        justify-content: space-around !important;
+        ._item{
+            width: 330px !important;
+            margin-bottom: 30px;
+            box-shadow:0px 8px 34px 0px rgba(92,96,150,0.16);
+            background-color:  #fff !important;
+            .item{
+                background-color:  #fff !important;
+            }
+        }
+    }
+    table{
+        border-color: #666 !important;
+        tr{
+            th,td{
+                border-color: #666 !important;
+            }
+            th{
+                background-color: @bg-gradient-color;
+                color: #fff !important;
+            }
+            td{
+                color: #666 !important;
+            }
+        }
+    }
+    /deep/.contract{
+        .van-cell{
+            .van-cell__title{
+                color: #000 !important;
+            }
+        }
+        &.footer {
+            margin: 60px 0 0 0 !important;
+            .items{
+                background-color: @bg-card-color !important;
+            }
+        }
+    }
+    .proxy{
+        ._item{
+            .item{
+                border-radius: 8px;
+                background-color: @bg-gradient-color;
+                .member,.commission,.date{
+                    color: #BEBEBE;
+                }
+            }
+        }
+    }
+    .title-h2{
+        color: @primary-color !important;
+        &::before, &::after{
+            background-color: @primary-color !important;
+        }
+    }
+    .step{
+        .item{
+            background-color: #992E2A;
+            &:nth-child(2n) {
+                .text,p{
+                    color: #fff !important;
+                }
+                background-color: @primary-color !important;
+            }
+            .text,p{
+                color: #fff !important;
+            }
+        }
+    }
+    .container .contract /deep/.van-collapse .van-collapse-item .van-cell .van-cell__title{
+         color: #000000;
+        text-align: left;
+     }
+    .footer{
+        margin: 1rem 0 0;
+        .items{
+            background: none;
+        }
+        background-color: #282828;
+    }
+
+}

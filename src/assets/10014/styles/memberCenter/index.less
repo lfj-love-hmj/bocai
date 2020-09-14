@@ -1,0 +1,108 @@
+.operating {
+    :nth-child(1) {
+      background: @primary-color;
+    }
+
+    :nth-child(2) {
+      background:none !important;
+      border:2px solid @primary-color !important;
+      color:@primary-color !important;
+    }
+
+    :nth-child(3) {
+        background:none !important;
+        border:2px solid @primary-color !important;
+        color:@primary-color !important;
+    }
+
+}
+.user-info{
+    position: relative;
+    z-index: 2;
+    .person-info{
+    .right {
+        .bottom {
+            color: #fff !important;
+        }
+    }
+    }
+}
+.member-page {
+    // background: #07101D url(/img/bg@2x.4b8a40e5.png) no-repeat !important;
+    // background-size:contain !important;
+    // .balance {
+    //     background:#0F192F !important;
+    // }
+    background: #251B4D !important;
+    .balance {
+        background: #2B2057 !important;
+        position: relative;
+        z-index: 2;
+        .operating{
+            border-top: 1px solid rgba(255,255,255,0.06) !important;
+        }
+        &::before{
+            position: absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            content:'';
+            background:#2B2057;
+            z-index:-1;
+        }
+        .other-balance{
+            .info-area{
+                span{
+                    &:last-child{
+                        color: #fff !important;
+                    }
+                }
+            }
+        }
+    }
+    .latest{
+        h2{
+            color: #B38A58 !important;
+            i{
+                color: #fff !important;
+            }
+        }
+        .newest-info-detail{
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+            .newest-num{
+                color: #B38A58 !important;
+            }
+        }
+    }
+    &::before{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:35%;
+        content:'';
+        background:#251B4D;
+        z-index:0;
+    }
+}
+.m-body{
+    background:#251B4D !important;
+}
+.member-page .person-entr .menu > i{
+    width:1rem !important;
+    height:1rem !important;
+}
+/deep/ .m-header{
+    z-index:3;
+}
+
+/deep/ .container{
+    .main{
+        .info {
+            p {
+                color: #fff !important; 
+            }
+        }
+    }
+}

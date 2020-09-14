@@ -1,0 +1,128 @@
+.operating{
+    :nth-child(1) {
+        background: @primary-color;
+    }
+
+    :nth-child(2) {
+        // background-image: linear-gradient(90deg, #13b1d7 0%, #1c7588 99%) !important;
+        background: transparent !important;
+        border:2px solid @primary-color;
+        color: @primary-color;
+    }
+
+    :nth-child(3) {
+        // background-image: linear-gradient(90deg, #da8b45 0%, #b04d25 99%) !important;
+        background: transparent !important;
+        border:2px solid @primary-color;
+        color: @primary-color;
+    }
+    border-top: 0 !important;
+    margin-top: 20px !important;
+}
+.member-page{
+    background-image: none !important;
+    padding-top: 30px;
+    .navhide{
+        background-color: transparent !important;
+        z-index: 99 !important;
+        top: 30px;
+        position: absolute;
+        /deep/ .van-nav-bar__title{
+            display: none;
+        }
+    }
+    .navshow{
+        background-color: #597EF7 !important;
+        z-index: 99 !important;
+        top: 0;
+        position: fixed;
+        /deep/ .van-nav-bar__title{
+            display: block;
+            color: #fff;
+        }
+    }
+    .m-body{
+        // position: relative;
+        background: url(~@assets/img3_0/memberCenter/bet_me_bg_top@2x.png) center -88px no-repeat;
+        background-size: 100% auto;
+        margin-top: -88px;
+        .balance{
+            background-color: #fff;
+            box-shadow:none;
+            position: relative;
+            z-index: 9;
+            .main-balance,.other-balance{
+                padding: 0;
+            }
+        }
+        .top-bg{
+            height: 300px;
+            width: 100%;
+            background-color: @primary-color;
+            position: absolute;
+            top:88px;
+            left: 0;
+            span{
+                width: 100%;
+                height: 40px;
+                position: absolute;
+                bottom:0;
+                background-color: #fff;
+                border-radius:14px 14px 0 0;
+            }
+        }
+        .user-info{
+            position: relative;
+            z-index: 9;
+            background: none!important;
+            .person-info{
+                .top span{
+                    color: #fff;
+                }
+                .bottom{
+                    color: rgba(255,255,255,.6)!important;
+                }
+            }
+
+        }
+        .person-entr{
+            p{
+                color: #000;
+            }
+        }
+        .balance-out-wrap{
+            box-shadow:0px 4px 28px 0px rgba(0,34,80,0.1);
+            border-radius:16px;
+            background-color: #fff;
+            margin: 40px 30px 0;
+            padding: 0 40px;
+        }
+        .balance-out{
+            background: none!important;
+            box-shadow: none!important;
+            padding: 30px 0 0!important;
+        }
+        .quick-link{
+            background: none!important;
+            box-shadow: none!important;
+            padding: 20px 0 30px!important;
+            border-top: 2px solid #E6EAEF;
+            img{
+                margin-right: 0;
+                width: 80px;
+            }
+        }
+    }
+    .newest-info-detail{
+        border: 0 !important;
+    }
+    .latest{
+        h2{
+            span{
+                color:#333;
+                font-weight: bold;
+                font-size: 28px;
+            }
+        }
+    }
+}

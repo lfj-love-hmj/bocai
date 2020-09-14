@@ -1,0 +1,81 @@
+#wallet {
+    input::-webkit-input-placeholder {
+        color: #999999;
+    }
+    .main > .total-box .income{
+        background-color: #fff;
+        > .total-amount .item > div:first-child{
+            color: #000;
+            font-weight: bold;
+        }
+        .incom-btn div:first-child{
+            border:2px solid @primary-color;
+            color: @primary-color;
+        }
+        .incom-btn div{
+            font-weight: bold!important;
+        }
+    }
+
+}
+
+.container .aagames-header{
+    background:@primary-color !important;
+    border-color:@primary-color !important;
+}
+.main .list .item > div > span:first-child{
+    color:#666 !important;
+}
+.main .list .item .blod > span{
+    color:#000 !important;
+    &:first-child{
+        color:#000 !important;
+    }
+}
+/deep/ .van-popup .list p{
+    border-color: @primary-color !important;
+    color: @primary-color !important;
+    &.active{
+        border-color:@primary-color !important;
+        color:#fff !important;
+    }
+}
+#wallet /deep/ .moneyBox{
+    > .finshBox > .btn{
+        color:#fff !important;
+    }
+    .account .treasury,.account .master_account{
+        border: 0;
+        background: #F5F5F5;
+        color: #333;
+    }
+}
+#wallet{
+    .list{
+        .item{
+            &:after{
+                background-color: rgba(0,0,0,.06);
+            }
+        }
+    }
+    .moneyBox > div .tranfer_amount {
+        .amount{
+            color: #666;
+        }
+
+        .active {
+            background: @primary-color !important;
+            border-color: @primary-color !important;
+        }
+        > div{
+            border-bottom: 2px solid rgba(0,0,0,.06)!important;
+            .all{
+                color: #666!important;
+            }
+        }
+        .btn{
+            background: @primary-color!important;
+        }
+    }
+
+}

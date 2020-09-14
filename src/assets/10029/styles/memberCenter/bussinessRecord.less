@@ -1,0 +1,122 @@
+/deep/.van-tabs {
+    /deep/.van-tabs__nav{
+        background-color: @bg-card-color !important;
+        .van-tab--active {
+            background-color: @bg-color-2 !important;
+            color: #fff !important;
+        }
+    }
+}
+/deep/.record-title{
+    color: #000 !important;
+}
+.tab_top{
+    &:after{
+        background-color: @border-color !important;
+    }
+    p{
+        &:first-child{
+            color: #000 !important;
+        }
+    }
+}
+.list_content{
+    border-bottom-color: @border-color !important;
+}
+.active_selected,.select-button{
+    color:#fff !important; 
+}
+// 交易记录
+.businessRecord{
+    .record-title{
+        background-color: @bg-color-white;
+        margin: 0;
+    }
+    /deep/ .van-tabs .van-tabs__wrap{
+        background-color: @bg-color-white;
+        padding: 12px 30px;
+        height: auto;
+        .van-tabs__nav{
+            height: 64px;
+            background: #E6EAEF!important;
+            align-items: center;
+            padding: 0 4px;
+            .van-tab{
+                height: 56px;
+                background-color: transparent!important;
+                font-size: 28px;
+                color: #999;
+                position: relative;
+                &:after{
+                    content: '';
+                    position: absolute;
+                    width: 2px;
+                    height: 26px;
+                    background-color: #fff;
+                    top: 50%;
+                    left: 0;
+                    margin-top: -13px;
+                }
+                &:first-child:after{
+                    content: none;
+                }
+                &.van-tab--active{
+                    background-color: @bg-gradient-color!important;
+                    &:after{
+                        content: none;
+                    }
+                }
+            }
+        }
+    }
+    .tab_top{
+        background-color: @bg-color-white;
+        margin-top: 0!important;
+    }
+    /deep/ .access{
+        .main .list ul{
+            padding: 0;
+            border-top: 20px solid #F5F6FA;
+            .van-list{
+                padding: 0 30px;
+                background-color: #fff;
+                li{
+                    &.turn_list{
+                        padding: 20px 0 0;
+                    }
+                    img{
+                        align-self: flex-start;
+                    }
+                    .header{
+                        color: #333;
+                        > span:last-child{
+                            color: @bg-gradient-color;
+                        }
+                    }
+                    .status > span:first-child{
+                        color: #333;
+                    }
+                    .remark{
+                        > .time{
+                            color: #999;
+                        }
+                    }
+                    .status .green{
+                        color: #999;
+                    }
+                    .status .yellow{
+                        color: #EC9221;
+                    }
+                    .turn{
+                        background-color:#D2B79C;
+                        color: #fff;
+                        align-self: flex-start;
+                        margin-left: 0!important;
+                    }
+                }
+            }
+        }
+    }
+
+}
+    

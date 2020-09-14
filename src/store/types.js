@@ -1,0 +1,31 @@
+// GAMES
+export const SET_GAMECATES_PLATFORMS = 'SET_GAMECATES_PLATFORMS'
+export const SET_ALL_PLATFORMS = 'SET_ALL_PLATFORMS'
+export const SET_ALL_CATES = 'SET_ALL_CATES'
+export const SET_ALL_GAME_IDS = 'SET_ALL_GAME_IDS'
+
+// USER
+export const SET_TOKEN = 'SET_TOKEN'
+export const SET_USER_INFO = 'SET_USER_INFO'
+export const SET_USER_WALLET = 'SET_USER_WALLET'
+
+// GAME CATEGORY ID
+export const GAME_CATE_ID_CASINO = 1
+export const GAME_CATE_ID_SLOTS = 2
+export const GAME_CATE_ID_FISHING = 3
+export const GAME_CATE_ID_LOTTERY = 5
+export const GAME_CATE_ID_CHESS = 7
+export const GAME_CATE_ID_SPORTS = 4
+export const GAME_CATE_ID_ESPORTS = 8
+
+// GLOBAL
+export const SET_GAME_SEARCH = 'SET_GAME_SEARCH'
+export const SET_PROFITS_RANK_DATA = 'SET_PROFITS_RANK_DATA'
+export const SET_SITE_INFO = 'SET_SITE_INFO'
+export const SET_POPUP_SHOW = 'SET_POPUP_SHOW'
+export const SET_NO_LOGIN = 'SET_NO_LOGIN'
+export const SET_GUIDE_REGISTER = 'SET_GUIDE_REGISTER'
+export const SET_SHOW_FLOW = 'SET_SHOW_FLOW'
+export const SET_FLOW_DATA = 'SET_FLOW_DATA'
+export const SET_MEMBER_ALL_LEVEL = 'SET_MEMBER_ALL_LEVEL'
+export const SET_RED_BAG = 'SET_RED_BAG'

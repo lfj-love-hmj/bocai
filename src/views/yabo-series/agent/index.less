@@ -1,0 +1,148 @@
+.submit-form {
+
+  width: 100vw;
+  .item {
+    margin-bottom: 20px;
+  }
+  .area-code {
+    width: auto;
+    padding: 20px 20px;
+    margin-right: 20px;
+    color: #cccccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .reset{
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-left: 0!important;
+    margin-right: 0!important;
+    justify-content: flex-start;
+    span{
+      width: 90px;
+      height: 100%;
+      background: rgba(255,255,255,.5);
+      text-align: center;
+      line-height: 90px;
+      display: block;
+      margin-right: 0!important;
+      border: 0;
+    }
+    .password-view{
+      position: absolute;
+      right: 30px;
+      top: 25px;
+    }
+
+  }
+  .to-login{
+    text-align: center;
+    color: #fff;
+    font-size: 28px;
+    a{
+      color: @bg-gradient-color;
+    }
+  }
+  .register-fr{
+    font-size: 28px;
+    color: #fff;
+    margin: 0;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    a{
+      color: #fff;
+    }
+  }
+  .reset:nth-child(5) {
+    >img{
+      width:42px;
+      // height: 40px;
+      margin-left: 6px;
+      margin-right: 30px;
+    }
+  }
+  .reset, .input {
+    height: 90px;
+    display: flex;
+    margin: 0 40px 30px;
+    box-sizing: border-box;
+    align-items: center;
+    position: relative;
+
+    img, .img {
+      width: 44px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .title{
+      color: #B1B1B1;
+      font-size: 32px;
+    }
+    input, .text {
+      flex: 1;
+      padding: 0 20px;
+      border: none;
+      font-size: 32px;
+      line-height: normal;
+      background: none;
+      height: 90px;
+      color: @bg-color-white;
+      background: rgba(216,216,216,0.4);
+      box-sizing: border-box;
+      width: 100%;
+    }
+    input::placeholder {
+      font-size:32px;
+      font-weight:400;
+      color:#fff;
+      line-height:44px;
+    }
+    input:-internal-autofill-selected{
+      background: transparent!important;
+    }
+
+    //span {
+    //  color: #ffcf6e;
+    //  font-size: 22px;
+    //  margin-top: 30px;
+    //  display: inline-block;
+    //  margin-bottom: 20px;
+    //}
+  }
+  .input{
+    height: 100px;
+    margin-bottom: 0;
+    &:after{
+      background-color: #E6EAEF;
+      height: 2px;
+      opacity: 1;
+    }
+    .icon{
+      width: 44px;
+    }
+    .text{
+      background: none;
+      color: #333;
+      line-height: 100px;
+      padding: 0;
+    }
+  }
+  .error {
+    margin-top: -30px;
+    padding: 0 40px;
+    box-sizing: border-box;
+    height: 110px;
+    font-size: 28px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(255, 102, 102, 1);
+    line-height: 110px;
+  }
+  .aagames-button-box{
+    padding: 0;
+  }
+}

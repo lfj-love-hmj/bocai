@@ -1,0 +1,28 @@
+.Join{
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    padding-top: 600px !important;
+    h2,h3{
+        color: #fff !important;
+    }
+    h2{
+        text-align: center;
+        width: 100% !important;
+    }
+}
+.title-h2{
+    color: @primary-color !important;
+    &::before, &::after{
+        background-color: @primary-color !important;
+    }
+}
+.step{
+    .item{
+        &:nth-child(2n) {
+            background-color: @primary-color !important;
+        }
+        .text{
+            color: #fff !important;
+        }
+    }
+}

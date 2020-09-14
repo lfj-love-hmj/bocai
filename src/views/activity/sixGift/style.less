@@ -1,0 +1,477 @@
+#welfare {
+  /deep/ .van-pagination__item {
+    color: #333;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 50%;
+  }
+  /deep/ .van-pagination__item--active {
+    background-color: #e74f38;
+    color: #fff;
+  }
+  /deep/ .van-pagination__prev {
+    width: 72px;
+  }
+  /deep/ .van-pagination__next {
+    width: 72px;
+  }
+  .red {
+    color: red;
+  }
+  .content {
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-top: @main-top;
+    .banner {
+      position: relative;
+      img {
+        width: 100%;
+      }
+      .caijin {
+        margin-top: -23px;
+      }
+      .detail {
+        position: absolute;
+        width: 422px;
+        top: 470px;
+        left: 50%;
+        margin-left: -208px;
+        padding: 0px 0px;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        .top {
+          color: #91570d;
+          text-align: center;
+          line-height: 60px;
+          img {
+            height: 24px;
+            width: 24px;
+            margin: 0 2px -5px;
+          }
+        }
+        .bottom-line {
+          width: 400px;
+          height: 2px;
+          background-color: #edd0bc;
+          display: block;
+          margin: 0 auto;
+        }
+        .bottom {
+          padding: 14px 0 0 14px;
+          clear: both;
+          label {
+            width: 130px;
+            text-align: center;
+            float: left;
+            line-height: 36px;
+            color: #91570d;
+          }
+          span {
+            float: left;
+            width: 236px;
+            height: 36px;
+            background: rgba(233, 56, 32, 1);
+            border: 1px solid;
+            border-image: linear-gradient(
+                0deg,
+                rgba(218, 26, 0, 1),
+                rgba(246, 97, 0, 1),
+                rgba(247, 55, 0, 1)
+              )
+              1 1;
+            box-shadow: -10px 4px 13px 0 rgba(233, 56, 32, 0.44);
+            margin-left: 14px;
+            color: #fff;
+            line-height: 36px;
+            padding-left: 30px;
+          }
+          i {
+            float: right;
+            font-style: normal;
+            color: #fff;
+            line-height: 36px;
+            position: relative;
+            left: -50px;
+          }
+        }
+      }
+    }
+    .finish-time {
+      padding: 0 30px;
+      .top {
+        margin-top: 14px;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          height: 32px;
+        }
+        span {
+          font-size: 30px;
+          color: #e64e37;
+          margin-left: 10px;
+        }
+      }
+      .bottom {
+        height: 80px;
+        background: #e64e37;
+        color: #fff;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        font-weight: 600;
+        .van-count-down {
+          color: #fff;
+          font-size: 46px;
+        }
+      }
+    }
+
+    .chongzhi {
+      width: 600px;
+      height: 100px;
+      text-align: center;
+      background-size: 100% 100%;
+      margin: 48px auto;
+      background-image: url("./assets/btn_bg@2x.png");
+      line-height: 80px;
+      font-size: 30px;
+      color: #fff;
+    }
+    .mfcaijin {
+      border-top: 2px dashed #edd0bc;
+      padding: 48px 30px;
+      margin-top: -15px;
+      .card {
+        height: 368px;
+        width: 274px;
+        margin-bottom: 30px;
+        background-image: url("./assets/hongbao_bg@2x.png");
+        background-size: 100% 100%;
+        padding-top: 50px;
+        display: inline-block;
+        text-align: center;
+        color: #91570d;
+        &:nth-child(2n) {
+          margin-left: 140px;
+        }
+        .money {
+          font-size: 40px;
+          font-weight: 600;
+          line-height: 50px;
+          span {
+            font-size: 12px;
+            font-weight: normal;
+          }
+        }
+        .freemoney {
+          line-height: 50px;
+        }
+        .depositmoney {
+          span {
+            font-weight: 700;
+          }
+        }
+        .get-btn {
+          padding-top: 60px;
+          overflow: hidden;
+          button {
+            width: 179px;
+            height: 42px;
+            background: linear-gradient(
+              76deg,
+              rgba(255, 210, 22, 1),
+              rgba(255, 246, 122, 1)
+            );
+            box-shadow: 0 8px 13px 0 rgba(145, 55, 36, 0.3);
+            border-radius: 21px;
+            border: 0;
+            outline: none;
+          }
+          > div {
+            width: 140px;
+            margin: 0 auto;
+            overflow: hidden;
+            text-align: center;
+            img {
+              width: 44px;
+              float: left;
+            }
+            p {
+              line-height: 44px;
+              color: #fff;
+              float: left;
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+    .miaobian {
+      height: 140px;
+      background: #6093ec;
+      margin-top: -60px;
+      img {
+        width: 100%;
+      }
+    }
+    .miaobian2 {
+      margin-top: -10px;
+    }
+
+    .miaobian-bottom {
+      margin-top: 30px;
+      height: 200px;
+      background-image: url("./assets/dibu_bg@2x.png");
+      background-size: 100% 200%;
+      background-position: bottom;
+      img {
+        width: 100%;
+      }
+    }
+
+    .lingqujilu {
+      & > img {
+        width: 100%;
+        margin-top: -35px;
+      }
+      table {
+        margin-top: -20px;
+        width: 100%;
+        td {
+          text-align: center;
+          padding: 16px 0;
+        }
+      }
+      .paging {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 0;
+        img {
+          width: 32px;
+          height: 32px;
+        }
+        span {
+          display: inline-block;
+          text-align: center;
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          border-radius: 50%;
+          background: #e64e37;
+          color: #fff;
+          margin: 0 20px;
+        }
+        div {
+          color: #666666;
+          margin-left: 20px;
+        }
+      }
+    }
+
+    .mingze {
+      & > img {
+        width: 100%;
+        margin-top: -20px;
+      }
+      div {
+        margin: 0 30px;
+        background: #f8f5e9;
+        color: #79480a;
+        padding: 38px 13px;
+        line-height: 36px;
+        border-radius: 10px;
+      }
+    }
+    // > div {
+    //   > .top {
+    //     width: 100%;
+    //     height: 11.2533rem;
+    //     background-size: 100% 100%;
+    //     overflow: hidden;
+    //     background-image: url("@assets/img/activities/welfare/banner.png");
+    //   }
+    //   > .center {
+    //     width: 100%;
+    //     overflow: hidden;
+    //     background-image: url("@assets/img/activities/welfare/Layer 1.png");
+    //     > .Witty {
+    //     width: 100%;
+    //     margin-bottom: 0.7467rem;
+    //     padding: 0.5rem 0 0 0;
+    //     > img {
+    //       display: block;
+    //       width: 6.16rem;
+    //       height: 0.6133rem;
+    //       margin: 0 auto;
+    //       margin-bottom: 0.5867rem;
+    //     }
+    //     > .list {
+    //       padding: 0 0.48rem 0 0.2667rem;
+    //       width: 100%;
+    //       display: flex;
+    //       justify-content: center;
+    //       > div {
+    //         width: 2.6667rem;
+    //         height: 2.5333rem;
+    //         border: 0.08rem solid #ec5074;
+    //         text-align: center;
+    //         margin-bottom: 0.5333rem;
+    //         > p:first-child {
+    //           position: relative;
+    //           padding: 0.4267rem 0 0.24rem 0;
+    //           color: #ec5074;
+    //           font-size: 0.4267rem;
+    //           font-weight: 600;
+    //           &::after {
+    //             position: absolute;
+    //             display: block;
+    //             content: "";
+    //             width: 1.2rem;
+    //             height: 0.0267rem;
+    //             background: rgba(236, 80, 116, 1);
+    //             left: 24%;
+    //             bottom: 0;
+    //           }
+    //         }
+    //         > p:nth-child(2) {
+    //           color: #9a1f3a;
+    //           font-size: 0.32rem;
+    //           line-height: 0.5333rem;
+    //         }
+    //         > p:nth-child(3) {
+    //           color: #9a1f3a;
+    //           font-size: 0.32rem;
+    //           line-height: 0.5333rem;
+    //         }
+    //       }
+    //       > img {
+    //         width: 0.3467rem;
+    //         height: 0.5867rem;
+    //         margin: 0.8rem 0.2667rem 0 0.2667rem;
+    //       }
+    //     }
+    //   }
+    //   // 星级特权福利
+    //   .privilege {
+    //     width: 100%;
+    //     > img {
+    //       display: block;
+    //       margin: 0 auto;
+    //       width: 5.8933rem;
+    //       height: 0.6133rem;
+    //       margin-bottom: 0.5333rem;
+    //     }
+    //     .privilege-table {
+    //       padding: 0 0.2667rem;
+    //       > table {
+    //         width: 100%;
+    //         tr {
+    //           width: 100%;
+    //           display: flex;
+    //           justify-content: space-around;
+    //           height: 0.6133rem;
+    //           line-height: 0.6133rem;
+    //           th,
+    //           td {
+    //             color: #ffffff;
+    //             font-size: 0.32rem;
+    //             display: flex;
+    //             justify-content: center;
+    //             width: 25%;
+    //             text-align: center;
+    //             border-bottom: 0.0267rem solid #ffffff;
+    //             border-right: 0.0267rem solid #ffffff;
+    //             &:nth-child(3) {
+    //               width: 35%;
+    //             }
+    //             &:nth-child(1),
+    //             &:nth-child(2),
+    //             &:nth-child(4) {
+    //               width: 20%;
+    //             }
+    //           }
+    //         }
+    //         tr:nth-child(2n + 1) {
+    //           background: #ec5074;
+    //         }
+    //         tr:nth-child(2n) {
+    //           background-color: #f49eb3;
+    //         }
+    //       }
+    //       > .text {
+    //         width: 100%;
+    //         padding: 0.2667rem;
+    //         > p {
+    //           color: #972036;
+    //           font-size: 0.32rem;
+    //           text-align: left;
+    //           margin-bottom: 0.2667rem;
+    //           line-height: 0.4rem;
+    //         }
+    //       }
+    //     }
+    //   }
+    //   // 活动规则
+    //   .rulesActivity {
+    //     width: 100%;
+    //     padding-top: 1.0667rem;
+    //     > img {
+    //       display: block;
+    //       width: 4.56rem;
+    //       height: 0.6133rem;
+    //       margin: 0 auto;
+    //     }
+    //     > .text {
+    //       margin-top: 0.5333rem;
+    //       p {
+    //         padding: 0 0.32rem;
+
+    //         margin-bottom: 0.4933rem;
+
+    //         &:after {
+    //           content: "";
+    //           display: block;
+    //           clear: both;
+    //         }
+    //         > span:first-child {
+    //           float: left;
+    //           margin: 0.1rem 0.1333rem 0 0;
+    //           color: #ffffff;
+    //           text-align: center;
+    //           display: block;
+    //           width: 0.4rem;
+    //           height: 0.4rem;
+    //           line-height: 0.4rem;
+    //           border-radius: 50%;
+    //           background-color: #ec5074;
+    //         }
+    //         > span:last-child {
+    //           float: left;
+    //           color: #ff3d72;
+    //           font-size: 0.32rem;
+    //           display: block;
+    //           line-height: 0.6rem;
+    //           width: calc(100% - 1.04rem - 0.13333rem);
+    //         }
+    //       }
+    //     }
+    //   }
+    //   }
+    // }
+  }
+  .no-header {
+    padding-top: 0;
+  }
+}

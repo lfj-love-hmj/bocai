@@ -1,0 +1,116 @@
+.operating{
+    :nth-child(1) {
+        background: @primary-color;
+    }
+
+    :nth-child(2) {
+        // background-image: linear-gradient(90deg, #13b1d7 0%, #1c7588 99%) !important;
+        background: transparent !important;
+        border:2px solid @primary-color;
+        color: @primary-color;
+    }
+
+    :nth-child(3) {
+        // background-image: linear-gradient(90deg, #da8b45 0%, #b04d25 99%) !important;
+        background: transparent !important;
+        border:2px solid @primary-color;
+        color: @primary-color;
+    }
+    border-top: 0 !important;
+    margin-top: 20px !important;
+}
+.member-page{
+    background-image: none !important;
+    .m-header{
+        background-color: @primary-color !important;
+        z-index: 99 !important;
+    }
+    .m-body{
+        // position: relative;
+        .balance{
+            background-color: #fff;
+            box-shadow:0px 4px 17px 0px rgba(92,96,150,0.16);
+            position: relative;
+            z-index: 9;
+        }
+        .top-bg{
+            height: 300px;
+            width: 100%;
+            background-color: @primary-color;
+            position: absolute;
+            top:88px;
+            left: 0;
+            span{
+                width: 100%;
+                height: 40px;
+                position: absolute;
+                bottom:0;
+                background-color: #fff;
+                border-radius:14px 14px 0 0;
+            }
+        }
+        .user-info{
+            position: relative;
+            z-index: 9;
+            .bottom{
+                color: #fff !important;
+            }
+        }
+        .person-entr{
+            p{
+                color: #000;
+            }
+        }
+    }
+    .newest-info-detail{
+        border: 0 !important;
+    }
+    .latest{
+        h2{
+            span{
+                color:#000;
+            }
+        }
+    }
+    
+}
+.member-page .user-info .person-info .right .name  {
+    font-size: 40px !important;
+    color: #000 !important;
+}
+.member-page .user-info .person-info .right .bottom {
+    color: #ACACAC !important;
+}
+.member-page .latest .newest-info-detail {
+    border-bottom: 0.02667rem solid @border-color !important;
+}
+#app .member-page .balance .other-balance {
+    padding-bottom: 30px;
+    border-bottom: 1px solid @border-color;
+}
+#app .member-page .balance .operating {
+    margin-top: 0 !important;
+}
+#app .member-page .latest h2 span {
+    color: #999999;
+    font-weight:600;
+}
+#app .member-page .latest .newest-info-detail .newest-info-first {
+    color: #5E5E5E;
+    font-weight:600;
+    align-items: center;
+    .newest-name {
+        height: 80px;
+        line-height: 80px;
+    }
+    .newest-num {
+        color: #999999;
+    }
+}
+#app .member-page .latest .newest-info-detail .newest-info-first .push-money{
+    color: #999999;
+    font-weight:600;
+}
+#app .member-page .m-body .person-entr .menu  p  {
+    color: #858585;
+}

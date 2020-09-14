@@ -1,0 +1,119 @@
+#seminar {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: @main-top;
+  }
+  .main {
+    height: auto;
+    > .top {
+      height: 13.8667rem;
+      position: relative;
+      > img {
+        width: 100%;
+      }
+      > .money {
+        font-size: 0.7067rem;
+        font-weight: bold;
+        color: rgba(255, 240, 0, 1);
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 9.7rem;
+      }
+      > .people {
+        font-size: 0.7067rem;
+        font-weight: bold;
+        color: rgba(255, 240, 0, 1);
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 12.4rem;
+      }
+    }
+    > .content {
+      height: 33.2933rem;
+      width: calc(100vw + 0.04rem);
+      background-image: url("./assets/bg.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      position: relative;
+      top: -0.04rem;
+      left: -0.04rem;
+      > img {
+        width: 100%;
+      }
+      > .list {
+        &:after{
+          content: '';
+          display: block;
+          clear: both;
+        }
+        > .item {
+          width: 9.1467rem;
+          height: 3.9867rem;
+          margin: 0.6667rem auto 0;
+          background-image: url("./assets/iconc.png");
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          position: relative;
+          > .title {
+            width: 1.9467rem;
+            height: 1.5733rem;
+            background-image: url("./assets/icont.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            position: absolute;
+            left: 3.6rem;
+            top: -0.3rem;
+            font-size: 0.48rem;
+            color: #fff;
+            text-align: center;
+            line-height: 1.5733rem;
+            font-weight: bold;
+          }
+          > .btn {
+            width: 4rem;
+            height: 1.5733rem;
+            background-image: url("./assets/iconb.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            position: absolute;
+            left: 2.5733rem;
+            bottom: -0.4rem;
+            font-size: 0.4267rem;
+            color: #000000;
+            text-align: center;
+            line-height: 1.5733rem;
+            font-weight: bold;
+          }
+          >.content1{
+            font-size: 0.4267rem;
+            line-height: 1;
+            color: #FFB400;
+            text-align: center;
+            padding-top: 1.2rem;
+          }
+          >.line{
+            width: 8rem;
+            height: 3px;
+            margin: 0.2667rem auto;
+            background-color: #FFB400;
+          }
+          >.content2{
+            font-size: 0.4267rem;
+            line-height: 1;
+            color: #fff;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .no-header {
+    margin-top: 0;
+  }
+}

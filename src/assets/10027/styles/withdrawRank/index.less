@@ -1,0 +1,74 @@
+.latest{
+    .item{
+        border-bottom: 2px solid @border-color !important;
+    }
+}
+/deep/.m-header.van-nav-bar .van-nav-bar__left{
+    .van-icon{
+        color: #fff !important;
+    }
+}
+/deep/.van-nav-bar .van-nav-bar__title {
+    color: #fff !important;
+}
+.float-button{
+    .van-icon,span{
+        color: #fff !important;
+    }
+}
+.profits-rank{
+    position: relative;
+    background: #fff url(~@assets/img3_0/memberCenter/ranks@2x.png) center -100px no-repeat;
+    background-size: 100% auto;
+    &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 740px;
+        width: 100%;
+        background:linear-gradient(135deg,rgba(39,107,245,1) 0%,rgba(127,168,255,1) 100%)!important;
+        z-index: 0;
+    }
+    .m-header.van-nav-bar{
+        background: none!important;
+        z-index: 20;
+        position: relative;
+    }
+    .m-body{
+        position: relative;
+        z-index: 2;
+        top: 0!important;
+        padding-top: 0;
+    }
+    .rank-info{
+        background: none!important;
+    }
+    .ranks{
+        background:none;
+    }
+    .float-button{
+        background-color: @bg-gradient-color;
+    }
+    .latest{
+        h2{
+            color: #333;
+            border-bottom: 2px solid #EDEFF6;
+            padding-bottom: 30px;
+            font-weight: bold;
+        }
+        dl.item-head dt{
+            color: #333;
+        }
+        dl.item-body{
+            color: #999;
+        }
+        dl dd{
+            color: #333;
+            font-weight: bold;
+        }
+    }
+    .van-image{
+        margin-top: -46px!important;
+    }
+}

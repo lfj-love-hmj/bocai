@@ -1,0 +1,136 @@
+.operating{
+    :nth-child(1) {
+        background: @primary-color;
+    }
+
+    // :nth-child(2) {
+    //     background-image: linear-gradient(90deg, #13b1d7 0%, #1c7588 99%) !important;
+    // }
+
+    // :nth-child(3) {
+    //     background-image: linear-gradient(90deg, #da8b45 0%, #b04d25 99%) !important;
+    // }
+    border-color:#fff !important;
+}
+.operating {
+    :nth-child(1) {
+      background: @primary-color;
+    }
+
+    :nth-child(2) {
+      background:none !important;
+      border:2px solid @primary-color !important;
+      color:@primary-color !important;
+    }
+
+    :nth-child(3) {
+        background:none !important;
+        border:2px solid @primary-color !important;
+        color:@primary-color !important;
+    }
+
+}
+.user-info{
+    position: relative;
+    z-index: 2;
+    .person-info{
+    .right {
+        .bottom {
+            color: #fff !important;
+        }
+    }
+    }
+}
+.member-page {
+    // background: #07101D url(/img/bg@2x.4b8a40e5.png) no-repeat !important;
+    // background-size:contain !important;
+    background:none !important;
+    /deep/ .m-header.van-nav-bar{
+        background:@primary-color !important;
+    }
+    .latest .newest-info-detail{
+        border-color:#fff !important;
+    }
+    .latest h2{
+        color:#000 !important;
+        font-weight: bold;
+    }
+    .balance {
+        position: relative;
+        z-index: 2;
+        background:#fff !important;
+        box-shadow:1px 1px 20px rgba(92, 96, 150, 0.16);
+        &::before{
+            position: absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            content:'';
+            background:#fff;
+            z-index:-1;
+        }
+    }
+    &::before{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:35%;
+        content:'';
+        background:@primary-color;
+        z-index:0;
+    }
+}
+.m-body{
+    // background:#07101D !important;
+}
+.member-page .person-entr .menu > i{
+    width:1rem !important;
+    height:1rem !important;
+}
+/deep/ .m-header{
+    z-index:3;
+}
+/deep/ .van-nav-bar {
+    .van-nav-bar__title {
+      color: #fff !important;
+    }
+}
+.member-page .info-area > span:first-child{
+    color:rgba(51,51,51,0.7) !important;
+}
+.member-page .balance .other-balance .info-area > span{
+    &:last-child{
+        color:#000 !important;
+    }
+}
+.member-page .latest .newest-info-detail .newest-info-first{
+    .newest-name{
+        color:#000 !important;
+        font-weight:bold;
+        display:flex;
+        justify-content: flex-start;
+        align-items: center;
+        img{
+            top:0 !important;
+        }
+    }
+    .newest-num{
+        color:#000 !important;
+        font-weight:bold;
+        display:flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+.member-page .person-entr .menu > p{
+    color:#000 !important;
+    font-weight: bold;
+}
+.member-page .user-info .person-info .right .name{
+    font-size: 0.54rem !important;
+}
+.member-page .latest .newest-info-detail .newest-info-first{
+    align-items:flex-start !important;
+}

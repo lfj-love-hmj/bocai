@@ -1,0 +1,87 @@
+.operating {
+  :nth-child(1) {
+    background: @primary-color;
+  }
+
+  :nth-child(2) {
+    // background-image: linear-gradient(90deg, #13b1d7 0%, #1c7588 99%) !important;
+    background: transparent !important;
+    border: 2px solid @primary-color;
+    color: @primary-color;
+  }
+
+  :nth-child(3) {
+    // background-image: linear-gradient(90deg, #da8b45 0%, #b04d25 99%) !important;
+    background: transparent !important;
+    border: 2px solid @primary-color;
+    color: @primary-color;
+  }
+  border-top: 0 !important;
+  margin-top: 20px !important;
+}
+
+#app {
+  .member-page {
+    background-image: none !important;
+    .m-header {
+      background: linear-gradient(303deg, rgba(255, 154, 93, 1) 0%, rgba(255, 57, 55, 1) 100%) !important;
+      z-index: 99 !important;
+    }
+    .m-body {
+      // position: relative;
+      .balance {
+        background-color: #fff;
+        box-shadow: 0px 4px 17px 0px rgba(92, 96, 150, 0.16);
+        position: relative;
+        z-index: 9;
+        .other-balance .info-area > span:last-child {
+          color: #000000;
+        }
+      }
+      .top-bg {
+        height: 450px;
+        width: 100%;
+        background: linear-gradient(303deg, rgba(255, 154, 93, 1) 0%, rgba(255, 57, 55, 1) 100%);
+        position: absolute;
+        top: 88px;
+        left: 0;
+        span {
+          width: 100%;
+          height: 40px;
+          position: absolute;
+          bottom: 0;
+          background-color: #fff;
+          border-radius: 14px 14px 0 0;
+        }
+      }
+      .user-info {
+        position: relative;
+        z-index: 9;
+        .bottom {
+          color: #fff !important;
+        }
+      }
+      .person-entr {
+        p {
+          color: #000;
+        }
+      }
+    }
+    .newest-info-detail {
+      border: 0 !important;
+    }
+    .latest {
+      h2 {
+        span {
+          color: #000;
+        }
+      }
+      .newest-info-detail .newest-info-first .newest-num {
+        color: #000000;
+      }
+    }
+  }
+  .container .main .info p {
+    color: #000000;
+  }
+}

@@ -1,0 +1,244 @@
+#interestRate {
+  > .container {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-top: @main-top;
+    background: #fff;
+    > div {
+      > img {
+        width: 100%;
+      }
+      > .bg2 {
+        margin-top: -0.0667rem;
+      }
+      > .bg3 {
+        margin-top: -0.0667rem;
+      }
+      > .bg4 {
+        height: 700px;
+        background-image: url("./assets/bg4.jpg");
+        background-size: 100% 100%;
+        margin-top: -0.0667rem;
+        overflow: hidden;
+        > table {
+          display: block;
+          width: 100%;
+          margin-top: 2.2667rem;
+          position: relative;
+          z-index: 999;
+          top:-30px;
+          tr {
+            width: 100%;
+            display: flex;
+            height: 0.6667rem;
+            line-height: 0.6667rem;
+            background-color: #fff;
+            td {
+              text-align: center;
+              color: #212229;
+              width: 25%;
+
+              &:first-child {
+                > span {
+                  display: inline-block;
+                  vertical-align: middle;
+                  width: 0.3467rem;
+                  height: 33px;
+                  background-size: 100% 100%;
+                  background-repeat: no-repeat;
+                }
+              }
+            }
+            &:nth-child(2) {
+              td {
+                &:first-child {
+                  > span {
+                    background-image: url("./assets/Grade1.png");
+                  }
+                }
+              }
+            }
+            &:nth-child(3) {
+              td {
+                &:first-child {
+                  > span {
+                    background-image: url("./assets/Grade2.png");
+                  }
+                }
+              }
+            }
+            &:nth-child(4) {
+              td {
+                &:first-child {
+                  > span {
+                    background-image: url("./assets/Grade3.png");
+                  }
+                }
+              }
+            }
+            &:nth-child(5) {
+              td {
+                &:first-child {
+                  > span {
+                    background-image: url("./assets/Grade4.png");
+                  }
+                }
+              }
+            }
+            &:nth-child(6) {
+              td {
+                &:first-child {
+                  > span {
+                    background-image: url("./assets/Grade5.png");
+                  }
+                }
+              }
+            }
+            &:nth-child(7) {
+              td {
+                &:first-child {
+                  > span {
+                    background-image: url("./assets/Grade6.png");
+                  }
+                }
+              }
+            }
+            &:first-child {
+              font-weight: bold;
+              background-color: #6257dc;
+              td {
+                color: #fff;
+              }
+            }
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4) {
+              td:first-child {
+                // color: #5248c4;
+              }
+            }
+            &:nth-child(5),
+            &:nth-child(6),
+            &:nth-child(7) {
+              td {
+                // font-weight: bold;
+                // color: #ff4200;
+              }
+            }
+          }
+        }
+      }
+      > .bg5 {
+        height: 11.9067rem;
+        background-image: url("./assets/bg5.jpg");
+        background-size: 100% 100%;
+        margin-top: -0.0667rem;
+        overflow: hidden;
+        > .form {
+          margin-top: 2.3067rem;
+          padding: 0 0.4rem;
+          > .item {
+            height: 0.8533rem;
+            margin-bottom: 0.3733rem;
+            display: flex;
+            > span {
+              display: inline-block;
+              line-height: 0.8533rem;
+              width: 1.6rem;
+              color: #fff;
+            }
+            > input,
+            > p {
+              width: 7.6rem;
+              background-color: #fff;
+              line-height: 0.8533rem;
+              border: none;
+              outline: none;
+              padding: 0 0 0 0.4rem;
+
+              &::placeholder {
+                color: #abaaaa;
+                font-size: 0.32rem;
+                line-height: 0.8533rem;
+              }
+            }
+            > p {
+              color: #6257dc;
+            }
+          }
+          > .pic {
+            margin: 0.5333rem 0;
+            width: 100%;
+            height: 0.0533rem;
+            background: rgba(255, 255, 255, 0.49);
+            border-radius: 50%;
+          }
+          > .note {
+            margin: 0.5333rem 0;
+            line-height: 1;
+            color: #fff;
+            font-size: 0.32rem;
+            padding-left: 1.6rem;
+          }
+          > .btn {
+            margin-top: 0.2667rem;
+            line-height: 1.0667rem;
+            height: 1.0667rem;
+            background-color: #ff4200;
+            color: #fff;
+            text-align: center;
+            font-size: 0.4rem;
+          }
+        }
+      }
+      > .bg6 {
+        height: 10.4133rem;
+        background-image: url("./assets/bg6.jpg");
+        background-size: 100% 100%;
+        margin-top: -0.0667rem;
+        overflow: hidden;
+        > .title {
+          margin-top: 2.7867rem;
+          display: flex;
+          height: 0.8533rem;
+          line-height: 0.8533rem;
+          > p {
+            text-align: center;
+            color: #fff;
+            font-size: 0.3467rem;
+            width: 3.3333rem;
+            &:first-child {
+              background-color: #6986ff;
+            }
+            &:nth-child(2) {
+              background-color: #ffb900;
+            }
+            &:last-child {
+              background-color: #ff4200;
+            }
+          }
+        }
+        > .content {
+          min-height: 4.9333rem;
+          padding: 0.5333rem 0.4rem;
+          font-size: 0.32rem;
+          line-height: 0.48rem;
+          color: #333;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+  /deep/ .van-picker {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .no-header {
+    padding-top: 0;
+  }
+}

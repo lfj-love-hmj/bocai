@@ -1,0 +1,195 @@
+.regContainer /deep/.bg-login{
+  padding-top: 50px!important;
+}
+.container.login, .container.regContainer, .container.registerSuccess{
+  background-size: 100% 100%;
+  overflow: auto;
+  background-attachment: fixed;
+  #g-code{
+    .input{
+      border-radius: 90px;
+      input{
+        padding-left: 0;
+        &::placeholder{
+          color: #bbb;
+        }
+      }
+    }
+
+    /deep/ .send-sms{
+      color: #fff;
+      line-height: 60px;
+      top: 50% !important;
+      margin-top: -40px!important;
+      margin-right: 0;
+      padding: 0;
+      width:202px;
+      height:60px!important;
+      background:rgba(255,255,255,.3)!important;
+      border-radius:40px;
+      border-left: 0!important;
+    }
+  }
+  .aagames-button{
+    width: 100%;
+    border-radius: 90px!important;
+    height: 90px;
+  }
+  .main{
+    .register{
+    }
+    .home-regist-btn{
+      background: none;
+      position: absolute;
+      bottom: 100px;
+      left: 50%;
+      margin-left: -140px;
+      width:280px;
+      height:80px;
+      border-radius:40px;
+      border:2px solid rgba(255,255,255,.3);
+      align-items: center;
+      img{
+        display: none;
+      }
+      span{
+        line-height: 80px;
+      }
+    }
+    .aagames-form /deep/ .input{
+      margin-bottom: 20px;
+      border-radius: 0;
+      background: none!important;
+      border-bottom: 2px solid rgba(255,255,255,.3);
+      img{
+        margin:0 0 0 19px!important;
+      }
+    }
+    .ship,.circle:before, .circle:after{
+      background-color: @bg-gradient-color;
+    }
+    .ship{
+      background-image: url('../../img3_0/login/onekey_bg@2x.png');
+      background-size: 100% auto;
+    }
+    .fill{
+      padding: 0;
+      margin-top: 80px;
+      .aagames-form{
+        padding:0;
+        margin-top: 0;
+        .areaNum{
+          padding: 0!important;
+          color: #fff!important;
+          border-right-color: rgba(255,255,255,.3)!important;
+          width: 150px;
+          img{margin: 0!important;width: 24px!important;}
+        }
+        .input{
+          border-radius: 0;
+          background: none!important;
+          border-bottom: 2px solid rgba(255,255,255,.3);
+          input{
+            background: none!important;
+          }
+          img{
+            margin-left: 19px;
+            width: 40px;
+          }
+        }
+        .right-button{
+          right:0;
+          top: 55%;
+          background: none!important;
+          border-left: 2px solid #bbb!important;
+          border-radius: 0;
+          height: auto;
+          line-height: 1;
+          // top:10px;
+        }
+      }
+    }
+    .onekeyText{
+      text-align: center;
+      color: #fff;
+    }
+    .funDiv {
+      margin-top: 20px;
+      color: #bbb;
+      font-size: 20px;
+      span {
+        display: inline-block;
+        height: 100%;
+      }
+      i {
+        width: 30px;
+        height: 30px;
+        margin-right: 14px;
+        display: inline-block;
+        transform: translateY(20%);
+        &.checkOff{
+          border: 2px solid #fff;
+          border-radius: 50%;
+        }
+      }
+      a {
+        color: #bbb;
+      }
+      .right{
+        color: #9988F9;
+      }
+    }
+  }
+  .customer .wait, .customer .kefu{
+    color: #fff;
+  }
+  .customer{
+    margin-top: 80px;
+  }
+  .main{
+    position: relative;
+    display: block;
+    top: 0;
+    width: 600px;
+    left: 0;
+    .home{
+      background: none!important;
+      width: 100%;
+      display: block;
+    }
+
+    /deep/ .van-tabs{
+      height:80px;
+      border-radius:40px;
+      border:2px solid rgba(255,255,255,.3);
+      .van-tabs__wrap,.van-tabs__nav{
+        height: 100%!important;
+        line-height: 80px!important;
+        padding-bottom: 0;
+      }
+      .van-tab{
+        line-height: 80px!important;
+        height: 100%!important;
+        font-size: 32px;
+      }
+      .van-tab--active{
+        background:rgba(255,255,255,.3);
+        border-radius: 80px;
+
+      }
+      .van-tabs__line{
+        display: none;
+      }
+    }
+  }
+}
+/deep/ .bg-login{
+  top: 0;
+  padding-top: 50px!important;
+  .logo{
+    width: 380px!important;
+  }
+  .cooperation{
+    width: 516px!important;
+  }
+}

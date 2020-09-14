@@ -1,0 +1,41 @@
+.container {
+  // background-image: url('~@assets/img3_0/login/login-bg@2x.png');
+  background-color: #F3F3F3;
+
+  .aagames-login-header {
+    display: none;
+  }
+  .down_logo{
+    margin: 8vh auto!important;
+  }
+
+  .main {
+    background: #fff !important;
+    margin-top: 0 !important;
+
+    /deep/ .aagames-button-box .aagames-button {
+      background-color: @primary-color !important;
+    }
+    /deep/ .van-tabs .van-tabs__nav .van-tab--active{
+      color: #000!important;
+      font-weight: bold;
+    }
+  }
+}
+
+/deep/ .submit-form {
+  .reset input{
+    color: #333!important;
+    font-size: 28px!important;
+    &::placeholder{
+      font-size: 28px!important;
+    }
+  }
+  .reset:nth-child(5) {
+    > img {
+      width: 50px !important;
+      height: auto !important;
+      margin-left: 0 !important;
+    }
+  }
+}

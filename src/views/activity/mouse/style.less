@@ -1,0 +1,462 @@
+.mouse{
+  background-color:#ffecd1;
+  background: url('./assets/bg.png') no-repeat;
+  background-size:cover;
+  padding-top: 88px;
+  .top{
+    width:690px;
+    margin:0 auto;
+    padding-top: 560px;
+    overflow-y: auto;
+    p{
+      text-align: center;
+      font-size: 28px;
+      color:#c4260e;
+      span{
+        text-decoration: underline;
+      }
+    }
+    >div{
+      display:flex;
+      flex-wrap:wrap;
+      .container{
+        text-align: center;
+        padding:30px;
+        p{
+          font-size: 22px;
+          color:#c4260e;
+          white-space:nowrap;
+        }
+        h3{
+          font-size: 24px;
+          color:#c4260e;
+          margin: 18px 0;
+          font-weight: 600;
+        }
+        &:nth-child(1){
+          width:50%;
+          .van-image{
+            width:128px;
+          }
+        }
+        &:nth-child(2){
+          width:50%;
+          .van-image{
+            width:110px;
+            margin-top: 26px;
+          }
+        }
+        &:nth-child(3){
+          width:100%;
+          .van-image{
+            width:200px;
+            margin-top: 26px;
+          }
+        }
+      }
+    }
+  }
+  .middle{
+    text-align: center;
+    padding-top: 560px;
+    >.van-image{
+      width:538px;
+      margin:0 auto;
+    }
+    >p{
+      text-align: center;
+      font-size: 28px;
+      color:#c4260e;
+      margin-top: 32px;
+      span{
+        text-decoration: underline;
+      }
+      // margin-bottom: 69px;
+    }
+    >div{
+      display:flex;
+      flex-wrap:wrap;
+      .container{
+        width:50%;
+        margin-top: 60px;
+        .van-image{
+          width:236px;
+        }
+        p{
+          color:#c4260e;
+          margin:33px 0;
+        }
+        .mouse-btn{
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  .reward{
+    text-align: center;
+    padding-top: 81px;
+    >.van-image{
+      width:500px;
+    }
+    .tab-1{
+      background-image:url(./assets/tab-11.png);
+    }
+    .tab-2{
+      background-image:url(./assets/tab-22.png);
+    }
+    .tab-header{
+      width:712px;
+      margin:0 auto;
+      // padding-top: 47px;
+      display: flex;
+      position: relative;
+      top:60px;
+      height:120px;
+      background-repeat:no-repeat;
+      background-size:contain;
+      span{
+        display: inline-block;
+        width:50%;
+      }
+      // .van-image{
+      //   position: absolute;
+      //   width:478px;
+      //   &:nth-child(1) {
+      //     left:0;
+      //   }
+      //   &:nth-child(2) {
+      //     right:0;
+      //   }
+      // }
+    }
+    .tab-detail{
+      width:712px;
+      height:560px;
+      background:url('./assets/liwu-bg.png') no-repeat;
+      background-size: cover;
+      margin:0 auto;
+      .van-swipe{
+        position: relative;
+        top: 80px;
+        height:330px;
+      }
+      .swipe-list{
+        display: flex;
+        color:#c4260e;
+        span{
+          flex:1;
+          text-align: left;
+          margin-bottom: 20px;
+          &:nth-child(1) {
+            padding-left: 50px;
+          }
+          &:nth-child(3) {
+            padding-right: 40px;
+          }
+        }
+      }
+    }
+    .mouse-btn{
+      width:480px;
+    }
+  }
+  .trip,.lipin{
+    text-align: center;
+    padding-top: 128px;
+    width:702px;
+    margin:0 auto;
+    >.van-image{
+      width:608px;
+      margin-bottom: 30px;
+    }
+    .mouse-btn{
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+    >p{
+      color:#C4260E;
+      font-size: 28px;
+      margin-bottom:20px;
+      line-height: 50px;
+      span{
+        font-weight: 600;
+      }
+    }
+    .trip-detail{
+      display: flex;
+      flex-wrap:wrap;
+      justify-content: space-between;
+      >div{
+        width:340px;
+        height:300px;
+        border-radius: 10px;
+        background:#fff;
+        margin-bottom: 86px;
+        position: relative;
+        overflow: hidden;
+        p{
+          position: absolute;
+          bottom:0;
+          line-height: 60px;
+          background:#A62819;
+          color:#FFF2E0;
+          font-size: 24px;
+          width:100%;
+        }
+      }
+    }
+  }
+  .lipin{
+    padding-top: 0;
+  }
+  .pop-mouse{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    .mask{
+      background-color:rgba(0,0,0,.5);    
+      position: fixed;
+      width:100%;
+      height:100%;
+      top:0;
+      left:0;
+    }
+    .redbag{
+      text-align: center;
+      position: relative;
+      >.van-image{
+        width:600px;
+        padding-top: 280px;
+      }
+      >.content1,
+      >.content2{
+        width:100%;
+        top:480px;
+        left:0;
+        position: absolute;
+        .van-icon{
+          position: absolute;
+          font-size: 50px;
+          color:#fffea7;
+          top:-260px;
+          right:140px;
+        }
+        p{
+          color:#fffea7;
+          font-size: 30px;
+          font-weight: 600;
+        }
+        h3{
+          font-size: 100px;
+          font-weight: 600;
+          margin:30px 0;
+          color:#fffea7;
+          span{
+            font-size: 24px;
+          }
+        }
+        .liwu{
+          width:240px;
+          height:240px;
+          margin: 0 auto;
+          margin-top: 30px;
+        }
+        .btn{
+          width: 220px;
+          margin: 0 auto;
+          margin-top: 20px;
+        }
+        .cross2{
+          top:-160px;
+        }
+        .p2{
+          margin-bottom: 20px;
+        }
+      }
+      .content2{
+        top:380px;
+        display: flex;
+        flex-direction:column;
+      }
+      .content3{
+        background:#fff;
+        width:700px;
+        margin:0 auto;
+        margin-top: 260px;
+        border-radius: 30px;
+        .form-header{
+          background:#b81516;
+          color:#fffea7;
+          position: relative;
+          border-top-left-radius: 30px;
+          border-top-right-radius: 30px;
+          height: 80px;
+          position: relative;
+          p{
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 80px;
+          }
+          .van-image{
+            position: absolute;
+            top:-50px;
+            width:110%;
+            left:-30px;
+          }
+          .close{
+            position: absolute;
+            top:0;
+            right:40px;
+            background: #fff;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            .van-icon{
+              font-size: 40px;
+              color:#d80b3c;
+              padding:8px;
+              z-index: 999;
+            }
+          }
+        }
+        .form-body{
+          margin-top: 30px;
+          position: relative;
+          z-index: 999;
+          >div{
+            padding-bottom: 20px;
+          }
+          .province{
+            >div{
+              display: inline-block;
+              position: relative;
+              input[disabled]{
+                color:#000;
+                border:2px solid rgba(129, 135, 145, 1);
+              }
+              &:nth-child(2) {
+                input{
+                  border-right: 0;
+                }
+              }
+              &:nth-child(3) {
+                input{
+                  border-left: 0;
+                }
+              }
+            }
+            .van-icon{
+              position: absolute;
+              right:20px;
+              top:50%;
+              margin-top: -12px;
+            }
+            input{
+              width:230px;
+            }
+          }
+          label{
+            font-size: 24px;
+            color:#818791;
+            min-width: 100px;
+            display: inline-block;
+            text-align: right;
+            margin-right: 20px;
+          }
+          input,textarea{
+            outline: none;
+            background:rgba(249,249,249,1);
+            border:2px solid rgba(129, 135, 145, 1);
+            line-height:50px;
+            width:460px;
+            padding:6px 10px;
+            color:#818791;
+            box-shadow: none;
+          }
+          textarea{
+            line-height: 36px;
+          }
+          >p{
+            color:#663300;
+            margin:20px 0;
+          }
+        }
+        .form-footer{
+          .van-button{
+            height: 80px;
+            line-height: 80px;
+            color:#fff;
+            margin-bottom: 40px;
+          }
+          .cancel{
+            width:200px;
+            background:linear-gradient(0deg,#8f8f8f,#808080);
+            margin-right: 20px;
+          }
+          .confirm{
+            width:300px;
+            background:linear-gradient(0deg,rgba(215,65,32,1),rgba(177,39,11,1));
+          }
+        }
+      }
+      .content4{
+        /deep/.van-tabs__nav{
+          background:#ebe8e8;
+        }
+        /deep/.van-tab{
+          &:nth-child(1) {
+            border-right: 2px solid rgba(0,0,0,.2);
+          }
+          color:#666;
+        }
+        /deep/.van-tab--active {
+          color:#cc0000;
+        }
+        /deep/.van-tabs__wrap {
+          border:0;
+        }
+        .form-body{
+          margin-top: 0;
+          >div{
+            .header,.body{
+              display: flex;
+              margin-bottom: 20px;
+              div{
+                flex:1;
+              }
+            }
+            .body{
+              color:#878787;
+            }
+          }
+        }
+        .form-footer{
+          padding-bottom: 40px;
+          span{
+            margin:0 10px;
+          }
+        }
+      }
+    }
+  }
+  .mouse-btn{
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    line-height:1;
+    height:54px;
+    box-sizing:border-box;
+    background-image: linear-gradient(#c4260e,#c4260e),linear-gradient(to bottom,#fafab3,#ba6952);
+    color: #F9DD98;
+    padding: 6px;
+    border-radius: 26px;
+    background-clip: content-box,padding-box;
+    margin-top: 20px;
+    box-shadow: 0px 6px 10px 0px rgba(196,125,78,0.6), 0px 2px 4px 0px rgba(212,53,24,0.85);
+    span{
+      display: block;
+      padding:10px 40px;
+    }
+  }
+}

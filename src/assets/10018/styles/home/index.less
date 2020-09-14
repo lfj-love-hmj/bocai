@@ -1,0 +1,30 @@
+.m-body {
+  background-color: #fff;
+  //background-image:url('~@assets/img3_0/home/esports/bg@2x.png');
+  //background-size: 100%;
+  //background-position: 0 0;
+  //background-repeat: no-repeat;
+}
+
+//add
+.nav-type-1 {
+  &.van-tabs {
+    /deep/.van-tab--active {
+      color: #000 !important;
+      .van-tab__text {
+        color: #000;
+        font-weight: 500;
+      }
+    }
+  }
+
+  /deep/ .van-tab__text {
+    color: #666;
+  }
+}
+
+/deep/ .profit-swipe .van-swipe-item .tag{
+  background-color:  @primary-color !important;
+  color: #000 !important;
+}
+

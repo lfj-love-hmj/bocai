@@ -1,0 +1,475 @@
+
+.featured{
+  padding-bottom: 500px;
+}
+/deep/.aa-footer{
+  position: absolute !important;
+  bottom: @space-gap - 24px !important;
+  padding: @space-gap !important;
+  border-radius: 0 !important;
+  left: 0;
+}
+.search-page{
+  background-color: #fff !important;
+  .game-item{
+    background-color: @bg-card-color;
+  }
+}
+#home{
+  background-color: #F5FAFF!important;
+}
+
+.index-main{
+  /deep/ .van-tabs{
+    padding: 0!important;
+    .van-sticky--fixed{
+      background-color: #F5FAFF;
+    }
+    .van-sticky{
+      float: none;
+      width: 100%;
+      margin-left: 0;
+      padding: 0 28px;
+      .van-tabs__nav{
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .van-tab{
+          img{
+            width: 160px;
+          }
+          &:nth-child(1),&:nth-child(2),&:nth-child(3){
+            img{
+              width: 210px;
+            }
+          }
+
+        }
+      }
+    }
+  }
+  ///deep/ .games-wrap{
+  //  margin-left: 0;
+  //  .game-item{
+  //    background: none;
+  //    box-shadow: none;
+  //    margin: 0;
+  //    width: 100%!important;
+  //    height: auto!important;
+  //    .van-image{
+  //      position: initial;
+  //    }
+  //    .game-info{
+  //      background:linear-gradient(41deg, rgba(129,147,189,1) 0%, rgba(160,181,218,1) 100%);
+  //      -webkit-background-clip:text;
+  //      -webkit-text-fill-color:transparent;
+  //      left: 112px!important;
+  //      top: 30px!important;
+  //    }
+  //  }
+  //}
+  ///deep/ .casino,/deep/ .slots,/deep/ .chess,/deep/ .lottery,/deep/ .fishing{
+  //  .game-item{
+  //    width: 50%!important;
+  //    &.tall,&.large{
+  //      width: 100%!important;
+  //    }
+  //  }
+  //}
+
+}
+
+
+/deep/ .van-tab{
+  margin-bottom: 26px;
+}
+/deep/ .van-tabs__content{
+  padding-left: 16px!important;
+  padding-right: 16px!important;
+  padding-top: 0!important;
+}
+/deep/ .banner{
+  padding: 0;
+  margin: 0 28px;
+  height:296px;
+  .van-swipe__indicators{
+    bottom: 16px;
+    background-color: transparent;
+  }
+}
+/deep/ .avaswipe {
+  //margin-top: 168px;
+  .swiper-container {
+    width: 100%;
+    height: 1000px;
+  }
+  #swiper-container1{
+    padding-top: 168px;
+    box-sizing: content-box;
+    > .swiper-pagination{
+      display: flex;
+      width: 100%;
+      height: 168px!important;
+      top: 0!important;
+      transform: translateY(0);
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      background-color: #F5FAFF;
+      padding: 0 28px;
+      box-sizing: border-box;
+      .swiper-pagination-bullet{
+        border-radius: 0;
+        width: 160px!important;
+        height: 74px;
+        background-repeat: no-repeat;
+        position: initial;
+        margin: 0;
+        &:nth-child(1),&:nth-child(2),&:nth-child(3){
+          width: 210px!important;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    > .swiper-wrapper{
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+
+  .swiper-container2{
+    padding-top: 20px;
+  }
+  .swiper-container2 .swiper-slide {
+    font-size: 18px;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    line-height: 100px;
+    color: #fff;
+    padding: 0 18px 0 0;
+
+  }
+
+  .avaswipe-tit {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+
+    .avaswipe-norm-tit {
+      font-size: 24px;
+      color: #666;
+      font-weight: bold;
+      transition: .3s;
+    }
+
+    .avaswipe-active-tit {
+      width: 176px;
+      height: 64px;
+      background: linear-gradient(left, #ffd17b, #ff7400);
+      border-radius: 16pt;
+      box-shadow: 0 12px 28px 0 rgba(255, 203, 116, 0.4);
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+
+      span:first-child {
+        display: block;
+        font-size: 24px;
+        color: #fff;
+      }
+
+      span:last-child {
+        display: block;
+        font-size: 12px;
+        color: #fff;
+      }
+    }
+  }
+}
+/deep/ .games-wrap {
+  position: relative;
+  margin-left: 18px!important;
+  &.mb-gap {
+    margin-bottom: 0;
+  }
+  .game-item {
+    background: none!important;
+    box-shadow: none!important;
+    margin: 0!important;
+    width: 100%!important;
+    position: relative;
+    height: 270px;
+    .van-image {
+      height: 100%;
+      position: relative;
+    }
+
+    .game-info {
+      z-index: 2;
+      color: #D3B2A0!important;
+      left: 112px!important;
+      top: 30px!important;
+      h3, h4 {
+        line-height: 1;
+        position: relative;
+        z-index: 2;
+      }
+      h3{
+        background:linear-gradient(41deg, rgba(129,147,189,1) 0%, rgba(160,181,218,1) 100%);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color:transparent;
+      }
+      h4{
+        color: #9FA9C6;
+      }
+    }
+  }
+}
+/deep/ .casino,/deep/ .slots,/deep/ .chess,/deep/ .lottery,/deep/ .fishing{
+  .game-item{
+    width: 50%!important;
+    &.tall,&.large{
+      width: 100%!important;
+    }
+  }
+}
+/deep/ .fishing{
+  .van-image{
+    width: 100%!important;
+  }
+  .games-wrap{
+    .game-item{
+      .game-info{
+        left: 54px!important;
+        top:32px;
+      }
+      &.mw{
+        float: right!important;
+        position: absolute;
+        bottom: 280px;
+        right: 0;
+        width: calc(50% - 30px);
+      }
+    }
+  }
+}
+/deep/ .chess{
+  position: relative;
+  margin-top: 14px;
+  &:before{
+    content: '';
+    position: absolute;
+    z-index: 5;
+    background: url('~@assets/img3_0/home/chess/bet_home_banner_title2@2x.png') center top no-repeat;
+    background-size: 282px auto;
+    width: 282px;
+    height: 100px;
+    top: 0;
+    left: 50%;
+    margin-left: -141px;
+  }
+  .game-item:nth-child(2){
+    h3,h4{
+      left: 94px;
+    }
+  }
+  .game-item:nth-child(1) .game-info{
+   width: 130px;
+  }
+}
+/deep/ .esports .games-wrap .game-item{
+  height: 270px!important;
+}
+/deep/ .lottery .game-item:first-child .game-info{
+  width: 130px;
+}
+/deep/ .head-mid-box{
+  background:none!important;
+
+  border-radius: 0!important;
+  box-shadow: none!important;
+  .m-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 100%;
+  }
+  .aagames-nav-bar,.nav-center{
+    text-align: left;
+    justify-content: flex-start;
+  }
+  .member-info{
+    text-align: left;
+    display: block;
+    p{
+      margin-bottom: 12px;
+      font-size: 24px;
+    }
+    div{
+      flex: 1;
+      justify-content: flex-start;
+      text-align: left;
+      font-size: 32px;
+    }
+    .money{
+      justify-content: flex-start;
+    }
+  }
+  .quick-link{
+    flex: 1;
+    li{
+      flex-direction: column;
+      margin-left: 40px;
+      &:first-child{
+        margin-left: 0;
+      }
+      img{
+        margin-right: 0!important;
+        width: 80px;
+      }
+    }
+  }
+  .no-token{
+    flex-direction: column;
+    justify-content: flex-start!important;
+    text-align: left;
+    display: block;
+    span{
+      display: block;
+      &:first-child{
+        font-size: 24px;
+      }
+      &:last-child{
+        font-size: 32px;
+        margin-left: 0;
+        margin-top: 12px;
+      }
+    }
+  }
+}
+.xb-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 40px;
+  color: #333;
+  font-weight: bold;
+  padding: 22px 28px;
+  background:linear-gradient(180deg,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 99%);
+  .xb-header-logo{
+    position: relative;
+    &:after{
+      content: '';
+      position: absolute;
+      width:12px;
+      height:12px;
+      background:rgba(245,94,103,1);
+      border-radius: 50%;
+      right: -12px;
+      top: -12px;
+    }
+    img{
+      width: 42px;
+    }
+  }
+  .xb-header-kf{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: #4F80FF;
+    img{
+      width: 44px;
+      margin-right: 10px;
+    }
+  }
+}
+.leftnav{
+  height: 100%;
+  width: 560px;
+  background-color: #fff;
+  border-radius: 0;
+  .leftnav-logo{
+    height: 320px;
+    background: url(~@assets/img3_0/home/bet_home_sheet_bg@2x.png) no-repeat;
+    background-size: 100% auto;
+    p{
+      display: inline-block;
+      text-align: center;
+      padding: 104px 0 0 54px;
+      img{
+        width: 120px;
+        box-shadow:0px 0px 30px 0px rgba(0,0,0,0.2);
+        border-radius:27px;
+      }
+      span{
+        display: block;
+        text-align: center;
+        font-size: 24px;
+        color: #fff;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+.leftnav-con{
+  padding: 0 0 0 54px;
+  h2{
+    font-size: 40px;
+    color: #333;
+    font-weight: bold;
+    margin: 60px 0 30px;
+  }
+  .leftnav-con-item{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 120px;
+    justify-content: space-between;
+    padding-right: 40px;
+    &:after{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 58px;
+      right: 0;
+      height: 2px;
+      background-color: #E6EAEF;
+    }
+    img{
+      width: 40px;
+    }
+    span{
+      flex: 1;
+      padding-left: 18px;
+    }
+    i{
+      font-size: 24px;
+      color: #999;
+    }
+  }
+}
+.leftnav-log{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 118px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: #333;
+  border-top: 2px solid #E6EAEF;
+  img{
+    width: 36px;
+    margin-right: 20px;
+  }
+  .c-999{
+    color: #999;
+  }
+}

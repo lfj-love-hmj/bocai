@@ -1,0 +1,36 @@
+.m-header {
+  ~ .bg-img {
+    background-color: @bg-color;
+    background-image: url('~@assets/img3_0/home/esports/bg@2x.png');
+    background-size: 100%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+}
+
+/deep/ .van-tabs {
+  &.nav-type-1 {
+    >div >div.van-sticky > div.van-tabs__wrap {
+      border-bottom: 2px solid rgba(165, 154, 154, .1) !important;
+      > .van-tabs__nav {
+        background-color: #363636 !important;
+        > .van-tab {
+          color: #CCCCCC !important;
+        }
+        > div.van-tab--active {
+          color: #FFFFFF !important;
+        }
+      }
+    }
+    .filter-nav{
+      div.van-tab--active {
+        color: #000000 !important;
+      }
+    }
+  }
+}
+
+/deep/ .notice {
+  color: #666 !important;
+  box-shadow: none !important;
+}

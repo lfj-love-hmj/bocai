@@ -1,0 +1,591 @@
+//[class*=van-hairline]::after{
+//  border:0 !important;
+//}
+
+.van-image{
+  .van-image__error,
+  .van-image__loading{
+    background-color: @bg-color;
+    border-radius: 8px;
+  }
+  .van-image__loading{
+    background-image: url(../img3_0/common/loading.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 280px 86px;
+    z-index: 10;
+    .van-icon{
+      opacity: 0;
+    }
+  }
+}
+
+.van-toast {
+  width: auto;
+  min-width: 1.2rem;
+  min-width: 400px;
+  height: 100px;
+  line-height: 100px;
+  background-color: @primary-color;
+  z-index:9999 !important;
+  // box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.5);
+  // height:50px;
+  // line-height: 50px;
+  border-radius: 8px;
+  &.van-toast--fail{
+    background-color:#C55055;
+    .van-toast__text{
+      color: #fff;
+    }
+  }
+  .van-toast__text {
+    color:#333;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 40px;
+  }
+  &.toast-loading {
+    background: transparent;
+    padding: 0;
+    .van-loading {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      &:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: transparent url(../img3_0/common/loading-1.png) center center no-repeat;
+        background-size: 45%;
+      }
+      .van-loading__spinner {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+        background: transparent url(../img3_0/common/loading-2.png);
+        background-size: contain;
+        svg,
+        > i {
+          display: none;
+        }
+      }
+    }
+
+    .van-toast__text {
+      font-size: @font-size-15;
+      font-weight: 400;
+      color: @primary-color;
+      line-height: 1.6;
+    }
+  }
+}
+.toast-loading{
+  height: auto;
+  box-shadow:none;
+}
+.van-toast--fail {
+  background-color: rgba(197, 80, 85, 1);
+  .van-icon-fail {
+    display: none;
+  }
+  .van-toast__text {
+    color: #FFFFFF;
+  }
+}
+
+// 重写dialog
+.van-dialog {
+  width: 90%;
+  border-radius: 28px;
+  padding: 0 40px;
+  background-color: @bg-color;
+  .van-dialog__header {
+    line-height: 80px;
+    color: #fff;
+  }
+  .van-dialog__content {
+    font-size: 28px;
+    color: #ccc;
+  }
+  /deep/ .protocol {
+    text-align: left;
+    font-size: 24px;
+    li {
+      list-style: decimal-leading-zero;
+      margin-left: 40px;
+      margin-bottom: 20px;
+    }
+  }
+  .van-dialog__footer {
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .van-dialog__footer--buttons {
+    justify-content: space-between;
+    .van-button {
+      flex: none;
+      width: 290px;
+    }
+  }
+  /deep/.van-dialog__confirm{
+    border: 0 !important;
+  }
+  .van-dialog__confirm.van-button--default{
+    background-color: @primary-color;
+    color: #fff;
+  }
+}
+
+.van-switch {
+  .van-switch__node {
+    background-color: #6B6B6B;
+    z-index:0;
+  }
+}
+
+.van-switch--on {
+  .van-switch__node {
+    background-color: @primary-color;
+  }
+}
+
+.van-picker {
+  background-color: @bg-card-color;
+  .van-picker__title {
+    color: #fff;
+  }
+  .van-picker__cancel, .van-picker__confirm, .van-picker__title {
+    height: 98px;
+    line-height: 98px;
+  }
+  .van-picker__mask {
+    background-image: linear-gradient(180deg, rgba(40, 40, 40, .9), rgba(65, 65, 65, 0.4)), linear-gradient(0deg, rgba(40, 40, 40, .9), rgba(65, 65, 65, 0.4));
+  }
+  .van-picker-column__item {
+    color: #fff;
+  }
+  .van-picker__cancel:active, .van-picker__confirm:active {
+    background:transparent;
+  }
+}
+.van-cell:not(:last-child)::after{
+  border:0;
+}
+.van-popup {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: @bg-card-color;
+  &.custom {
+    max-height: 80%;
+    background-color: @bg-card-color;
+    .van-popup__close-icon {
+      font-size: 40px;
+      color: #fff;
+      top: @space-gap;
+      //left: @space-gap;
+    }
+    h4 {
+      text-align: center;
+      font-size: 28px;
+      color: #ccc;
+      line-height: 40px;
+    }
+    .footer-tips {
+      width: 100%;
+      height: 40px;
+      font-size: 28px;
+      font-weight: 400;
+      color: rgba(82, 81, 82, 1);
+      line-height: 40px;
+      text-align: center;
+      margin-bottom: 30px;
+      span {
+        color: #ccc;
+        text-decoration: underline;
+      }
+    }
+    .pop-head {
+      color: #fff;
+      position: relative;
+      // border-bottom: 2px solid #4a4a4a;
+      h2 {
+        margin: 0;
+        text-align: center;
+        line-height: 100px;
+        font-size: 32px;
+      }
+      .van-icon-arrow-left {
+        position: absolute;
+        font-size: 40px;
+        margin-top: -20px;
+        left: 10px;
+        top:50%;
+      }
+    }
+    .pop-body {
+      padding: @space-gap;
+      font-size: 28px;
+      color: #999;
+      &.payStatus{
+        text-align: center;
+      }
+      .aagames-button{
+        &.line{
+          background: @bg-card-color;
+        }
+      }
+      .pay-title{
+        font-size: 32px;
+        color:#fff;
+        text-align: center;
+        line-height: 80px;
+      }
+    }
+    .input-field {
+      margin-bottom: @space-gap;
+      > label {
+        display: block;
+        line-height: 60px;
+      }
+      .input-box {
+        width: 100%;
+        background-color: @bg-color-input;
+        height: 96px;
+        line-height: 96px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 8px;
+        .placeholderColor(@primary-text-color);
+        > * {
+          margin: 0 15px;
+          background-color: transparent;
+          border: none;
+          align-self: stretch;
+        }
+        input,
+        select {
+          width: 100%;
+        }
+        .areaNum {
+          font-size: 28px;
+          font-weight: 500;
+          color: #CCCCCC;
+          border-right:2px solid @bg-card-color;
+          min-width:140px;
+          display: block;
+          line-height: 1;
+        }
+        .xiala {
+          width: 30px;
+          height: 20px;
+          margin: 0 10px;
+          float: right;
+        }
+        .iconfont {
+          color: #999;
+          margin-right: 15px;
+        }
+        .areaNum {
+          // flex: 1.5;
+          font-size: 24px;
+          padding: 0 10px 0 10px;
+        }
+        .select{
+          background-color: @bg-color-2;
+          border-radius: 8px;
+        }
+        .van-dropdown-menu {
+          height: auto;
+          .van-dropdown-menu__title {
+            font-size: 28px;
+            color: #fff;
+            padding: 0 20px;
+            line-height: 40px;
+            &:after {
+              border-width: 6px;
+            }
+          }
+          .van-dropdown-item {
+            // position: absolute;
+            .van-popup,
+            .van-cell {
+              background-color: @bg-color;
+            }
+            .van-cell {
+              color: #ccc;
+            }
+            .van-cell__title {
+              padding-left: 60px;
+              line-height: 40px;
+              font-size: 28px;
+            }
+            .van-cell__value {
+              padding-right: 60px;
+            }
+            .van-icon {
+              font-size: 30px;
+            }
+          }
+        }
+      }
+      .submit {
+        width: 100%;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        background-color: @primary-color;
+        color: #1e1e1e;
+        font-size: 32px;
+        font-weight: 500;
+        border-radius: 8px;
+        border: none;
+      }
+    }
+  }
+}
+
+// 自定义tab（活动，品牌）
+@custom_tab_height: 80px;
+.van-tabs--card.custom-card-tabs {
+  background-color: @bg-color;
+  /deep/ .van-tab,
+  /deep/ .van-tabs__wrap,
+  /deep/ .van-tabs__nav {
+    height: @custom_tab_height;
+    line-height: @custom_tab_height;
+    font-size: 28px;
+  }
+  /deep/ .van-tabs__nav--card {
+    border: none;
+  }
+  /deep/ .van-tab {
+    background: transparent;
+    padding: 5px 10px;
+    border: none;
+    color: #999 !important;
+    // height: @custom_tab_height - 16px;
+    // line-height: @custom_tab_height - 16px;
+    // C8A77F
+    .van-ellipsis {
+      border: 2px solid rgba(#4D4C4D,.3);
+      border-radius: 8px;
+      height: @custom_tab_height - 16px;
+      line-height: @custom_tab_height - 16px;
+    }
+    &.van-ellipsis {
+      .van-tab__text{
+        border: 2px solid rgba(#4D4C4D,.3);
+        border-radius: 8px;
+        height: @custom_tab_height - 16px;
+        line-height: @custom_tab_height - 16px;
+        display: block;
+      }
+    }
+  }
+  /deep/ .van-tab--active {
+    .van-ellipsis {
+      border-color: @primary-color;
+      color: @primary-color;
+    }
+    &.van-ellipsis {
+      .van-tab__text{
+        border-color: @primary-color;
+        color: @primary-color;
+      }
+    }
+  }
+  /deep/ .van-tabs__content {
+    .page-linear-gradient();
+    .van-tab__pane-wrapper {
+      padding: @space-gap;
+    }
+  }
+}
+
+.ui-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // padding: 0 @space-gap;
+  margin-top: @space-gap;
+  flex-wrap: wrap;
+  &.gap {
+    padding-left: @space-gap;
+    padding-right: @space-gap;
+  }
+  &.fixed {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 120px;
+  }
+  button{
+    margin-bottom: 30px;
+  }
+}
+
+.van-button {
+  width: 100%;
+  border-radius: 8px;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 100px;
+  border: none;
+  //margin-bottom: @space-gap;
+  &:last-child {
+    margin: 0;
+  }
+  .van-icon {
+    font-size: 40px;
+  }
+  &.van-button--primary {
+    background-color: @primary-color;
+    color: #fff;
+    &.dark{
+      background-color: #353435;
+      color: #fff;
+    }
+  }
+  &.van-button--default {
+    border: 2px solid @border-color-base;
+    background-color: @bg-color;
+    color: @primary-color;
+  }
+  &.van-button--cancel {
+    background-color: transparent;
+    color: #666;
+    border: 2px solid rgba(#fff, .1);
+  }
+  &.van-button--disabled {
+    background-color: #666;
+    color: #1E1E1E;
+  }
+  /deep/ .van-button__text {
+    vertical-align: middle;
+  }
+}
+
+.van-cell-group {
+  background-color: transparent;
+  padding-left: @space-gap;
+  margin: @space-gap 0;
+  .van-cell {
+    align-items: center;
+    height: 100px;
+    background-color: transparent;
+    border-bottom: 2px solid #252525;
+    padding: 0 @space-gap/2 0 0;
+    font-size: 32px;
+    .van-cell__title {
+      color: #666;
+    }
+    .van-cell__value {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      color: #fff;
+      padding-right: @space-gap;
+      font-size: 32px;
+      .van-icon:last-child {
+        margin-right: -@space-gap;
+      }
+      input,
+      textarea {
+        background-color: transparent;
+        border: none;
+        text-align: right;
+        font-size: 32px;
+        color: #fff;
+      }
+      .list-cells {
+        padding: 0;
+        .cell {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}
+
+// 重置密码组件
+.van-password-input {
+  margin: 0;
+  .van-password-input__security {
+    height: auto;
+    i{
+      background-color: @primary-color;
+    }
+  }
+  li {
+    background-color: @bg-color-input;
+    border-radius: 8px;
+    height: 96px;
+    width: 96px;
+  }
+  /deep/.van-password-input__cursor{
+    background-color:@primary-color;
+    width:4px;
+  }
+}
+
+// 底部弹窗
+.van-popup--bottom {
+  background-color: @bg-card-color;
+  // .van-picker .van-picker__mask {
+  //   // background-image:none;
+  // }
+  .van-picker .van-picker-column__item {
+    color: #ccc;
+  }
+  .van-picker .van-picker__mask {
+    background-image: linear-gradient(180deg, rgba(40, 39, 59, .6)), linear-gradient(0deg, rgba(40, 39, 59, .6));
+  }
+}
+
+// 倒计时
+.van-count-down{
+  display: inline-block;
+}
+.van-count-down.processing-time-deposit{
+  font-size: 32px;
+  color:@primary-color;
+  display: block;
+}
+
+.van-nav-bar__text:active{
+  background-color: transparent;
+}
+
+// 数字键盘
+.van-number-keyboard__body{
+  // background:#353435;
+  // i{
+  //   color:#ccc;
+  //   &.van-key--gray{
+  //     background:@bg-color;
+  //   }
+  // }
+}
+
+.van-loading{
+  text-align: center;
+}
+
+.van-sticky--fixed{
+  background-color: @bg-color;
+  background-image:url('../img3_0/home/esports/bg@2x.png');
+  background-size:100%;
+  background-position:0 0;
+  background-repeat: no-repeat;
+}

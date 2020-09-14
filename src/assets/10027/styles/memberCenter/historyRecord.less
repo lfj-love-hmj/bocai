@@ -1,0 +1,88 @@
+.wash-money{
+    .money{
+        p{
+            color: #000 !important;
+        }
+    }
+}
+.historyRecord{
+    /deep/ .aagames-nav-bar{
+        background-color: transparent!important;
+        z-index: 3;
+        .van-icon,.nav-center{
+            color: #fff;
+        }
+    }
+    .container{
+        position: relative;
+        &:after{
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 100%;
+            left: 0;
+            height: 366px;
+            background:linear-gradient(309deg,rgba(39,107,245,1) 0%,rgba(127,168,255,1) 100%);
+        }
+        .main{
+            position: relative;
+            z-index: 2;
+            .wash-money{
+                background-color: transparent!important;
+                .money p{
+                    color: #fff!important;
+                }
+            }
+            .list{
+                background-color: #fff;
+                .item{
+                    height: 116px;
+                    border-bottom: 2px solid #E6EAEF;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    .col{
+                        flex: 1;
+                        width: 100%;
+                        align-items: center;
+                        height: auto;
+                        line-height: 1;
+                        &.t .l,&.t .r{
+                            color: #333;
+                        }
+                        &.b .r{
+                            color: #18B78F;
+                        }
+                        &.b .l{
+                            color: #999;
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    &.empty{
+        background: #F5F6FA;
+        .container:after{background: none;}
+        /deep/ .aagames-nav-bar{
+            background-color: #fff!important;
+            color: #333;
+            box-shadow:0px 4px 8px 0px rgba(0,0,0,0.06);
+            .van-icon,.nav-center{
+                color: #333;
+            }
+        }
+        .main{
+            display: none;
+        }
+        .container .empty{
+            width: 100%;
+            padding: 0 30px;
+            background: #F5F6FA;
+            height: calc(100vh - 400px);
+            margin-top: 0;
+        }
+    }
+}

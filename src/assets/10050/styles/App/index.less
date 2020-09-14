@@ -1,0 +1,1185 @@
+.m-header{
+  ~ .bg-img{
+    background-color: @bg-color;
+    background-image:url('~@assets/img3_0/home/esports/bg@2x.png');
+    background-size:100%;
+    background-position:0 0;
+    background-repeat: no-repeat;
+  }
+}
+/deep/ .van-tabs {
+  &.nav-type-1{
+    .van-tabs__nav {
+      background-color: #fff !important;
+      .van-tab{
+        color: #000 !important;
+      }
+      .van-tab--active {
+        color: #000 !important;
+      }
+    }
+  }
+  .van-tabs__wrap{
+    border-bottom: 2px solid rgba(165, 154, 154,.1) !important;
+  }
+}
+/deep/.notice{
+  color: #666 !important;
+  box-shadow: none !important;
+}
+
+// 交易记录
+/deep/ .businessRecord{
+  .record-title{
+    background-color: @bg-color;
+    margin: 0;
+  }
+  .van-tabs .van-tabs__wrap{
+    background-color: @bg-color-white;
+    padding: 12px 30px;
+    height: auto;
+    .van-tabs__nav{
+      height: 64px;
+      background: #E6EAEF!important;
+      align-items: center;
+      padding: 0 4px;
+      .van-tab{
+        height: 56px;
+        background-color: transparent!important;
+        font-size: 28px;
+        color: #999;
+        position: relative;
+        &:after{
+          content: '';
+          position: absolute;
+          width: 2px;
+          height: 26px;
+          background-color: #DADADA;
+          top: 50%;
+          left: 0;
+          margin-top: -13px;
+        }
+        &:first-child:after{
+          content: none;
+        }
+        &.van-tab--active{
+          background-color: @bg-gradient-color!important;
+          .van-tab__text{
+            color: #fff;
+          }
+          &:after{
+            content: none;
+          }
+        }
+      }
+    }
+  }
+  .tab_top{
+    background-color: @bg-color-white;
+    margin-top: 0!important;
+  }
+  /deep/ .access{
+    .main .list ul{
+      padding: 0;
+      border-top: 20px solid #F5F6FA;
+      .van-list{
+        padding: 0 30px;
+        background-color: #fff;
+        li{
+          img{
+            align-self: flex-start;
+          }
+          .header{
+            color: #333;
+            > span:last-child{
+              color: @bg-gradient-color;
+            }
+          }
+          .status > span:first-child{
+            color: #333;
+          }
+          .remark{
+            > .time{
+              color: #999;
+            }
+          }
+          .status .green{
+            color: #999;
+          }
+          .status .yellow{
+            color: #EC9221;
+          }
+          .turn{
+            background-color: @bg-gradient-color;
+            color: #fff;
+            align-self: flex-start;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+/deep/ .drawer{
+  .main{
+    background-color: @bg-color-white!important;
+    //width: 630px!important;
+    .select-title{
+      color: #333;
+    }
+    //&.main-show{
+    //    bottom: 50%!important;
+    //    transform: rotateY(50%)!important;
+    //}
+  }
+  .select-button{
+    background-color: @bg-gradient-color;
+  }
+  .active_selected{
+    background-color: @bg-gradient-color;
+  }
+  .select-bar{
+    color: #333;
+    font-weight: bold;
+  }
+  .select-bar-i > div{
+    border-color: #E6EAEF;
+    color: #333;
+    border-radius: 8px;
+    &.active_selected{
+      background: url(~@assets/img3_0/otherIcon/iaoyijilu_select@2x.png) right bottom no-repeat;
+      border-color: @bg-gradient-color;
+      color: @bg-gradient-color!important;
+      background-size: 32px auto;
+    }
+  }
+  .select .van-row{
+    border-color: #E6EAEF;
+    border-radius: 8px;
+    .data-time-picker{
+      color: #333;
+    }
+  }
+  .input-cells {
+    /deep/.aagames-button {
+      height: 80px;
+      line-height: 80px;
+    }
+  }
+}
+
+/deep/ .profits-rank{
+  background: #fff;
+  // background: #fff url(~@assets/img3_0/memberCenter/ranks@2x.png) center -100px no-repeat;
+  background-size: 100% auto;
+  .m-header{
+    &.van-nav-bar{
+      background: #000!important;
+    }
+  }
+  .rank-info{
+    background: #0EC8A8!important;
+  }
+  .ranks{
+    background:none;
+  }
+  .float-button{
+    background-color: #7B7E93;
+  }
+  .latest{
+    h2{
+      color: #333;
+      border-bottom: 2px solid #EDEFF6;
+      padding-bottom: 30px;
+      font-weight: bold;
+    }
+    dl.item-head dt{
+      color: #333;
+    }
+    dl.item-body{
+      color: #999;
+    }
+    dl dd{
+      color: #333;
+      font-weight: bold;
+    }
+  }
+}
+//关于我们
+/deep/ .aboutWe{
+  .main img{
+    margin: 20px auto 108px!important;
+    width: 280px!important;
+  }
+}
+/deep/ .bankcard-page{
+  &.bankcard-manage{
+    .van-button.van-button--primary{
+      // background-color: @bg-color-white;
+      color: #fff;
+      border-radius:8px;
+      i{
+        color: @bg-color-white;
+      }
+    }
+  }
+  .m-header.transparent{
+    background-color: @bg-color;
+  }
+  .van-cell-group{
+    padding: 0!important;
+    .van-cell{
+      background-color: @bg-color-white;
+      padding: 0 30px;
+      .van-cell__title{
+        font-weight: normal!important;
+      }
+      &:nth-child(3){
+        margin-bottom: 20px;
+      }
+      .van-cell__value{
+        padding-right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        span{
+          line-height: 1;
+          font-size: 28px;
+        }
+        .cell-body{
+          font-size: 28px;
+        }
+        .van-icon{
+          margin: 0;
+          color: #999;
+        }
+      }
+      .van-cell__title{
+        color: #333;
+        font-weight: bold !important;
+      }
+    }
+  }
+  .van-button.van-button--primary{
+    background-color: @bg-gradient-color;
+    height: 100px;
+    border-radius: 100px;
+    color: #fff;
+  }
+
+}
+/deep/ .verify{
+  .aagames-nav-bar{
+    background-color: @bg-gradient-color;
+  }
+}
+/deep/ .container_403{
+
+}
+
+/deep/ .agent-form-10024{
+  .mid-line-10024{
+    display: block;
+  }
+  .list .item .left{
+    color: #333;
+  }
+  .item .p1 .right{
+    color:rgba(64,128,255,1);
+  }
+  .item .p1,.item .p2{
+    font-weight: bold!important;
+  }
+}
+/deep/ .list-cells{
+  .cell-foot .van-icon-success{
+    color: @bg-gradient-color;
+  }
+  .cell{
+    border-bottom: 2px solid #E6EAEF;
+    color: #333;
+  }
+}
+/deep/ .van-popup.van-popup--round.van-popup--bottom.custom{
+  //bottom: 50%;
+  //transform: translate(-50%,-50%);
+  //width: 630px;
+  //left: 50%;
+}
+/deep/ .select{
+  .select-button{
+    background-color: @bg-gradient-color;
+  }
+  .active_selected{
+    background-color: @bg-gradient-color;
+  }
+  .select-bar{
+    color: #333;
+    font-weight: bold;
+  }
+  .days .day{
+    border: 2px solid #E6EAEF!important;
+  }
+  .days .active{
+    background: #fff url(~@assets/img3_0/agent/agent_icon9.png) right bottom no-repeat!important;
+    border-color: @bg-gradient-color!important;
+    color: @bg-gradient-color!important;
+    background-size: 32px auto!important;
+  }
+
+  .van-row{
+    border: 2px solid #E6EAEF!important;
+    border-radius: 8px;
+    margin: 20px!important;
+    padding: 0!important;
+    .col-s,.col-e{
+      color: #333!important;
+    }
+  }
+  .title{
+    color: #333!important;
+  }
+}
+
+/deep/ .agent-form-10024{
+  .list{
+    margin: 0 0 0 30px!important;
+    .item .p1 .right{
+      color: @bg-gradient-color!important;
+    }
+    .van-list{
+      border-bottom: 2px solid #E6EAEF;
+      padding-right: 30px;
+    }
+    .item .p2 span:last-child{
+      text-align: right;
+    }
+    .item .p3 .left{
+      color: #999;
+    }
+    .item .p1,.item .p2{
+      font-weight: bold!important;
+    }
+  }
+}
+/deep/ .agMemberList{
+  .aagames-nav-bar{
+    box-shadow:0px 4px 8px 0px rgba(0,0,0,0.06);
+  }
+
+  .list{
+    border-top: 20px solid #F5F6FA;
+    margin: 0!important;
+    width: 100%!important;
+    padding: 0 30px;
+    .item{
+      border-bottom: 2px solid #E6EAEF;
+      .p1{
+        color: #999!important;
+        font-size: 24px!important;
+        .left{
+          font-size: 32px;
+          color: #333;
+          font-weight: bold;
+        }
+        .right{
+          font-weight: bold;
+          color: @bg-gradient-color!important;
+        }
+      }
+    }
+  }
+}
+/deep/ .reportForm{
+  background: @bg-color-white;
+  .main{
+    background: @bg-color-white;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 88px;
+      height: 20px;
+      background: #F5F6FA;
+      width: 100%;
+    }
+    .item .p1,.item .p2{
+      font-weight: bold!important;
+    }
+  }
+  .aagames-nav-bar{
+    box-shadow:0px 4px 8px 0px rgba(0,0,0,0.06);
+  }
+  .list{
+    width: auto!important;
+    margin: 0 0 0 30px!important;
+    .table{
+      margin: 0!important;
+      border-bottom: 2px solid #E6EAEF;
+      padding-right: 30px;
+      .p1 .left,.p2 .left{
+        color: #555555;
+      }
+      .current {
+        color: #FF6666;
+      }
+      .p3 .left{
+        color: #999;
+      }
+      .right{
+        color: @bg-gradient-color!important;
+      }
+    }
+  }
+
+}
+/deep/ .daili-container{
+  .van-popup.custom{
+    width: 630px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    border-radius: 24px;
+    overflow: initial;
+    .van-popup__close-icon{
+      top: -80px;
+      font-size: 50px;
+    }
+  }
+}
+/deep/ .agpsw{
+  background: #F5F6FA!important;
+  .reseter{
+    background-color: @bg-color-white;
+  }
+  .aagames-button{
+    color: #fff!important;
+    border-radius: 90px!important;
+  }
+  .reset{
+    div{
+      border-bottom-color: #E6EAEF!important;
+    }
+    p,input{
+      color: #333!important;
+    }
+  }
+}
+/deep/ .list-cells{
+  .cell{
+    border-bottom-color: #E6EAEF!important;
+  }
+  .cell-foot .van-icon-success{
+    color: @bg-gradient-color!important;
+  }
+}
+/deep/ .agbankbind{
+  background: #fff !important;
+  height: 100vh;
+  .main{
+    background: none;
+  }
+  .bank-card-label{
+    display: none;
+  }
+  .tisp{
+    color: #333!important;
+  }
+  .aagames-button-box .aagames-button{
+    border-radius: 90px;
+  }
+}
+/deep/ .van-picker{
+  .van-ellipsis{
+    font-size: 28px;
+    img{
+      width: 48px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+  }
+}
+/deep/ .carrycash{
+  .aagames-nav-bar{
+    box-shadow:0px 4px 8px 0px rgba(0,0,0,0.06);
+  }
+  .main{
+    padding-left: 0!important;
+    padding-right: 0!important;
+    .reset{
+      background: #fff;
+      margin-bottom: 20px;
+      padding: 24px 18px 24px 30px!important;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+    .amount .mt{
+      border-bottom: none!important;
+    }
+    .name{
+      color: #333;
+    }
+    .tx{
+      margin-bottom: 0!important;
+      p{
+        margin-top: 0!important;
+        color: #333!important;
+      }
+    }
+    .btn{
+      background: #fff;
+      margin: 0!important;
+      p{
+        margin: 0!important;
+        padding: 0 0 28px 30px!important;
+      }
+    }
+  }
+  .aagames-button-box .aagames-button{
+    border-radius: 90px;
+  }
+}
+/deep/ .van-key__wrapper{
+  text-align: center;
+}
+/deep/ .deposit-page{
+  .m-body{
+    background-color: #F5F6FA;
+  }
+  .deposit-main .quick-select .board{
+    background: #fff!important;
+    border-radius: 24px!important;
+  }
+  .list-cells .cell .card-like li > span{
+    color: #333;
+  }
+  .list-cells .cell .card-like li a{
+    border: none !important;
+    color: @bg-gradient-color;
+  }
+  .van-nav-bar .van-nav-bar__left .van-icon-arrow-left,.van-nav-bar .van-nav-bar__title{
+    color: #fff;
+  }
+}
+/deep/ .van-count-down.processing-time-deposit{
+  color: @bg-gradient-color;
+}
+/deep/ .pay-mark .money-text{
+  color: #333!important;
+  margin-bottom: 20px;
+}
+/deep/ .wallet{
+  height: 100%;
+  overflow: auto;
+}
+/deep/ .cell-body{
+  color: #333;
+}
+.quota{
+  background: #fff;
+  /deep/ .aagames-nav-bar{
+    box-shadow:0px 4px 8px 0px rgba(0,0,0,0.06);
+  }
+  /deep/ .main{
+    border-top: 20px solid #F5F6FA;
+  }
+  /deep/ .accout .transfer_out .content > .content_l > .wallet{
+    color: #333!important;
+  }
+  /deep/ .accout .transfer_out .content > .content_l .num{
+    color: @bg-gradient-color!important;
+  }
+  /deep/ .accout .transfer_out .content{
+    border-bottom: 2px solid #E6EAEF;
+  }
+  /deep/ .accout > .transfer > .input_ > input{
+    color: #333!important;
+    &::placeholder{
+      color: #999!important;
+    }
+  }
+  /deep/ .accout > .transfer > .input_ > span{
+    color: #0FC59E!important;
+  }
+  /deep/ .aagames-button-box{
+    padding: 0;
+    justify-content: space-between!important;
+    div{
+      width: 330px!important;
+    }
+    .line{
+      border: 2px solid @bg-gradient-color;
+      color: @bg-gradient-color;
+      background: none;
+    }
+    div:last-child{
+      background-color: @bg-gradient-color!important;
+    }
+  }
+  /deep/ .accout ul > li{
+    background:linear-gradient(270deg,rgba(92,111,141,1) 0%,rgba(37,45,64,1) 100%)!important;
+    border-radius:8px;
+    p:first-child{
+      color: #fff!important;
+    }
+    p:last-child,p:nth-child(2){
+      color: #fff!important;
+    }
+
+  }
+  /deep/ .van-popup{
+    .head{
+      background-color: @bg-gradient-color;
+      .quote-close{
+        position: absolute;
+        right: 30px;
+        font-size: 40px;
+        top: 30px;
+      }
+      p{
+        color: #fff;
+      }
+    }
+    .list ul li{
+      border-bottom: 1px solid #E6EAEF;
+      .name,.money{
+        color: #333;
+        &.on{
+          color: @bg-gradient-color;
+        }
+      }
+      .name {
+        min-width: 100px;
+      }
+    }
+  }
+}
+/deep/ #wallet{
+  background-color: #F5F6FA;
+  .container{
+    height: auto;
+    overflow: auto;
+    // background: url(~@assets/img3_0/common/head-blue-bg@2x.png) center top no-repeat;
+    background: url(~@assets/img3_0/common/green@2x.png) no-repeat;
+    background-position: 0 88px;
+    background-size: 100% 32%;
+    background-color: #fff;
+    &.walletEmpty{
+      background-color: transparent;
+    }
+    .main{
+      display: block;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      width: 100%;
+      .empty{
+        margin-top: 100px;
+      }
+    }
+  }
+
+  .record-title{
+    background-color: #000!important;
+  }
+  .aagames-header{
+    background-color: transparent;
+  }
+  .main{
+    .total-box{
+      background-color: transparent;
+      height: auto;
+      .total-amount{
+        padding-top: 0;
+        margin: 0;
+        height: 172px;
+      }
+      .income{
+        height: 370px;
+        margin: 0 auto;
+        width: 690px;
+        padding-top: 40px;
+        .total-amount{
+          height: auto;
+          margin-bottom: 24px;
+        }
+      }
+    }
+    .lists{
+      margin-top: 0;
+      .list{
+        padding: 30px 30px 0;
+        margin: 0;
+        .item{
+          border-bottom: 2px solid #E6EAEF;
+          padding: 18px 0;
+          .blod{
+            margin-top: 0;
+          }
+        }
+      }
+    }
+    .emptyWallet{
+      background-image: url(~@assets/img3_0/memberCenter/Personal_center_wallet_Empty2@2x.png);
+    }
+    .incom-btn{
+      div:first-child{
+        border: 2px solid @bg-gradient-color;
+        color: @bg-gradient-color!important;
+        background: none;
+      }
+      div:last-child{
+        background-color: @bg-gradient-color!important;
+      }
+    }
+    .lists{
+      .van-list{
+        color: #ccc;
+        .blod{
+          span:last-child{
+            color: @bg-gradient-color!important;
+          }
+        }
+      }
+    }
+  }
+  .van-popup{
+    top: 50%;
+    left: 50%;
+    bottom: auto;
+    width: 630px;
+    border-radius:24px!important;
+    overflow: initial;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    .head p{
+      color: #333;
+    }
+  }
+  .list{
+    p{
+      width: 176px;
+      margin-left: 20px;
+      border-color: #E6EAEF;
+      color: #333;
+      &.active{
+        background-color: @bg-gradient-color;
+      }
+    }
+
+  }
+  .moneyBox{
+    background-color: transparent!important;
+    > div{
+      .account{
+        padding: 0 30px;
+        div{
+          background-color: #EDEFF6;
+          color: #333!important;
+          width: 240px!important;
+        }
+      }
+      .tranfer_amount{
+        margin-top: 0!important;
+        > div{
+          background-color: #EDEFF6;
+          height: 88px!important;
+          line-height: 88px!important;
+          padding-bottom: 0!important;
+          border-bottom: 0!important;
+          border-radius:8px;
+          display: flex;
+          align-items: center;
+          margin-top: 20px;
+          .all{
+            color: @bg-gradient-color!important;
+            padding-right: 20px;
+            font-size: 28px!important;
+          }
+          input{
+            background-color: transparent!important;
+            height: 100%!important;
+            width: auto;
+            flex: 1;
+            color: #333!important;
+          }
+          .icon{
+            color: #333!important;
+            margin-left: 20px;
+          }
+        }
+        > .btn{
+          width: 100%!important;
+          background-color: @bg-gradient-color!important;
+          border: 0!important;
+        }
+        p{
+          color: #666!important;
+        }
+      }
+    }
+
+  }
+}
+/deep/ .cells{
+  &.cells-1{
+    background-color: #EDEFF6;
+    color: #333;
+    border: 2px solid #EDEFF6;
+    .border{
+      background-color: #fff;
+    }
+  }
+  &.cells-2{
+    color: #333;
+    border: 2px solid #EDEFF6;
+    div{
+      color: #333;
+    }
+    .border{
+      background-color: #E6EAEF;
+    }
+  }
+}
+/deep/ .input-cells .aagames-button-default{
+  background-color: transparent!important;
+  color: @bg-gradient-color;
+  border: 2px solid @bg-gradient-color;
+}
+
+/deep/ #g-code .right-button{
+  background-color: transparent;
+  color: @bg-gradient-color;
+  border-left: 2px solid rgba(255,255,255,.3);
+  border-radius: 0;
+}
+/deep/ .aagames-form .input .areaNum{
+  border-right-color: #fff!important;
+  color: #333!important;
+}
+/deep/ .washcode{
+  background: url(~@assets/img3_0/common/head-blue-bg@2x.png) center top no-repeat;
+  background-size: 100% auto;
+
+  .aagames-nav-bar{
+    background: none;
+    background-color: transparent!important;
+    color: #fff;
+  }
+
+  .container{
+    position: static;
+    box-sizing: border-box;
+    .main{
+      .wash-money{
+        background-color: transparent;
+        .van-icon{
+          color: #fff!important;
+          font-size: 30px!important;
+        }
+        .btn-wash{
+          width:320px;
+          height:88px;
+          background:rgba(255,255,255,1);
+          box-shadow:0px 12px 20px 0px rgba(32,86,196,0.5);
+          border-radius:50px;
+          color: @bg-gradient-color;
+          font-weight: bold;
+        }
+      }
+      .list{
+        background-color: #fff;
+        padding: 0 30px;
+        .detail{
+          .wash{
+            border-bottom: 2px solid #E6EAEF;
+            .wash-top{
+              margin-bottom: 20px;
+            }
+            .wash-top div p:nth-child(1),.wash-bottom div p:nth-child(1){
+              color: #999;
+            }
+            .wash-top div p:nth-child(2),.wash-bottom div p:nth-child(2){
+              color: #333;
+              font-weight: bold;
+            }
+            .wash-top div .primary-color{
+              color: @bg-gradient-color!important;
+            }
+            .wash-top div:nth-child(3){
+              border-left: 2px solid #E6EAEF;
+              padding-left: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.empty{
+    background: none;
+    .aagames-nav-bar{
+      background-color: #000!important;
+      color: #333;
+      box-shadow:0px 4px 8px 0px rgba(0,0,0,0.06);
+    }
+    .empty{
+      width: 100%;
+      padding: 20vh 30px 0;
+      box-sizing: border-box;
+      .chinese {
+        color: #333 !important;
+      }
+    }
+  }
+}
+/deep/ .pop-body{
+  >div{
+    color: #333!important;
+  }
+  .btn{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 90px;
+    button:nth-child(1){
+      position: absolute;
+      right: 0;
+      width: 330px;
+    }
+    button:nth-child(2){
+      position: absolute;
+      left: 0;
+      width: 330px;
+    }
+  }
+}
+/deep/ .privilege{
+  .van-progress__portion{
+    background-color: @bg-gradient-color!important;
+    &:after{
+      content: '';
+      position: absolute;
+      width: 58px;
+      height: 32px;
+      background: url(~@assets/img3_0/vip/newLevel/vip_jindu@2x.png);
+      background-size: 100% auto;
+      right: -45px;
+      top: -8px;
+    }
+  }
+}
+/deep/ .app-install{
+  display: none!important;
+}
+/deep/ .contactinfo{
+  height: 100vh;
+  .main .submit-form .input:nth-child(2) img{
+    margin-left: 0!important;
+  }
+  .main .submit-form .input input{
+    font-size: 28px;
+    &::placeholder{
+      font-size: 28px;
+    }
+  }
+}
+/deep/ .duty{
+  display: none;
+}
+.recharge-bottom .btn-group .van-button--default{
+  background: none!important;
+}
+/deep/ .aboutWe{
+  .main .list{
+    color: #333!important;
+  }
+}
+.guide{display: none}
+/deep/ .downApp{
+  .right{
+    div:first-child,div:last-child{
+      background: none!important;
+      color: #fff!important;
+      background-color: @bg-gradient-color!important;
+    }
+  }
+}
+.serviceSubscription{
+  background: #F5F6FA;
+  /deep/.aagames-select-box {
+    .select {
+      background-color: #fff !important;
+    }
+  }
+}
+/deep/ .callWe{
+  .aagames-nav-bar{
+    box-shadow:0px 4px 8px 0px rgba(0,0,0,0.06);
+  }
+  .main{
+    padding: 0!important;
+    margin-top: 108px!important;
+    .list{
+      background: #fff;
+      margin: 0!important;
+      padding: 20px 0 24px 30px;
+      position: relative;
+      &:after{
+        content: '';
+        position: absolute;
+        left: 30px;
+        right: 0;
+        bottom: 0;
+        height: 2px;
+        background-color: #EDEFF6;
+      }
+      .title{
+        border-left-color: @bg-gradient-color!important;
+        color: #333!important;
+        font-weight: bold;
+      }
+      span{
+        color: #333!important;
+        padding-left: 20px;
+        font-size: 28px;
+        font-family: "PingFang SC", "Microsoft Yahei", sans-serif, arial;
+      }
+    }
+  }
+}
+/deep/.app-install  .install-btn{
+  background:linear-gradient(180deg,rgba(50,190,161,1) 0%,rgba(20,107,90,1) 100%);
+  width: 136px;
+  height: 50px;
+  border-radius: 26px;
+
+  color: #C6E1DB;
+  line-height: 50px;
+  padding: 0;
+  .van-button__text{
+    font-size: 24px;
+  }
+}
+/deep/ .kefu .m-body{
+  padding-bottom: 0;
+}
+/deep/ .help-detail{
+  height: 100%;
+  overflow: auto;
+}
+/deep/ .loading{
+  background: rgba(0,0,0,.7);
+  .title{
+    color: #fff!important;
+  }
+}
+/deep/ .carrycash{
+  min-height: 100%!important;
+}
+/deep/ #invitation{
+  .box{
+    .title,.content{
+      color: #333;
+    }
+  }
+  .btn{color: #fff;background-color: @bg-gradient-color}
+  .cumulative div{
+    height: 90px!important;
+    border-radius: 90px!important;
+    padding: 0!important;
+    line-height: 90px;
+    background: #fff;
+  }
+}
+/deep/ .aboutMore{
+  height: 100%;
+  min-height: auto!important;
+  .main{
+    .reset .aagames-select-box .select{
+      &:after{
+        background-color: #EDEFF6!important;
+        bottom: 0;
+        left: 0;
+        right: 30px;
+        opacity: 1!important;
+      }
+      span{
+        font-weight: bold;
+      }
+      .right-text{
+        color: #333;
+        font-weight: normal;
+      }
+    }
+    .login-out{
+      font-weight: bold;
+    }
+  }
+}
+
+#app .agMemberList, #app .carrycash, #app .callWe,
+#app .businessRecord, #app .esport-goods-record{
+  background: #FFFFFF;
+  height: 100vh;
+  
+}
+
+#app /deep/.accountSafe-page {
+  .reset {
+    background: #F7F7F7;
+  }
+  .aagames-select-box {
+    background: #F7F7F7;
+    padding: 0;
+    .personal-title {
+      margin-left: 34px;
+    }
+    .select {
+      height: 100px;
+      padding: 34px;
+    }
+  }
+}
+
+#app .esport-deposit, #app .aboutMore, #app .serviceSubscription, #app .accountSafe-page,
+#app .verify, #app #wallet,#app .esport-shop-products,#app .washcode,
+#app .historyRecord, #app .bankcard-page, #app .contactinfo, #app .agAddBankBind{
+  background: #F7F7F7;
+  min-height: 100vh;
+}
+
+#app /deep/.aboutMore {
+  .aagames-nav-bar {
+    background: #000000 !important;
+  }
+  .main {
+    .select {
+      background: #fff;
+    }
+  }
+}
+
+#app .help-detail, #app .helpcont{
+  background: #fff;
+  min-height: 100vh;
+}
+
+#app .quota {
+  /deep/.van-popup--bottom{
+    background: #fff;
+  }
+  /deep/.aagames-nav-bar .nav-right .help .van-icon-question-o{
+    color: #0FC59E !important;
+  }
+}
+
+#app /deep/.van-nav-bar .van-nav-bar__right .van-icon {
+  color: #fff;
+}
+
+

@@ -1,0 +1,47 @@
+.container .tabs .router-link{
+    background:#fff !important;
+    border:2px solid rgba(242,242,242,1);
+    color: #666!important;
+    &.router-link-active{
+        color: #fff!important;
+    }
+}
+.container .tabs .router-link-active{
+    background:@primary-color !important;
+}
+.container{
+    padding-top: 1.17333rem;
+    /deep/ .tutorial .problem{
+        background: none;
+        .item{
+            .left{
+                color: #000;
+                font-weight: bold;
+            }
+        }
+        &.novice .item{
+            border-bottom: 2px solid rgba(0,0,0,.06);
+            color: #666;
+            &:last-child{
+                border-bottom: 0;
+            }
+        }
+    }
+}
+/deep/ .item .title{
+    color:#000 !important;
+}
+
+/deep/ .tutorial{
+    .h3{
+        color:#000 !important;
+    }
+    .item .list div a{
+        background: none;
+        border:2px solid rgba(242,242,242,1);
+        color: #666;
+    }
+    .problem .item .rigth a{
+        color: #666!important;
+    }
+}

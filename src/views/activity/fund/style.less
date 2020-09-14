@@ -1,0 +1,501 @@
+#fund {
+  .fl {
+    float: left;
+  }
+  .fr {
+    float: right;
+  }
+  > .container {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: @main-top;
+    > div {
+      > .top {
+        width: 100%;
+        height: 13.8667rem;
+        background-size: 100% 100%;
+        background-image: url("./assets/banner.jpg");
+      }
+      // 榜单盈利
+      > .lis-profit {
+        padding: 1.6533rem 0 1.0667rem 0;
+        width: 100%;
+        height: auto;
+        background-size: 100% 100%;
+        overflow: hidden;
+        background-image: url("./assets/bg_2.jpg");
+        > .top {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          margin-bottom: 0.96rem;
+          > img:first-child {
+            transform: rotate(180deg);
+          }
+          > img {
+            width: 2.6667rem;
+            height: 0.24rem;
+            margin-top: 0.2667rem;
+          }
+          > p {
+            padding: 0 0.4rem;
+            color: #e9d9ba;
+            font-size: 0.64rem;
+          }
+        }
+      }
+      // 中奖榜单
+      .listOne {
+        width: 9.1733rem;
+        margin: 0 auto;
+        .winning-list {
+          padding-top: 0.2667rem;
+          text-align: center;
+          width: 100%;
+          height: 1.6533rem;
+          background-size: 100% 100%;
+          overflow: hidden;
+          background-image: url("./assets/list_title_bg.png");
+          > p:first-child {
+            color: #010101;
+            font-size: 0.56rem;
+            font-weight: bold;
+          }
+          > p:nth-child(2) {
+            color: #010101;
+            font-size: 0.4rem;
+            margin-top: 0.1333rem;
+          }
+        }
+        table {
+          display: block;
+          width: 100%;
+
+          tr {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            height: 1.2rem;
+            line-height: 1.2rem;
+            th,
+            td {
+              color: #000000;
+              font-size: 0.3733rem;
+              display: flex;
+              justify-content: center;
+              width: 25%;
+              text-align: center;
+            }
+          }
+          tr:nth-child(2n + 1) {
+            background: #ffffff;
+          }
+          tr:nth-child(2n) {
+            background-color: #e9e9eb;
+          }
+        }
+      }
+      .listTwo {
+        width: 9.1733rem;
+        margin: 0.9333rem auto 0;
+
+        .winning-list {
+          padding-top: 0.2667rem;
+          text-align: center;
+          width: 100%;
+          height: 1.6533rem;
+          background-size: 100% 100%;
+          overflow: hidden;
+          background-image: url("./assets/list_title_bg.png");
+          > p:first-child {
+            color: #010101;
+            font-size: 0.56rem;
+            font-weight: bold;
+          }
+          > p:nth-child(2) {
+            color: #010101;
+            font-size: 0.4rem;
+            margin-top: 0.1333rem;
+          }
+        }
+        table {
+          display: block;
+          width: 100%;
+
+          tr {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            height: 1.2rem;
+            line-height: 1.2rem;
+            th,
+            td {
+              color: #000000;
+              font-size: 0.3733rem;
+              display: flex;
+              justify-content: center;
+              width: 25%;
+              text-align: center;
+            }
+          }
+          tr:nth-child(2n + 1) {
+            background: #ffffff;
+          }
+          tr:nth-child(2n) {
+            background-color: #e9e9eb;
+          }
+        }
+      }
+      // 活动申请
+      .apply {
+        padding: 1.6533rem 0 1.3333rem 0;
+        width: 100%;
+        height: auto;
+        background-size: 100% 100%;
+        overflow: hidden;
+        background-image: url("./assets/bg_3.png");
+        > .top {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          margin-bottom: 0.96rem;
+          > img:first-child {
+            transform: rotate(180deg);
+          }
+          > img {
+            width: 2.6667rem;
+            height: 0.24rem;
+            margin-top: 0.2667rem;
+          }
+          > p {
+            padding: 0 0.4rem;
+            color: #e9d9ba;
+            font-size: 0.64rem;
+          }
+        }
+        > .img {
+          height: 5.0933rem;
+          background-position: center;
+          margin: 0 auto;
+          background-repeat: no-repeat;
+          background-size: 90% 90%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-image: url("./assets/text_bg_nor.png");
+          &.active{
+            background-image: url("./assets/text_bg_active.png");
+          }
+          >img{
+            width: 75%;
+            position: relative;
+            top: 0.2667rem;
+          }
+        }
+        > .lendingAmount {
+          width: 100%;
+          margin-top: 0.8533rem;
+          > .form-items {
+            padding-left: 0.4rem;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 0.5333rem;
+            > .form-item-label {
+              width: 3.4rem;
+              text-align: right;
+              color: #e3c395;
+              font-size: 0.4rem;
+              line-height: 0.9067rem;
+              margin-right: 0.2133rem;
+            }
+            > span {
+              color: #f7cd6e;
+              font-size: 0.96rem;
+            }
+          }
+          > .form-item {
+            padding-left: 0.4rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 0.5333rem;
+            > .form-item-label {
+              width: 3rem;
+              text-align: right;
+              color: #e3c395;
+              font-size: 0.4rem;
+              line-height: 0.9067rem;
+              margin-right: 0.2133rem;
+            }
+            > .form-item-content {
+              width: 5.6rem;
+              height: 0.9067rem;
+              background-color: #ffffff;
+              > input {
+                padding-left: 0.2133rem;
+                width: 100%;
+                height: 0.9067rem;
+                line-height: 1;
+                &::placeholder {
+                  color: #999999;
+                  font-size: 0.4rem;
+                }
+              }
+            }
+          }
+          > .btn {
+            width: 4.9867rem;
+            height: 0.96rem;
+            margin: 0.88rem auto 0;
+            background-size: 100% 100%;
+            overflow: hidden;
+            background-image: url("./assets/registered_btn.png");
+            font-size: 0.32rem;
+            color: #222;
+            font-weight: bold;
+            text-align: center;
+            line-height: 0.96rem;
+          }
+        }
+      }
+      //   活动等级
+      .grade {
+        padding: 1.3333rem 0 0 0;
+        width: 100%;
+        height: auto;
+        background-size: 100% 100%;
+        overflow: hidden;
+        background-image: url("./assets/bg_4.jpg");
+        > .look {
+          color: #e9d7b7;
+          font-size: 0.3733rem;
+          padding: 1rem 0 0.7333rem 0.4533rem;
+        }
+        > .top {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          margin-bottom: 0.96rem;
+          > img:first-child {
+            transform: rotate(180deg);
+          }
+          > img {
+            width: 2.6667rem;
+            height: 0.24rem;
+            margin-top: 0.2667rem;
+          }
+          > p {
+            padding: 0 0.4rem;
+            color: #e9d9ba;
+            font-size: 0.64rem;
+          }
+        }
+        .activityLevelList {
+          width: 100%;
+          height: auto;
+          overflow-y: hidden;
+          overflow-x: auto;
+          table {
+            width: 21.3333rem;
+            margin-left: 0.4533rem;
+            font-size: 0.3733rem;
+            tr {
+              width: 100%;
+              display: flex;
+              justify-content: space-around;
+              height: 1.2rem;
+              line-height: 1.2rem;
+              th,
+              td {
+                display: flex;
+                justify-content: center;
+                width: 40%;
+                text-align: center;
+                span {
+                  float: left;
+                  display: block;
+                  width: 0.8267rem;
+                  height: 0.8267rem;
+                  margin: 0.2667rem;
+                  background-position: center;
+                  background-size: cover;
+                }
+              }
+            }
+            tr:nth-child(2n) {
+              background-color: rgba(255, 255, 255, 1);
+            }
+            tr:nth-child(2n + 1) {
+              background-color: rgba(214, 214, 215, 1);
+            }
+            > tr:nth-child(2) {
+              td {
+                span {
+                  background-image: url("./assets/list_1.png");
+                }
+              }
+            }
+            > tr:nth-child(3) {
+              td {
+                span {
+                  background-image: url("./assets/list_2.png");
+                }
+              }
+            }
+            > tr:nth-child(4) {
+              td {
+                span {
+                  background-image: url("./assets/list_3.png");
+                }
+              }
+            }
+            > tr:nth-child(5) {
+              td {
+                // color: #e2470b;
+                span {
+                  background-image: url("./assets/list_4.png");
+                }
+              }
+              > td:first-child {
+                // color: #e2470b;
+                // font-weight: bold;
+              }
+            }
+            > tr:nth-child(6) {
+              td {
+                // color: #e2470b;
+                span {
+                  background-image: url("./assets/list_5.png");
+                }
+              }
+              > td:first-child {
+                // color: #f53400;
+                // font-weight: bold;
+              }
+            }
+            .activityLevel-title {
+              width: 100%;
+              line-height: 1.68rem;
+              height: 1.68rem;
+              background-position: 100% 100%;
+              background-size: cover;
+              background-color: transparent;
+              background-image: url("./assets/line_bg.png");
+
+              th {
+                font-size: 0.3733rem;
+                font-weight: bold;
+                color: #000000;
+              }
+            }
+          }
+        }
+      }
+      // 活动细则
+      .regulations {
+        padding: 0.96rem 0 0.72rem 0;
+        width: 100%;
+        height: auto;
+        background-size: 100% 100%;
+        overflow: hidden;
+        background-image: url("./assets/bg_5.png");
+        position: relative;
+        top: -0.0133rem;
+        > .top {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          margin-bottom: 0.96rem;
+          > img:first-child {
+            transform: rotate(180deg);
+          }
+          > img {
+            width: 2.6667rem;
+            height: 0.24rem;
+            margin-top: 0.2667rem;
+          }
+          > p {
+            padding: 0 0.4rem;
+            color: #e9d9ba;
+            font-size: 0.64rem;
+          }
+        }
+        > .text {
+          width: 90%;
+          margin: 0 auto;
+          > p {
+            color: #efd2a5;
+            font-size: 0.32rem;
+            margin-bottom: 0.1333rem;
+            line-height: 0.5867rem;
+            > span {
+              display: inline-block;
+              color: #efd2a5;
+              font-size: 0.2667rem;
+              text-align: center;
+              width: 0.4rem;
+              height: 0.4rem;
+              line-height: 0.4rem;
+              background-size: 100% 100%;
+              overflow: hidden;
+              margin: 0 0.2667rem 0 0;
+              background-image: url("./assets/text_bg.png");
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1.4933rem;
+    background-color: #000000;
+    align-items: center;
+    > div {
+      text-align: center;
+      width: 25%;
+      padding-top: 0.08rem;
+      > img {
+        width: 0.5067rem;
+        height: 0.5067rem;
+        margin: 0 auto;
+      }
+      > p {
+        text-align: center;
+        font-size: 0.2933rem;
+        color: #ffffff;
+        &.active {
+          color: #f9e2b2;
+        }
+      }
+    }
+  }
+  .no-header {
+    margin-top: 0;
+  }
+  .target-text {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+//覆盖样式
+.profit-loss  {
+  background-image: url("./assets/bg_3.png") !important;
+  table > tr > td {
+    color: #000 !important;
+    font-weight: normal !important;
+  }
+}

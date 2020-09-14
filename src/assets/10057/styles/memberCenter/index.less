@@ -1,0 +1,175 @@
+.operating {
+    :nth-child(1) {
+        background: @primary-color;
+    }
+
+    :nth-child(2) {
+        border: 2px solid #00213A !important;
+        background: none !important;
+        color: #00213A !important;
+    }
+
+    :nth-child(3) {
+        border: 2px solid #00213A !important;
+        background: none !important;
+        color: #00213A !important;
+    }
+}
+
+.balance {
+    background: #fff !important;
+
+    .info-area {
+        span:last-child {
+        }
+    }
+
+    .operating {
+        border-top:2px solid rgba(0,0,0,.06)!important;
+    }
+}
+
+.other-balance {
+    .info-area {
+        span:nth-child(2) {
+            color: #000 !important;
+        }
+    }
+}
+
+.refresh {
+    position: absolute;
+    top:34px;
+    right:40px;
+    width:44px;
+    height: 44px;
+}
+
+.latest {
+    .newest-name {
+        color: #000000 !important;
+        font-weight: bold;
+        img {
+            display: none;
+        }
+    }
+
+    .newest-num {
+        color: #A37C3C;
+    }
+
+    h2 {
+        span {
+            color: #000000;
+            font-weight: bold;
+        }
+    }
+
+    /deep/ .van-icon {
+        color: #6D5E4E !important;
+    }
+}
+
+.person-entr {
+    .menu {
+        i {
+            width: 88px !important;
+            height: 88px !important;
+        }
+
+        p {
+            color: #000000;
+        }
+    }
+}
+.user-info{
+    position: relative;
+    z-index: 2;
+    .person-info{
+    .right {
+        .name{
+            color: #000!important;
+            font-weight: bold!important;
+            font-size: 40px!important;
+        }
+        .bottom {
+            color: #666 !important;
+        }
+    }
+    }
+}
+.member-page {
+    // background: #07101D url(/img/bg@2x.4b8a40e5.png) no-repeat !important;
+    // background-size:contain !important;
+    &:before{
+        content: none!important;
+    }
+    /deep/ .m-header.van-nav-bar{
+        &::after{
+            border-bottom:none !important;
+        }
+    }
+    .latest .newest-info-detail{
+        border-color:rgba(0,0,0,0.06) !important;
+    }
+    .latest h2{
+        color:#000 !important;
+    }
+    .balance {
+        position: relative;
+        z-index: 2;
+        background:#F5F5F5 !important;
+        box-shadow:1px 1px 20px rgba(92, 96, 150, 0.16);
+        border-radius:15px;
+
+    }
+    &::before{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:35%;
+        content:'';
+        background:#000;
+        z-index:0;
+    }
+}
+.m-body{
+    // background:#07101D !important;
+}
+.member-page .person-entr .menu > i{
+    width:88px !important;
+    height:88px !important;
+}
+/deep/ .m-header{
+    z-index:3;
+}
+/deep/ .van-nav-bar {
+    .van-nav-bar__title {
+      color: #fff !important;
+    }
+}
+
+.member-page .balance .other-balance .info-area > span{
+    &:last-child{
+        color:@primary-color !important;
+    }
+}
+.member-page .latest .newest-info-detail .newest-info-first{
+    // .newest-name{
+    //     color:#b1b1b1 !important;
+    // }
+    .newest-num{
+        color:#000 !important;
+    }
+}
+.member-page .person-entr .menu > p{
+    color:#000 !important;
+    font-size: 28px;
+    margin-top: 0!important;
+}
+.member-page .latest .newest-info-detail .newest-info-two{
+    .newest-state{
+        color:#000 !important;
+    }
+}

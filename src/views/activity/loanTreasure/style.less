@@ -1,0 +1,315 @@
+#loanTreasure {
+  width: 100%;
+  height: 0;
+  background-color: #fef9f2;
+  > .content {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-top: @main-top;
+    > div {
+      > .top {
+        width: 100%;
+        height: 9.7333rem;
+        background-size: 100% 100%;
+        background-color: #fff;
+        // background-image: url("./assets/jiedaibao_banner.png");
+        &.top-wanqu{
+          background-image: url("./assets/jiedaibao_banner.png");
+        }
+        &.top-other{
+          background-image: url("./assets/jiedaibao_banner1.png");
+        }
+      }
+      > .center {
+        width: 100%;
+        background-color: #fef9f2;
+        // 借贷规则
+        > .lendingRules {
+          width: 100%;
+          padding-top: 1.0667rem;
+          overflow-x: auto;
+          overflow-y: hidden;
+          > div {
+            width: 13.3333rem;
+            margin-left: 0.8rem;
+            > .top {
+              width: 100%;
+              font-weight: bold;
+              height: 1.0133rem;
+              background-color: #a5b0fa;
+              position: relative;
+              border-radius: 0.4rem 0.4rem 0 0;
+              > div {
+                left: 1.8rem;
+                top: -0.2667rem;
+                position: absolute;
+                color: #d0551d;
+                font-size: 0.5333rem;
+                text-align: center;
+                width: 5.7333rem;
+                height: 0.9333rem;
+                line-height: 0.8rem;
+                background-size: 100% 100%;
+                margin: 0 auto;
+                background-image: url("./assets/jiedaibao_rule_bg.png");
+              }
+            }
+            table {
+              display: block;
+              width: 100%;
+
+              tr {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                height: 0.8rem;
+                line-height: 0.8rem;
+                th,
+                td {
+                  color: #445df9;
+                  font-size: 0.32rem;
+                  display: flex;
+                  justify-content: center;
+                  width: 25%;
+                  text-align: center;
+                  &:nth-child(2) {
+                    width: 35%;
+                  }
+                  &:nth-child(3),
+                  &:nth-child(4),
+                  &:nth-child(5) {
+                    width: 15%;
+                  }
+                }
+              }
+              tr {
+                > td:first-child {
+                  color: #f75e04;
+                  font-size: 0.32rem;
+                  font-weight: bold;
+                }
+              }
+
+              tr:nth-child(2n + 1) {
+                background: rgba(225, 228, 255, 1);
+              }
+              tr:nth-child(2n) {
+                background-color: #d3d8ff;
+              }
+              .rules-title {
+                height: 1.0667rem;
+                line-height: 1.0667rem;
+                font-weight: bold;
+                th {
+                  font-size: 0.3467rem;
+                  color: rgba(0, 0, 201, 1);
+                }
+              }
+            }
+            > p {
+              color: #e97a48;
+              font-size: 0.32rem;
+              width: 100%;
+              height: 1.2533rem;
+              line-height: 1.2533rem;
+              padding-left: 2.56rem;
+              border-radius: 0 0 0.4rem 0.4rem;
+              background-color: #e1e4ff;
+            }
+            .look {
+              width: 100%;
+              padding: 0.4rem 0 1.0933rem 0;
+              overflow: hidden;
+              > img {
+                width: 0.4rem;
+                height: 0.4rem;
+                float: left;
+                margin: 0 0.2133rem 0 0;
+              }
+              > span {
+                color: #6a7cf4;
+                font-size: 0.32rem;
+                float: left;
+                font-weight: bold;
+                line-height: 0.4rem;
+              }
+            }
+          }
+        }
+        // 活动申请
+        .activity {
+          padding: 1.0667rem 0;
+          width: 100%;
+          height: 9.7333rem;
+          background-size: 100% 100%;
+          background-image: url("./assets/jiedaibao_application_bg_b.png");
+          > .top {
+            font-weight: bold;
+            color: #d0551d;
+            font-size: 0.5333rem;
+            width: 9.2rem;
+            height: 0.9333rem;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 0.9333rem;
+            background-size: 100% 100%;
+            background-image: url("./assets/jiedaibao_application_bg_a.png");
+          }
+          > .list {
+            margin-top: 0.72rem;
+            display: flex;
+            justify-content: center;
+            > div {
+              > .pic {
+                text-align: center;
+                width: 1.6rem;
+                height: 1.6rem;
+                background-size: 100% 100%;
+                background-image: url("./assets/jiedaibao_application_ic_bg_nor.png");
+                &.active {
+                  background-image: url("./assets/jiedaibao_application_ic_bg_pre.png");
+                }
+                > img {
+                  width: 0.8rem;
+                  height: 0.8rem;
+                  margin: 0.4rem auto 0;
+                }
+              }
+              > p {
+                color: #63697b;
+                font-size: 0.32rem;
+              }
+            }
+            > img {
+              width: 0.4rem;
+              height: 0.4rem;
+              margin: 0.5867rem 0.1333rem 0 0.1333rem;
+            }
+          }
+          > .lendingAmount {
+            margin-top: 1.0667rem;
+            > div {
+              > .form-item {
+                display: flex;
+                justify-content: center;
+                > .form-item-label {
+                  color: #63697b;
+                  font-size: 0.3733rem;
+                  line-height: 1.0667rem;
+                  margin-right: 0.2667rem;
+                }
+                > .form-item-content {
+                  width: 6.4rem;
+                  height: 1.0667rem;
+                  line-height: 1.0667rem;
+                  background: rgba(255, 255, 255, 1);
+                  border-radius: 0.1067rem;
+                  > input {
+                    padding-left: 0.32rem;
+                    width: 100%;
+                    height: 1.0667rem;
+                    line-height: 1;
+                    &::placeholder {
+                      color: #abaaaa;
+                      font-size: 0.3733rem;
+                    }
+                  }
+                }
+              }
+              > p {
+                text-align: center;
+                line-height: 1.2;
+                color: #63697b;
+                font-size: 0.32rem;
+                font-weight: bold;
+              }
+            }
+            > .btn {
+              text-align: center;
+              color: #e1545c;
+              font-size: 0.4267rem;
+              width: 4.2667rem;
+              height: 1.04rem;
+              line-height: 0.9333rem;
+              background-size: 100% 100%;
+              font-weight: bold;
+              margin: 0.5333rem auto 0;
+              background-image: url("./assets/jiedaibao_application_btn_bg_nor.png");
+            }
+          }
+        }
+        // 活动细则
+        .rulesActivities {
+          width: 100%;
+          padding: 1.0667rem 0 1.5rem 0;
+          height: auto;
+          overflow: hidden;
+          background-size: 100% 100%;
+          background-image: url("./assets/rule_bg_b.png");
+          > .rules {
+            padding-bottom: 1.28rem;
+            width: 9.2rem;
+            margin: 0 auto;
+            background-size: 100% 100%;
+            background-image: url("./assets/rule_bg_a.png");
+            > div {
+              height: 1.0667rem;
+              line-height: 1.4;
+              text-align: center;
+              color: #ffffff;
+              font-size: 0.5333rem;
+              margin-bottom: 0.8rem;
+              font-weight: bold;
+            }
+            > p {
+              color: #5b5bc2;
+              font-size: 0.32rem;
+              padding: 0 0.56rem 0 0.56rem;
+              margin-bottom: 0.4rem;
+              line-height: 1.2;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1.4933rem;
+    background-color: #000000;
+    align-items: center;
+    > div {
+      text-align: center;
+      width: 25%;
+      padding-top: 0.08rem;
+      > img {
+        width: 0.5067rem;
+        height: 0.5067rem;
+        margin: 0 auto;
+      }
+      > p {
+        text-align: center;
+        font-size: 0.16rem;
+        color: #ffffff;
+        &.active {
+          color: #f9e2b2;
+        }
+      }
+    }
+  }
+  input {
+    border: none;
+  }
+  .no-header {
+    padding-top: 0;
+  }
+}

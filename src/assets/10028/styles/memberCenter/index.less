@@ -1,0 +1,248 @@
+.operating{
+    :nth-child(1) {
+        background: @primary-color;
+    }
+
+    :nth-child(2) {
+        // background-image: linear-gradient(90deg, #13b1d7 0%, #1c7588 99%) !important;
+        background: transparent !important;
+        border:2px solid @primary-color;
+        color: @primary-color;
+    }
+
+    :nth-child(3) {
+        // background-image: linear-gradient(90deg, #da8b45 0%, #b04d25 99%) !important;
+        background: transparent !important;
+        border:2px solid @primary-color;
+        color: @primary-color;
+    }
+    border-top: 0 !important;
+    margin-top: 20px !important;
+}
+.member-page{
+    background-image: none !important;
+    .m-header{
+        z-index: 99 !important;
+        /deep/ .van-nav-bar__title{
+            display: none;
+        }
+    }
+    .m-body{
+        // position: relative;
+        .balance{
+            background-color: #fff;
+            box-shadow:0px 4px 17px 0px rgba(92,96,150,0.16);
+            position: relative;
+            z-index: 9;
+        }
+        .top-bg{
+            height: 300px;
+            width: 100%;
+            background-color: @primary-color;
+            position: absolute;
+            top:88px;
+            left: 0;
+            span{
+                width: 100%;
+                height: 40px;
+                position: absolute;
+                bottom:0;
+                background-color: #fff;
+                border-radius:14px 14px 0 0;
+            }
+        }
+        .user-info{
+            position: relative;
+            z-index: 9;
+
+
+        }
+        .person-entr{
+            p{
+                color: #000;
+            }
+        }
+    }
+    .newest-info-detail{
+        border: 0 !important;
+    }
+    .latest{
+        h2{
+            span{
+                color:#333;
+                font-weight: bold;
+                font-size: 28px;
+            }
+        }
+    }
+}
+.member-page{
+    .latest{
+        margin: 30px 28px!important;
+        box-shadow:0px 4px 28px 0px rgba(0,34,80,0.1);
+        border-radius:16px;
+        padding-left: 0!important;
+        background: #fff;
+        background-size: 100% auto!important;
+        h2{
+            padding-left: 40px!important;
+            position: relative;
+            border-radius:16px 16px 0 0;
+            border-bottom: 0!important;
+            height: 80px!important;
+            &:after{
+                content: '';
+                position: absolute;
+                left: 40px;
+                right: 30px;
+                height: 2px;
+                background: #E6EAEF;
+                bottom: 0;
+            }
+        }
+        .newest-info-detail{
+            padding-left: 40px!important;
+        }
+    }
+    .person-entr{
+        margin: 30px 28px!important;
+        box-shadow:0px 4px 28px 0px rgba(0,34,80,0.1);
+        border-radius:16px;
+        background: #fff;
+        background-size: 100% auto;
+        h2{
+            padding-left: 40px!important;
+            position: relative;
+            border-radius:16px 16px 0 0;
+            height: 80px;
+            line-height: 80px;
+            color: #333;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .menu{
+            width: 33.33%!important;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: auto!important;
+            padding: 30px 0;
+            background-color: transparent!important;
+            &:after{
+                content: none!important;
+            }
+            &:nth-child(2),&:nth-child(3){
+                margin-bottom: 0!important;
+            }
+            >i{
+                margin-bottom: 12px;
+            }
+
+            >p{
+                color: #6C6E82;
+                font-size: 28px!important;
+            }
+        }
+    }
+    .balance-out-wrap{
+        margin: 30px 28px!important;
+        box-shadow:0px 4px 28px 0px rgba(0,34,80,0.1);
+        border-radius:16px;
+        background: #fff;
+        background-size: 100% auto;
+        .balance-out{
+            padding: 0!important;
+            background-color: transparent!important;
+            box-shadow: none!important;
+            .balance{
+                box-shadow: none!important;
+                background-color: transparent!important;
+            }
+        }
+    }
+    .quick-link{
+        position: relative;
+        padding: 8px 40px 30px;
+        background: none!important;
+        &:after{
+            content: '';
+            position: absolute;
+            left: 40px;
+            right: 40px;
+            top: 0;
+            height: 2px;
+            background-color: #E6EAEF;
+        }
+        li{
+
+            img{
+                width: 80px;
+            }
+        }
+    }
+    .m-header.van-nav-bar{
+        background-color: transparent!important;
+        position: relative!important;
+
+    }
+    .user-info{
+        background-color: transparent!important;
+        .person-info img{
+            width: 120px!important;
+            height: 120px!important;
+        }
+        .name{
+            color: #fff!important;
+        }
+        .bottom{
+            color: #B4D1FF!important;
+            span{
+                color: #fff!important;
+            }
+            &.bottom-progress{
+                margin: 8px 0;
+                div{
+                    display: flex;
+                    align-items: center;
+                    color: #fff;
+                    font-size: 24px;
+                    .bottom-progress-vip{
+                        font-size: 24px!important;
+                        margin-left: 12px;
+                    }
+                    .bottom-progress-vip:first-child{
+                        margin-left: 0;
+                        margin-right: 12px;
+                    }
+                }
+                /deep/ .van-progress{
+                    flex:1;
+                    border-radius: 16px;
+                    position: static;
+                    transform: translateY(0);
+                    height:28px!important;
+                    padding: 4px;
+                    background:rgba(255,255,255,.4)!important;
+                    margin: 10px 0;
+                    .van-progress__portion{
+                        background-color: #fff!important;
+                        width: auto;
+                        left: 4px;
+                        right: 4px;
+                        top: 4px;
+                        bottom: 4px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+    .m-body{
+        background: url(~@assets/img3_0/memberCenter/bet_me_bg_top@2x.png) center -88px no-repeat;
+        background-size: 100% auto;
+        margin-top: -88px;
+    }
+    .info-area > span:first-child{
+        color: #666!important;
+    }
+}

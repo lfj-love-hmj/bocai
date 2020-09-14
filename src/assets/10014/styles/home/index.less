@@ -1,0 +1,112 @@
+.m-body{
+    background-color: #251B4D;
+    // background-image:url('~@assets/img3_0/home/esports/bg@2x.png');
+    background-size: 100%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+/deep/ .nav-type-1{
+    .van-sticky{
+        .van-tabs__line{
+            background:#B38A58 !important;
+        }
+    }
+}
+
+/deep/ .van-tabs__content{
+    .van-tab__pane-wrapper{
+        &:first-child{
+            padding:0 !important;
+            #banner{
+                margin:0 auto 24px !important;
+            }
+            .van-tab__pane>.van-image{
+                padding:0 0.4rem;
+            }
+            .notice{
+                margin:0.4rem 0.4rem 0;
+                width:auto;
+                border-color:rgba(255,255,255,0.06) !important;
+                > .van-icon{
+                    color:rgba(255, 255, 255, 0.14) !important;
+                }
+                .van-swipe .van-swipe-item{
+                    color:rgba(153, 153, 153, 0.8) !important;
+                }
+                .action{
+                    color:rgba(153, 153, 153, 0.8) !important;
+                    &::before{
+                        background:rgba(255, 255, 255, 0.1) !important;
+                    }
+                    .van-icon{
+                        color:rgba(255, 255, 255, 0.1) !important;
+                    }
+                }
+            }
+            .featured{
+                .app-index-3{
+                    .gameList{
+                        padding:45px 0.4rem 25px;
+                    }
+                    .groupInfo{
+                        overflow:hidden;
+                    }
+                    .buss{
+                        padding-top:40px;
+                        background:rgba(0,0,0,0.2) !important;
+                        .title_zh{
+                            .title_top{
+                                color:#fff !important;
+                            }
+                        }
+                        .list .list_item .item_box p{
+                            color: rgba(255,255,255,0.2) !important;
+                        }
+                        .list .list_item{
+                            width:30% !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.van-tabs {
+    /deep/ .van-tab--active {
+        .van-tab__text {
+            font-size: 32px !important;
+        }
+
+        color: #fff !important;
+    }
+
+    /deep/ .van-tabs__line {
+        background: #B38A58 !important;
+    }
+
+    /deep/ .van-tabs__wrap {
+        border-bottom: 2px solid rgba(153, 153, 153, 0.1);
+
+
+    }
+    /deep/ .van-tab {
+        background: #251B4D !important;
+    }
+}
+/deep/ .slots{
+    .jackpot{
+        background-image:url('../../img3_0/home/slots/jackpot-bg_1@2x.png');
+        background-repeat: no-repeat;
+        background-size:contain;
+        background-position: center;
+    }
+}
+/deep/.search-trigger {
+    i{
+        // color: #666666 !important;
+    }
+    span{
+        color: #CCCCCC !important;
+    }
+}

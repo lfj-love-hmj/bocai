@@ -1,0 +1,364 @@
+#invitation {
+  .fl {
+    float: left;
+  }
+  .fr {
+    float: right;
+  }
+  .container {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-top: @main-top;
+    > div {
+      > .top {
+        padding: 6.8rem 0 0.3467rem 0;
+        width: 100%;
+        height: auto;
+        background-size: 100% 100%;
+        background-image: url("./assets/bg.png");
+        // 领取福利
+        > .receive {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          > .receiveNum {
+            > div {
+              overflow: hidden;
+              > .left {
+                color: #ffffff;
+                font-size: 0.3467rem;
+                line-height: 0.96rem;
+              }
+              > .right {
+                font-size: 0.4267rem;
+                color: #ffffff;
+                text-align: center;
+                width: 3.4667rem;
+                height: 0.96rem;
+                line-height: 0.96rem;
+                background-size: 100% 100%;
+                background-image: url("./assets/welfare_bg.png");
+                &.active {
+                  color: #ffe400;
+                }
+              }
+            }
+            > div:first-child {
+              margin-bottom: 0.2667rem;
+            }
+          }
+          .immediately {
+            font-size: 0.4267rem;
+            color: #000000;
+            text-align: center;
+            width: 2.48rem;
+            height: 2.3733rem;
+            padding-top: 0.5333rem;
+            background-size: 100% 100%;
+            line-height: 1.2;
+            margin-left: 0.3733rem;
+            background-image: url("./assets/Receive_bg.png");
+          }
+        }
+        // 累计邀请好友
+        .cumulative {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          margin-top: 0.5333rem;
+          > div {
+            text-align: center;
+            padding: 0.3467rem 0;
+            width: 4.1333rem;
+            height: 1.8933rem;
+            background-size: 100% 100%;
+            background-image: url("./assets/leiji_bg.png");
+            > p:first-child {
+              color: #8c8c8c;
+              font-size: 0.4267rem;
+              font-weight: normal;
+              padding-bottom: 0.1333rem;
+            }
+            > p:last-child {
+              color: #f74848;
+              font-weight: normal;
+              font-size: 0.6667rem;
+            }
+          }
+          > div:first-child {
+            margin-right: 0.5333rem;
+          }
+        }
+        .code {
+          width: 100%;
+          text-align: center;
+          margin-top: 0.6667rem;
+          > p {
+            color: #ffffff;
+            font-size: 0.3467rem;
+          }
+          > .clickToGet {
+            color: #000000;
+            font-size: 0.3467rem;
+            text-align: center;
+            width: 4.2133rem;
+            margin: 0 auto;
+            margin-top: 20px;
+            background:#ffd700;
+            border-radius: 10px;
+            > p {
+              line-height:90px;
+              font-size: 0.2667rem;
+            }
+          }
+        }
+      }
+      // 我的好友，邀请规则
+      .list {
+        padding: 0.5333rem 0 0.3467rem 0;
+        width: 100%;
+        background-size: 100% 100%;
+        background-image: url("./assets/bg2.png");
+        > .title {
+          display: flex;
+          justify-content: center;
+          > div {
+            float: left;
+            color: #3d2944;
+            font-size: 0.3733rem;
+            text-align: center;
+            width: 4.32rem;
+            height: 1.0667rem;
+            line-height: 1.0667rem;
+            background-size: 100% 100%;
+            background-image: url("./assets/list_bg.png");
+            &.active {
+              height: 1.2267rem;
+              line-height: 1.1467rem;
+              color: #ffffff;
+              background-image: url("./assets/list_active_bg.png");
+            }
+          }
+        }
+        // 邀请好友内容
+        > .goodfriendContent {
+          padding-top: 0.72rem;
+          > .top {
+            text-align: center;
+            color: #614411;
+            font-size: 0.4rem;
+          }
+          > .time {
+            margin-top: 0.5333rem;
+            display: flex;
+            justify-content: center;
+            > div {
+              > p {
+                color: #614411;
+                font-size: 0.32rem;
+                text-align: center;
+              }
+              > div {
+                text-align: center;
+                color: #614411;
+                font-size: 0.32rem;
+                width: 2.64rem;
+                height: 0.72rem;
+                line-height: 0.72rem;
+                background: rgba(255, 255, 255, 1);
+                border-radius: 0.2667rem;
+              }
+            }
+            > div:first-child {
+              margin-right: 0.6667rem;
+            }
+          }
+          .query {
+            color: #000000;
+            font-size: 0.32rem;
+            text-align: center;
+            margin: 0.3467rem auto 0;
+            width: 6.0267rem;
+            height: 0.8533rem;
+            line-height: 0.8533rem;
+            background-size: 100% 100%;
+            background-image: url("./assets/bt_2.png");
+          }
+          table {
+            width: 100%;
+            margin-top: 0.64rem;
+            tr {
+              width: 100%;
+              display: flex;
+              justify-content: space-around;
+              height: 0.8rem;
+              line-height: 0.8rem;
+              th,
+              td {
+                color: #000000;
+                font-size: 0.32rem;
+                display: flex;
+                justify-content: center;
+                width: 25%;
+                text-align: center;
+              }
+            }
+            tr:nth-child(2n) {
+              background-color: #ffe6b1;
+            }
+            tr:nth-child(2n + 1) {
+              background-color: #f3daa4;
+            }
+            .grade-title {
+              background-color: #e3af44 !important;
+            }
+          }
+          .pagingBtn {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 0.24rem;
+            > div {
+              color: #000000;
+              font-size: 0.32rem;
+              text-align: center;
+              width: 2.7467rem;
+              height: 0.8533rem;
+              line-height: 0.8533rem;
+              background-size: 100% 100%;
+              background-image: url("./assets/bt_1.png");
+            }
+            > div:first-child {
+              margin-right: 1.0133rem;
+            }
+          }
+        }
+        // 邀请规则内容
+        > .rulesContent {
+          padding-top: 0.72rem;
+          > .top {
+            text-align: center;
+            color: #614411;
+            font-size: 0.4rem;
+          }
+          table {
+            width: 100%;
+            margin-top: 0.64rem;
+            tr {
+              width: 100%;
+              display: flex;
+              justify-content: space-around;
+              height: 0.8rem;
+              line-height: 0.8rem;
+              th,
+              td {
+                color: #000000;
+                font-size: 0.32rem;
+                display: flex;
+                justify-content: center;
+                width: 25%;
+                text-align: center;
+                &:nth-child(2),
+                &:nth-child(3) {
+                  width: 30%;
+                }
+                &:nth-child(4) {
+                  width: 28%;
+                }
+              }
+            }
+            tr:nth-child(2n) {
+              background-color: #ffe6b1;
+            }
+            tr:nth-child(2n + 1) {
+              background-color: #f3daa4;
+            }
+            .grade-title {
+              background-color: #e3af44 !important;
+            }
+          }
+        }
+      }
+      // 邀请流程
+      .invitationProcess {
+        width: 100%;
+        height: auto;
+        padding: 0.5867rem 0;
+        background-size: 100% 100%;
+        background-image: url("./assets/Invitation_bg.png");
+        > p {
+          text-align: center;
+          color: #ffffff;
+          font-size: 0.4rem;
+        }
+        > .lists {
+          margin-top: 0.7467rem;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          > div {
+            width: 2.2133rem;
+            > img {
+              width: 100%;
+              height: 2.2133rem;
+              display: block;
+              margin-bottom: 0.7733rem;
+            }
+            > p {
+              width: 100%;
+              text-align: center;
+              color: #ffffff;
+              font-size: 0.2667rem;
+              line-height: 0.4267rem;
+            }
+          }
+          > img {
+            display: block;
+            width: 0.48rem;
+            height: 0.3467rem;
+            margin: 1.0667rem 0.2933rem 0 0.2933rem;
+          }
+        }
+      }
+      // 邀请说明
+      .rule {
+        width: 100%;
+        background-color: #ffffff;
+        padding: 0.64rem 0.3733rem 0.8267rem 0.64rem;
+        > p {
+          &:after {
+            content: "";
+            display: block;
+            clear: both;
+          }
+          > span:first-child {
+            float: left;
+            margin: 0.15rem 0.2667rem 0 0;
+            display: block;
+            width: 0.4rem;
+            height: 0.4rem;
+            line-height: 0.4rem;
+            border-radius: 50%;
+            text-align: center;
+            border: 0.0267rem solid #7f7f7f;
+            color: #7f7f7f;
+          }
+          > span:last-child {
+            float: left;
+            width: calc(100% - 0.66667rem);
+            display: block;
+            color: #7f7f7f;
+            font-size: 0.32rem;
+            line-height: 0.7rem;
+          }
+        }
+      }
+    }
+  }
+  .no-header {
+    padding-top: 0;
+  }
+}

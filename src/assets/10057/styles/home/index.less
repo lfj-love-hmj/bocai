@@ -1,0 +1,401 @@
+
+.m-body {
+  // background-color: #1B1826;
+  // background-image:url('~@assets/img3_0/home/esports/bg@2x.png');
+  // background-size: 100%;
+  // background-position: 0 0;
+  // background-repeat: no-repeat;
+  background: @bg-color;
+  //padding-bottom: 3rem;
+
+  .line {
+    background: linear-gradient(to left, #D7C4B4, #FFF) !important;
+    height: 2px !important;
+  }
+
+  .line:last-child {
+    background: linear-gradient(to right, #D7C4B4, #FFF) !important;
+  }
+
+
+  /deep/.jackpot {
+    // background: #00213A !important;
+
+    .jackpot-text {
+      h3 {
+        color: #D7C4B4 !important;
+      }
+
+      p {
+        color: #FFF !important;
+      }
+    }
+  }
+
+  /deep/.search-trigger {
+    background-color: #fff;
+    border: 2px solid #F2F2F2;
+    .van-icon{
+      color: #666 !important;
+    }
+    color: #666 !important;
+  }
+
+  /deep/.filter-nav {
+    .van-tab {
+      color: #666666 !important;
+    }
+
+    .van-tab--active {
+      color: #000000 !important;
+    }
+  }
+
+  /deep/.filters {
+    .labels {
+      label {
+        color: #666666 !important;
+      }
+
+      .active {
+        color: @primary-color !important;
+        font-weight: bold;
+      }
+    }
+  }
+
+  /deep/ .van-tabs--line {
+    .van-tabs__content {
+      .notice {
+        border-color: #E3E3E3 !important;
+        margin-top: 0!important;
+
+        /deep/.van-icon {
+          color: #525152 !important;
+        }
+
+        /deep/ .van-swipe {
+          color: #333333 !important;
+        }
+
+        .action {
+          color: #333333;
+
+          .van-icon {
+            color: #999999 !important;
+          }
+        }
+
+        .action:before {
+          background: #e3e3e3 !important;
+        }
+      }
+
+      .featured {
+        .app-index-3 {
+          .title {
+            .line {
+              background: linear-gradient(to right, #fff, #022069) !important;
+
+              &:last-child {
+                background: linear-gradient(to right, #022069, #fff) !important;
+              }
+            }
+
+            .title_top {
+              color: @primary-color !important;
+              font-size: 32px;
+              font-weight: bold;
+            }
+          }
+
+
+          .title_zh {
+            .title_top {
+              color: #00213A !important;
+            }
+          }
+
+          .link {
+            margin-top: 520px;
+            margin-bottom: 0 !important;
+
+            ul {
+              li {
+                color: #022069 !important;
+              }
+
+              li:nth-child(2) {
+                border-left: 0.02667rem solid rgba(0, 0, 0, 0.1);
+                border-right: 0.02667rem solid rgba(0, 0, 0, 0.1);
+              }
+            }
+          }
+
+          .groupBuss_item_title {
+            color: #000000 !important;
+          }
+
+          .copyright {
+            font-size: 20px;
+            padding-bottom: 60px !important;
+          }
+
+          .buss {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            background-color: #F5F5F5;
+            background-size: 100%;
+            .logo{
+              width: 188px;
+            }
+            p{
+              font-size: 24px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+    }
+  }
+  /deep/ .sports{
+    .matches{
+      background:@primary-color !important;
+      .prev{
+        background:#00213A !important;
+      }
+      .next{
+        background:#00213A !important;
+      }
+    }
+  }
+  /deep/ .esports{
+    .matches{
+      background:@primary-color !important;
+      .prev{
+        background:#fff !important;
+      }
+      .next{
+        background:#fff !important;
+      }
+    }
+  }
+  /deep/ .slots{
+    .game-item h3{
+      color: #333;
+    }
+    .jackpot{
+      // background-image:url('../../img3_0/home/slots/jackpot-bg_1@2x.png');
+      background-repeat: no-repeat;
+      background-size:contain;
+      background-position: center;
+      .jackpot-text{
+        h3{
+          color: #D7C4B4 !important;
+        }
+        p{
+          color:#fff !important;
+        }
+      }
+    }
+  }
+  /deep/ .profit-swipe .van-swipe-item .tag{
+    background:@primary-color !important;
+    color:#fff !important;
+  }
+  /deep/ .casino{
+    .roadmap{
+      background-color: @bg-color;
+      border: 2px solid #F2F2F2;
+      border-top: 0;
+      .mapinfo a{
+        background-color: #022069;
+      }
+    }
+  }
+  /deep/ .van-tabs__content{
+    margin-top: 30px;
+    .van-tab__pane-wrapper{
+      &.fishing,&.chess{
+        background: none!important;
+      }
+      &:first-child{
+        padding:0 !important;
+        #banner{
+          margin:0 auto 24px !important;
+        }
+        .van-tab__pane>.van-image{
+          padding:0 0.4rem;
+        }
+        .notice{
+          margin:0.4rem 0.4rem 0;
+          width:auto;
+          border-color:#E3E3E3 !important;
+          box-shadow: none !important;
+          > .van-icon{
+            color:#525152 !important;
+          }
+          .van-swipe .van-swipe-item{
+            color:#333 !important;
+          }
+          .action{
+            color:#333 !important;
+            &::before{
+              background:#E3E3E3 !important;
+            }
+            .van-icon{
+              color:#999 !important;
+            }
+          }
+        }
+        .featured{
+          .app-index-3{
+            .gameList{
+              padding:45px 0.4rem 25px;
+            }
+            .groupInfo{
+              overflow:hidden;
+            }
+            .link{
+              padding-top: 0;
+              margin-top: 360px;
+            }
+            .buss{
+              padding-top:40px;
+            }
+          }
+        }
+      }
+    }
+  }
+  /deep/ .van-list.games{
+    justify-content: space-between !important;
+  }
+  /deep/ .van-sticky{
+    background:#fff !important;
+  }
+  // /deep/ .van-tabs .van-tabs__nav{
+  //     background:#fff !important;
+  // }
+
+  /deep/ .slots .profit-swipe .van-swipe-item .box{
+    background:@primary-color !important;
+  }
+  /deep/ .slots .van-list.games .van-cell{
+    background:#fff !important;
+    border-color: #F2F2F2!important;
+  }
+
+  /deep/ .lotteries .game h3{
+    color:#000 !important;
+  }
+  /deep/ .lotteries .ui-title h2{
+    color:#000 !important;
+  }
+  /deep/ .slots .ui-title h2{
+    color:#000 !important;
+  }
+  /deep/ .chess .games-wrap .game-item h3{
+    color: #333;
+  }
+
+}
+.van-tabs {
+  /deep/ .van-tab--active {
+    .van-tab__text {
+      color: @primary-color !important;
+      font-size: 32px !important;
+    }
+
+    // color: #282828 !important;
+  }
+
+  /deep/ .van-tabs__line {
+    background: @primary-color !important;
+  }
+
+  /deep/ .van-tabs__wrap {
+    border-bottom: 2px solid rgba(153, 153, 153, 0.1);
+  }
+}
+
+/deep/ .filter-nav{
+  border-bottom:2px solid rgba(0, 0, 0, 0.1) !important;
+  .van-tabs__content{
+    margin-top: 0;
+  }
+}
+/deep/ .roadmap .roadmap-statistics label{
+  &:first-child{
+    span{
+      color: #FF6666;
+    }
+  }
+  &:nth-child(2){
+    span{
+      color: #7FE1DF;
+    }
+  }
+  &:last-child{
+    span{
+      color: #7C86E9;
+    }
+  }
+}
+/deep/ .banner{
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+  height: 280px;
+  .van-swipe__track{
+    height: 240px;
+    z-index: 2;
+  }
+  .van-swipe__indicators{
+    bottom: 60px;
+  }
+  &:before{
+    content: '';
+    position: absolute;
+    width: 92%;
+    left: 4%;
+    height: 200px;
+    bottom: 40px;
+    background-color: #ccc;
+    z-index: 0;
+    box-shadow: 0 0 40px rgba(0,0,0,.4);
+    border-radius: 20px;
+  }
+}
+/deep/ .app-index-3 .banner{
+  height: auto;
+  .van-swipe__track{
+    height: auto;
+  }
+  &:before{
+    content: none;
+  }
+}
+/deep/ #banner{
+  position: relative;
+  height: auto;
+  &:before{
+    content: '';
+    position: absolute;
+    width: 92%;
+    left: 4%;
+    height: 200px;
+    bottom: 0;
+    background-color: #ccc;
+    z-index: 0;
+    box-shadow: 0 0 40px rgba(0,0,0,.4);
+    border-radius: 20px;
+  }
+}
+/deep/ .games-wrap {
+  &.mb-gap {
+    margin-bottom: 20px!important;
+  }
+}

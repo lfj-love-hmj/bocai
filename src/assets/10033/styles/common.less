@@ -1,0 +1,1419 @@
+/*
+* 1px ≈ .0266666666666667rem
+*/
+/**
+ * [基本背景]
+ * @type {[type]}
+ */
+
+@bg-color-white: #FFFFFF;
+@bg-color-black: #000000;
+@bg-color: #fff;
+@bg-card-color: #282828;
+@bg-color-2: #353435;
+@bg-color-3: #E40B0B;
+@bg-color-4: #fff;
+@bg-gradient-color: #9988F9;
+@bg-color-gray:#F5F6FA;
+@header-deposit-color:rgba(35, 35, 33, 1);
+
+/* 工具栏 */
+// @height-tool-bar: .58666rem;
+@height-tool-bar: 0;
+
+/**
+ * [导航栏]
+ * @type {[type]}
+ */
+
+@bg-color-nav-bar: #28273B;
+@color-nav-bar-title: #000;
+@height-nav-bar: 1.17333rem;
+@line-height-nav-bar: 1.17333rem;
+@font-size-nav-bar-title: 1rem;
+
+// var tabs height
+@height-tabs: 1.2rem;
+
+/*
+* [底部导航栏]
+*/
+@height-tab-bar: 1.4rem;
+@color-tab-bar: #fff;
+@color-tab-bar-active: #353435;
+@color-notice: #777F9C;
+
+@chip-color: #fff;
+
+/**
+ * [标签栏]
+ * @type {[type]}
+ */
+
+@bg-color-title-bar: #FDFDFD;
+@bg-color-input: @bg-color-2;
+
+/**
+  * [基本字体颜色]
+  * @type {[type]}
+  */
+
+@text-color-white: #FFFFFF;
+@text-color-black: #000000;
+@text-color-default: #222222;
+@text-color-orange: #FFE9D4;
+@text-color-placeholder: #666;
+@text-color-light: #666666;
+@text-color-2: @primary-text-color;
+@text-color-3: @primary-color;
+@primary-text-color:#666;
+@primary-color: #E40B0B;
+@primary-color-btn: @primary-color;
+@text-color-999:#999;
+
+/*
+* 常用字号
+*/
+@font-size-12: .32rem;
+@font-size-13: .34666rem;
+@font-size-14: .37333rem;
+@font-size-15: .4rem;
+@font-size-16: .42666rem;
+@font-size-18: .48rem;
+
+/*
+* 粗体字
+*/
+@font-weight-600: 600;
+@font-weight-700: 700;
+@font-weight-800: 800;
+
+/*
+*常用的边距值
+*/
+@margin-5: .133333rem;
+@margin-10: .26666rem;
+@margin-15: .4rem;
+@margin-20: .53333rem;
+@margin-30: .8rem;
+@margin-40: 1.06666rem;
+@margin-60: 1.6rem;
+
+/*
+* 常用圆角值
+*/
+@border-radius-8px: 8px;
+@border-radius-2px: .05333rem;
+@border-radius-5px: .13333rem;
+@border-color:rgba(153,153,153,.1);
+
+/*
+* 文本内容的行高
+*/
+@line-height-content: .66667rem;
+
+/*
+* 内容区域距离顶部的距离
+*/
+@main-top: @height-tool-bar + @height-nav-bar;
+
+/*
+* 内容区域距离顶部的边距
+*/
+@main-margin-top: @main-top + @margin-15;
+
+/**
+  * [左右内边距]
+  * @type {[type]}
+  */
+@padding-align: 0 .53333rem;
+
+/**
+  * [边框颜色]
+  * @type {[type]}
+  */
+
+@border-color-base: #4080FF;
+@border-color-white: #FFFFFF;
+
+@baseFontFamily: "Din Alternate", Quicksand, "PingFang SC", "Hiragino Sans GB", "Helvetica Neue", "Microsoft Yahei", sans-serif, arial;
+@space-gap: 30px;
+
+/* icon-font */
+@icon-size: .53333rem;
+
+@button-color-active: #fff;
+
+/**
+  * [常用Mixin]
+  */
+
+//超出省略号
+.text-ellipsis() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+//圆角
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.placeholderColor (@color: #666) {
+  // Firefox 4-18
+  input:-moz-placeholder,
+  textarea:-moz-placeholder {
+    color: @color;
+  }
+  // Firefox 19+
+  input::-moz-placeholder,
+  textarea::-moz-placeholder{
+    color: @color;
+  }
+  // Internet Explorer 10+
+  input:-ms-input-placeholder,
+  textarea:-ms-input-placeholder{
+    color: @color;
+  }
+  // Safari and Chrome
+  input::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder{
+    color: @color;
+  }
+}
+
+.page-linear-gradient{
+  // background-image: linear-gradient(to bottom, @bg-color, @bg-color 120px, #1E1E1E 120px, #1E1E1E);
+}
+
+.clearfix() {
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+//阴影
+.box-shadow(@h, @v, @blur, @spread, @color) {
+  box-shadow: @h @v @blur @spread @color;
+}
+.background-image{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/**
+  * [基本按钮样式]
+  */
+
+.button-orange-filled (@width) {
+  width: @width;
+  height: 1.3333rem;
+  line-height: 1.3333rem;
+  font-size: 0.4533rem;
+  color: #FFFFFF;
+  border: 1px solid #FFC353;
+  outline: none;
+  text-align: center;
+  background: linear-gradient(-90deg, #FFC353 0%, #FF9F27 100%);
+  .border-radius(2px);
+  &:active {
+    background: #FF9F27;
+  }
+}
+
+.button-orange-bordered (@width) {
+  width: @width;
+  height: 1.3333rem;
+  line-height: 1.3333rem;
+  font-size: 0.4533rem;
+  color: #D2985B;
+  outline: none;
+  text-align: center;
+  border: 1px solid #D2985B;
+  background-color: @bg-color-white;
+  .border-radius(2px);
+  &:active {
+    background-color: #F7F5F5;
+  }
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: @bg-color;
+  width: 100%;
+  min-height: 100%;
+  // text-align: center;
+  line-height: 1;
+  color: @text-color-default;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  scroll-behavior: smooth; // 平滑滚动
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: @baseFontFamily;
+  font-weight: 400;
+}
+
+html {
+  box-sizing: border-box;
+  line-height: 24px;
+
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+p,
+ul {
+  margin: 0;
+}
+
+ul, li {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, em, i, th, caption, cite, code, address {
+  font-style: normal;
+  font-weight: normal;
+}
+
+input {
+  outline: none;
+  border-radius: 0;
+}
+
+input.special::placeholder {
+  color: rgba(34, 34, 34, 1);
+}
+
+input::placeholder {
+  font-size: 28px;
+  color: @text-color-placeholder;
+}
+
+a:focus,
+a:active,
+a:hover {
+  outline: none;
+  cursor: pointer;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+/* 工具栏 */
+.tool-bar {
+  width: 100%;
+  height: @height-tool-bar;
+  background-color: @bg-color-nav-bar;
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* aagames 控件样式 */
+.aagames {
+
+  /* 头部样式 */
+  &-header {
+    width: 100%;
+    // height: calc(@height-tool-bar + @height-nav-bar);
+    height: @height-nav-bar;
+  }
+  &-login-header {
+    width: 100%;
+    // height: @height-nav-bar;
+  }
+
+  /* 顶部导航栏 */
+  &-nav-bar {
+    //background-color: @bg-color-nav-bar;
+    color: @color-nav-bar-title;
+    height: @height-nav-bar;
+    width: 100%;
+    position: fixed;
+    top: @height-tool-bar;
+    left: 0;
+    z-index: 20;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 28px;
+    // background-color:@bg-color;
+    // @padding-align;
+
+    /* 顶部导航按钮用 */
+    span {
+      font-size: 32px;
+      font-weight: 700;
+      &:not(:first-child) {
+        margin-left: 10px;
+      }
+    }
+    .nav-left {
+      //flex: 3;
+      text-align: left;
+      .icon-size {
+        width: 48px;
+        height: 48px;
+      }
+      .icon-size-fanhui {
+        width: 18px;
+        height: 32px;
+      }
+      .van-icon{
+        font-size: 32px;
+      }
+    }
+    /* 导航中间布局 */
+    .nav-center {
+      //flex: 5;
+      text-align: center;
+      .aagames-logo {
+        display: inline-flex;
+        justify-content: center;
+        .logo {
+          // width: 2.4rem;
+          height: 70px;
+        }
+        .aagames-ad {
+          margin-left: .13333rem;
+          .aagames {
+            font-size: .37333rem;
+            letter-spacing: .105rem;
+          }
+          .aagames-remark {
+            font-size: .16rem;
+            letter-spacing: .022222rem;
+            margin-top: .022222rem;
+          }
+        }
+      }
+    }
+    /* 导航右侧布局 */
+    .nav-right {
+      //flex: 3;
+      text-align: right;
+      img {
+        display: block;
+        width: 1.1333rem;
+        height: 1.1333rem;
+        display: inline-block;
+        position: relative;
+        right: -0.37333rem;
+        &.active {
+          width: 0.6rem;
+          height: 0.6rem;
+          top: 0.04rem;
+          right: -0.04rem;
+        }
+      }
+    }
+    // 右侧功能区
+    .right {
+      float: right;
+      margin-right: 24px;
+      color: #FFCF6E;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  /*
+  * aagames 默认表单样式
+  * dom结构：
+    div.aagames-from
+      >div.input
+        >(span/i
+            >img
+          )
+        >input
+  */
+  &-form {
+    width: 100%;
+    padding: 0 @margin-15;
+    >p{
+      color:#999999;
+      font-size: 28px;
+      line-height: 80px;
+    }
+    .input {
+      width: 100%;
+      min-height: 88px;
+      display: inline-flex;
+      align-items: center;
+      position: relative;
+      background-color:@bg-color-input;
+      border-radius: 8px;
+      overflow: hidden;
+      color: #666;
+      // &::after {
+      //   content: '';
+      //   position: absolute;
+      //   bottom: 0;
+      //   width: 100%;
+      //   height: .026666rem;
+      //   background-color: rgba(255, 255, 255, 0.63);
+      // }
+      .img{
+        width:44px;
+      }
+      ::-webkit-input-placeholder {
+        color: @primary-text-color;
+        font-weight: 400;
+      }
+      > span,
+      > .iconfont,
+      .areaNum {
+        font-size: 28px;
+        font-weight: 500;
+        color: #666;
+        border-right:2px solid @bg-color-2;
+      }
+      .xiala {
+        width: 30px;
+        height: 20px;
+        margin: 0 10px;
+      }
+      .iconfont {
+        color: #999;
+        margin-right: 15px;
+      }
+      .areaNum {
+        // flex: 1.5;
+        font-size: 24px;
+        padding: 0 20px 0 20px;
+      }
+      > input {
+        font-size: 28px;
+        background-color: @bg-color-input;
+        height: 100%;
+        padding: 0 30px;
+        border: none;
+        flex: 1;
+        color:#666;
+      }
+      > textarea {
+        font-size: 28px;
+        background-color: @bg-color-input;
+        height: 100%;
+        padding: 30px;
+        border: none;
+        flex: 1;
+        color:#666;
+      }
+      // 如果右侧有按钮
+      .right-button {
+        flex: 2;
+        height:68px;
+        line-height: 68px;
+      }
+    }
+    .select{
+      width: 100%;
+      height: 88px;
+      display: inline-flex;
+      align-items: center;
+      position: relative;
+      background-color:@bg-color-input;
+      border-radius: 8px;
+      overflow: hidden;
+      > input {
+        font-size: 28px;
+        background-color: @bg-color-input;
+        height: 100%;
+        padding: 0 30px;
+        border: none;
+        flex: 1;
+        color:#666;
+      }
+    }
+  }
+
+  /* 默认按钮样式 */
+  &-button-box {
+    width: 100%;
+    padding: 0 .4rem;
+    margin-bottom: 30px;
+    .aagames-button {
+      width: 100%;
+      height: 100px;
+      background-color: @primary-color;
+      //background:linear-gradient(90deg,rgba(45,41,30,1) 0%,rgba(20,18,13,1) 100%);
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      font-weight: 600;
+      text-align: center;
+      line-height: 100px;
+      font-size: 32px;
+      /deep/ .van-button__text {
+        vertical-align: middle;
+      }
+    }
+    .line{
+      background: @bg-color-2;
+      color: #fff;
+    }
+    .dark {
+      // color: #CCCCCC;
+      background-color: #353435;
+      color: #fff;
+      // border: 2px solid #6055FF;
+      // color:#9F5DFF;
+    }
+  }
+
+  /*
+  * 盒子
+  */
+  .base-box {
+    width: 100%;
+    padding: 0 @margin-15;
+  }
+
+  /*
+  * 盒子内的自定义控件
+  */
+  .base-custom-control {
+    display: inline-flex;
+    align-items: center;
+    border-radius: @border-radius-2px;
+    background-color: @bg-color-white;
+    border: .02666rem solid rgba(235, 235, 235, 1);
+    width: 100%;
+    height: 1.17333rem;
+    overflow: hidden;
+    line-height: 1.17333rem;
+  }
+
+  /* 金额输入框 */
+  &-input-box {
+    .base-box;
+    .input {
+      .base-custom-control;
+      span {
+        flex: 1;
+        text-align: center;
+        font-size: @font-size-14;
+        font-weight: @font-weight-600;
+      }
+      input {
+        flex: 10;
+        border: none;
+        font-size: @font-size-14;
+      }
+    }
+  }
+
+  /* 选择行 */
+  &-select-box {
+    .base-box;
+    //background-color: #FFFFFF;
+    .select {
+      .base-custom-control;
+      border: 0;
+      border-bottom: 2px solid @border-color;
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: .02666rem;
+        color: #FFFFFF;
+        background-color: #1E1E1E;
+      }
+      span {
+        flex: 3;
+        color: #000;
+        font-size: @font-size-14;
+      }
+      input,.input-tips {
+        text-align: right;
+        flex: 10;
+        border: none;
+        font-size: @font-size-14;
+      }
+      input::-webkit-input-placeholder { /* WebKit browsers */
+        color:@primary-text-color;
+      }
+      input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+          color:@primary-text-color;
+      }
+      input::-moz-placeholder { /* Mozilla Firefox 19+ */
+          color:@primary-text-color;
+      }
+      input:-ms-input-placeholder { /* Internet Explorer 10+ */
+          color:@primary-text-color;
+      }
+      i {
+        flex: 1;
+        text-align: right;
+        color: #000;
+      }
+    }
+  }
+
+  /* 选择银行卡 */
+  &-bank-select-box {
+    .base-box;
+    margin-top: @margin-10;
+    .select {
+      .base-custom-control;
+      input {
+        flex: 10;
+        border: none;
+        font-size: @font-size-14;
+        padding: 0 @margin-10;
+      }
+      i {
+        flex: 1;
+        color: @text-color-default;
+      }
+    }
+  }
+
+  /* 警告信息 */
+  &-warn {
+    padding: @margin-15;
+    .text {
+      color: @primary-text-color;
+      font-size: @font-size-13;
+    }
+  }
+
+  /* 提示信息 */
+  &-tips {
+    // padding: @margin-15;
+    color: #999;
+  }
+  // 忘记密码
+  &-tips-forget{
+    line-height: 80px;
+  }
+
+  /* 提示信息 */
+  &-tips-warning {
+    height: 94px;
+    border-radius: 50px;
+    border: 2px solid #BE8D24;
+    background-color: #EFEAE2;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    img {
+      height: 40px;
+      width: 40px;
+      margin-right: 16px;
+    }
+    div {
+      font-size: 26px;
+      font-family: PingFangSC;
+      color: rgba(181, 126, 8, 1);
+      line-height: 36px;
+    }
+  }
+}
+
+// 密码组件
+.aagames-input-password{
+  padding:0 30px;
+  margin-bottom: 30px;
+  .input{
+    p{
+      color:#666;
+      font-size: 28px;
+      line-height: 80px;
+    }
+  }
+  .van-password-input{
+    i{
+      background-color:@primary-color;
+    }
+  }
+}
+
+/*
+*表单按钮
+*/
+.input-cells,.btn{
+  margin-bottom: 30px;
+  .aagames-button-box{
+    display: flex;
+    justify-content: space-between;
+  }
+  .aagames-button-box.fail-button{
+    padding:0;
+    .aagames-button{
+      width:320px;
+    }
+  }
+  // .aagames-button-box-deposit{
+  //   display: flex;
+  //   justify-content: space-between;
+  //   padding:0;
+  // }
+  .aagames-button{
+    // width:330px;
+  }
+  .aagames-button-default{
+    background-color: @bg-color-2;
+    color: #fff;
+  }
+}
+
+/* 分割线条 */
+.aagames-separation-line(
+  @width: .027rem,
+  @height: 100%,
+  @top: 0,
+  @left: 0,
+  @color: #EBEBEB
+) {
+  content: '';
+  position: absolute;
+  width: @width;
+  height: @height;
+  top: @top;
+  // right: @right;
+  // bottom: @bottom;
+  left: @left;
+  background-color: @color;
+}
+
+/* 盒子的边框 */
+.box-border (
+  @width: .02222rem,
+  @color: #EBEBEB
+) {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: @width solid @color;
+}
+
+/* 底部线条 */
+.border-bottom {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: .02666rem;
+  background-color: #EEEEEE;
+}
+
+/* 表单自动填充时的样式 */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  box-shadow: 0 0 0 1000px white inset;
+  font-size: .4rem;
+  font-weight: 600;
+}
+
+/* vant:tab控件
+* 重写部分样式，
+* 因为flexible将vant的px进行了转换，所以使用vant控件的地方都要转换回来
+*/
+// .van-tabs,
+// .van-tab,
+// .van-tabs--line .van-tabs__wrap,
+// .van-tabs__nav{
+//   height: @height-tabs;
+//   line-height: @height-tabs;
+//   font-size: .4rem;
+// }
+.van-tabs {
+  .van-tab,
+  .van-tabs__wrap,
+  .van-tabs__nav {
+    height: @height-tabs;
+    line-height: @height-tabs;
+    font-size: 28px;
+  }
+  .van-tabs__wrap{
+    border-bottom: 2px solid #323232;
+  }
+}
+
+/* 文字强调色 */
+.primary-text-color {
+  color: @primary-text-color;
+}
+
+.mt5 {
+  margin-top: 5px;
+}
+
+.text-align-c {
+  text-align: center;
+  width: 100%;
+}
+
+.cd0021b {
+  color: #d0021b;
+}
+
+
+
+.van-picker__cancel, .van-picker__confirm, .van-picker__title{
+  font-size: 32px;
+  color: #7d7e80;
+  line-height: 75px;
+}
+
+.van-picker__confirm {
+  color: @primary-text-color;
+}
+
+// .van-picker-column,.van-picker__columns{
+//   height: 300px !important;
+// }
+// .van-picker-column ul li{
+//   line-height: 50px !important;
+//   height: 50px !important;
+// }
+// .van-picker-column__item,.van-hairline--top-bottom {
+//   line-height: 50px !important;
+//   height: 50px !important;
+// }
+
+.van-picker__toolbar {
+  height: 75px !important;
+}
+
+.van-picker-column__item {
+  font-size: 28px;
+}
+
+.van-list__loading-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.van-list__error-text, .van-list__finished-text, .van-list__loading-text {
+  font-size: 28px;
+}
+
+[class*=" el-icon-"], [class^=el-icon-] {
+  color: @primary-text-color;
+}
+
+.van-key {
+  width: 33.33333333%;
+  font-size: 30px; /* no */
+  font-style: normal;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  height: 100px; /* no */
+  line-height: 100px; /* no */
+}
+
+.van-password-input__security i {
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+  margin-top: -10px;
+}
+
+.van-picker__columns {
+  // height: 300px !important;
+}
+
+.van-dialog__message {
+  padding: 30px;
+  font-size: 28px;
+  line-height: 1.5;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  white-space: pre-wrap;
+}
+
+.van-button--large {
+  width: 100%;
+  height: 70px;
+  line-height: 68px;
+}
+
+.van-button {
+  font-size: 18px;
+}
+
+.van-dialog__header {
+  text-align: center;
+  font-weight: 500;
+  padding-top: 35px;
+}
+
+.van-number-keyboard__title {
+  height: 30px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  position: relative;
+  color: #7d7e80;
+}
+
+.van-hairline--top:after {
+  border-top-width: 1px /* no */
+}
+
+.van-hairline--left:after {
+  border-left-width: 1px /* no */
+}
+
+.van-hairline--right:after {
+  border-right-width: 1px /* no */
+}
+
+.van-hairline--bottom:after {
+  border-bottom-width: 1px /* no */
+}
+
+[class*='van-hairline']::after {
+  content: ' ';
+  position: absolute;
+  pointer-events: none;
+  box-sizing: border-box;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  -webkit-transform: scale(0.5); /* no */
+  transform: scale(0.5); /* no */
+  border: 0 solid #ebedf0;
+}
+
+.van-dialog__header {
+  padding-top: 25px; /* no */
+}
+
+.van-loading {
+  // width: 50px;
+  // height: 50px;
+  z-index: 0;
+  font-size: 0;
+  line-height: 0;
+  position: relative;
+  vertical-align: middle;
+}
+
+.van-toast--default {
+  width: initial;
+}
+
+.van-toast--default .van-toast__text {
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.van-toast__text {
+  min-width: 100px;
+}
+
+.van-pull-refresh__head {
+  font-size: 25px;
+  height: 0;
+}
+
+.van-pull-refresh__loading .van-loading {
+  width: 30px;
+  height: 30px;
+}
+
+.van-nav-bar {
+  background-color: #090705;
+  height: 88px;
+  line-height: 88px;
+  z-index: 10;
+  .van-nav-bar__title {
+    font-size: 32px;
+    color: #000;
+  }
+  .van-nav-bar__left {
+    font-size: 32px;
+    color: #000;
+    .van-icon {
+      color: #000;
+    }
+  }
+  .van-nav-bar__text{
+    color: #666;
+  }
+  .van-nav-bar__right {
+    font-size: 28px;
+    color: #666;
+    .van-icon {
+      font-size: 40px;
+      color: #000;
+    }
+  }
+}
+
+.van-nav-bar .van-icon {
+  color: #000;
+}
+
+// .van-tab--active {
+//   color: rgba(255, 255, 255, 1);
+// }
+
+// .van-tab {
+//   font-size: 36px;
+//   font-weight: 500;
+//   color: #999999;
+// }
+
+.van-password-input__security [class*='van-hairline']::after {
+  border: 0 solid #090705
+}
+
+// .el-main {
+//   // margin-top: 84px;
+// }
+
+.templateCls {
+  margin-top: 84px;
+}
+
+.van-password-input__securit {
+  .van-hairline {
+    border-right: 2px solid #090705;
+  }
+}
+.van-dialog__cancel {
+  background-color:#353435;
+  color:#666;
+}
+
+.van-dialog__confirm,.van-dialog__cancel{
+  height:88px !important;
+  line-height: 88px !important;
+  border-radius: 8px;
+  width:290px;
+}
+
+.van-button {
+  height: 100px;
+}
+
+.van-button__text {
+  font-size: @font-size-15;
+  // line-height: @line-height-content;
+}
+
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.van-dialog__header {
+  font-size: @font-size-16;
+}
+
+.list_empty {
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  // background-color: #FFFFFF;
+  .emptyDiv {
+    margin-top: 5.44rem;
+    height: 100%;
+    .van-pull-refresh {
+      height: 100%;
+    }
+    .text {
+      color: #EEEEEE;
+      text-align: center;
+      .chinese {
+        margin-top: 50px;
+        font-size: .373333rem;
+        color: #999999;
+        line-height: 70px;
+      }
+      button {
+        padding: 15px 25px;
+        background-color: #FFCF6E;
+        border-radius: 4px;
+        color: #67382F;
+        border: none;
+        font-size: 28px;
+        font-weight: 700;
+        /*color: */
+      }
+    }
+  }
+}
+
+.pageFullScreen {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+}
+
+.van-notify {
+  font-size: 30px;
+  padding: 10px 20px;
+  border-radius: 0 !important;
+}
+
+// Nprogress bar color
+#nprogress {
+  .bar {
+    height: 3px;
+    background:@bg-gradient-color !important;
+  }
+  .peg {
+    box-shadow: 0 0 10px @bg-gradient-color, 0 0 5px @bg-gradient-color !important;
+  }
+  .spinner-icon {
+    border-top-color: @bg-gradient-color !important;
+    border-left-color: @bg-gradient-color !important;
+  }
+}
+
+/* Transitions */
+// 首页游戏列表动画
+.next-leave-to {
+  animation: leaveToLeft .5s both linear;
+  z-index: 0;
+}
+
+.next-enter-to {
+  animation: enterFromRight .5s both linear;
+  z-index: 1;
+}
+
+.prev-leave-to {
+  animation: leaveToRight .5s both linear;
+  z-index: 1;
+}
+
+.prev-enter-to {
+  animation: enterFromLeft .5s both linear;
+  z-index: 0;
+}
+
+@keyframes leaveToLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-105%);
+    opacity: 0.5;
+  }
+}
+
+@keyframes enterFromLeft {
+  from {
+    transform: translateX(-105%);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes leaveToRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(105%);
+  }
+}
+
+@keyframes enterFromRight {
+  from {
+    transform: translateX(105%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+// 列表项动画
+.item-list-move {
+  transition: transform .45s;
+}
+
+.item-list-enter, .item-list-leave-to {
+  opacity: 0;
+  transform: translateX(30%);
+}
+
+.item-list-leave-active {
+  // position: absolute;
+}
+
+input {
+  line-height: normal;
+  padding: 0.05rem 0;
+}
+
+// 底部弹出框list样式
+.list-cells{
+	padding: 0 @space-gap;
+	.cell{
+		width: 100%;
+		height: 100px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 2px solid #333;
+		color: #666;
+		font-size: 28px;
+		&:last-child{
+			border-bottom: none;
+		}
+		&-head{
+			padding-right: @space-gap;
+			white-space: nowrap;
+			.van-image{
+				width: 60px;
+				height: 60px;
+			}
+		}
+		&-body{
+			width: 100%;
+			// font-size: 28px;
+			text-align: left;
+			input{
+				background-color: transparent;
+				width: 100%;
+				border: none;
+				text-align: right;
+			}
+		}
+		&-foot{
+			white-space: nowrap;
+			color: #666;
+			display: flex;
+			align-items: center;
+			.van-icon{
+				font-size: 40px;
+				margin-left: @space-gap;
+			}
+			.van-icon-success{
+				color: @primary-color;
+			}
+		}
+		&.cell-ness{
+			height: auto;
+			padding: 20px 0;
+		}
+		.card-like{
+			li{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				height: 60px;
+				label, >span{
+					padding-right: @space-gap;
+				}
+				label,a{
+					white-space: nowrap;
+				}
+				>span{
+					color: #fff;
+					font-weight: 500;
+					text-align: left;
+					width: 100%;
+				}
+				a{
+					color: @primary-color;
+					border-radius: 20px;
+					line-height: 30px;
+					border: 2px solid @primary-color;
+					font-size: 20px;
+					padding: 5px 10px;
+				}
+			}
+		}
+	}
+}
+
+@keyframes refresh {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.table{
+  width: 100%;
+  border-collapse: collapse;
+  thead{
+    th,td{
+      border: 2px solid @bg-color;
+      background-color: #353435;
+      color: #999;
+      padding: 25px 10px;
+      text-align: center;
+    }
+  }
+  tbody{
+    th,td{
+      border: 2px solid #353435;
+      background-color: @bg-color;
+      color: #666;
+      padding: 25px 10px;
+      text-align: center;
+    }
+  }
+}
+
+.gray-scal{
+  filter:grayscale(100%)
+}
+.kf-icon{
+  width: 40px;
+}

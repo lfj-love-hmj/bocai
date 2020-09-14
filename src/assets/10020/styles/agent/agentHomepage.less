@@ -1,0 +1,127 @@
+.Join{
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    padding-top: 700px !important;
+    h2,h3{
+        color: #fff !important;
+    }
+    h2{
+        text-align: center;
+        width: 100% !important;
+    }
+}
+.title-h2{
+    color: #000 !important;
+    &::before, &::after{
+        background-color: #000 !important;
+    }
+}
+.title-h3{
+    color: #999999 !important;
+}
+.step{
+    .item{
+        &:nth-child(2n+1) {
+            background-color: #700046 !important;
+        }
+        &:nth-child(2n) {
+            background-color: @primary-color !important;
+        }
+        .text{
+            color: #fff !important;
+        }
+    }
+}
+.statistics{
+    ._item{
+        .item{
+            background:#fff !important;
+            box-shadow:0px 8px 34px 0px rgba(92,96,150,0.16);
+            border-radius:8px;
+        }
+    }
+    &.proxy{
+        ._item{
+            .item{
+                background:#E30168 !important;
+                .household{
+                    border-bottom: none !important;
+                }
+                .member{
+                    color: #fff !important;
+                }
+            }
+        }
+    }
+}
+.container{
+    background: #fff !important;
+    .commission-plan table{
+        background: #fff !important;
+        border: 1px solid #E3E3E3 !important;
+        th{
+            background: #700046 !important;
+            color: #E3E3E3 !important;
+        }
+        tr{
+            td{
+                color: #000;
+                border: 1px solid #e3e3e3 !important;
+            }
+        }
+    }
+    .Join {
+        h2{
+            color: #000 !important;
+        }
+        h3{
+            color: #000 !important;
+        }
+        .feature{
+            .item {
+                p {
+                    color: #333 !important;
+                }
+            }
+        }
+    }
+    .commission-info {
+        color: #E3E3E3 !important;
+    }
+    .contract {
+        .items{
+            background: #700046 !important;
+            flex-wrap: nowrap !important;
+        }
+        /deep/ .van-collapse .van-collapse-item .van-cell .van-cell__title{
+            color: #000 !important;
+            text-align: left !important;
+        }
+        /deep/ .van-collapse .van-collapse-item .van-collapse-item__content {
+            color: #999 !important;
+            text-align: left !important;
+        }
+    }
+    .contract.footer{
+        background: #700046 !important;
+        margin: 0 !important;
+        margin-top: 1.6rem !important;
+    }
+}
+.proxy .item{
+    .member{
+        color:rgba(255,255,255,0.4) !important;
+    }
+    .commission{
+        color:#ccc !important;
+    }
+    .household{
+        color:#fff !important;
+    }
+    .date{
+        color:#BEBEBE !important;
+    }
+}
+// .contract /deep/ .van-cell__right-icon{
+//     line-height:60px !important;
+// }

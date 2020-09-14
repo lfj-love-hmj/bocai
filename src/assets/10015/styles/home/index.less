@@ -1,0 +1,76 @@
+.casino{
+    .main,/deep/.game-item{
+        border:0;
+    }
+}
+/deep/ .slots{
+    /deep/.van-cell{
+        border: 0 !important;
+    }
+    /deep/.filter-nav{
+        border-bottom: 2px solid rgba(165, 154, 154,.1) !important;
+        .van-tab{
+            color: #666666;
+        }
+    }
+    .labels label{
+        color: #666666;
+    }
+    /deep/.search-trigger{
+        color: #fff;
+    }
+    /deep/.login-name{
+        color: #fff !important;
+    }
+    /deep/.ui-title{
+        color: #000;
+    }
+    /deep/.jackpot{
+        background:#282828;
+        border-radius: 10px;
+        h3{
+            color: #fff;
+        }
+        p{
+            color: #fff
+        }
+    }
+    .game-item{
+        background-color: #1C1A1D;
+    }
+    .search-trigger{
+        background-color: #1C1A1D;
+    }
+}
+.lottery{
+    /deep/h2{
+        color: #000 !important;
+    }
+    /deep/.lotteries{
+        h3{
+            color: #000 !important;
+        }
+    }
+}
+.featured{
+    padding-bottom: 500px;
+    .jackpot .jackpot-text p
+    {
+        color: @primary-color;
+    }
+}
+/deep/.aa-footer{
+    position: absolute !important;
+    bottom: @space-gap - 24px !important;
+    padding: @space-gap !important;
+    border-radius: 0 !important;
+    left: 0;
+    background-color: @bg-color-black;
+}
+
+.search-page{
+    background-color: #fff !important;
+    .game-item{
+        background-color: @bg-card-color;
+    }
+}

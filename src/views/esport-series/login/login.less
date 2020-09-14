@@ -1,0 +1,331 @@
+.container {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  z-index: 2;
+
+  /deep/.aagames-nav-bar{
+    background:transparent;
+  }
+  .main {
+    display: table;
+    table-layout: fixed;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: calc(100% - 80px);
+    margin: 0 auto;
+    left: 40px;
+    top:552px;
+    flex: 1;
+    padding: 0;
+    background-color:transparent!important;
+    z-index: 4;
+    margin-top: 160px;
+    .home{
+      overflow: hidden;
+      display: table-cell;
+      .login-top {
+        position: fixed;
+        top: 50px;
+        z-index: 2;
+        width: 100%;
+        margin-top: 20px;
+        img{
+          &:first-child {
+            width: 242px;
+            height: 60px;
+          }
+          &:last-child {
+            width: 36px;
+            height: 36px;
+            margin-left: 50%;
+            position: relative;
+            top: -15px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    /deep/.aagames-form{
+      #g-code .input input{
+        padding-left: 0;
+      }
+      .right-button{
+        width: 200px;
+        background: linear-gradient(180deg,rgba(72,211,177,1) 0%,rgba(23,103,85,1) 100%) !important;
+        height: 96px !important;
+        line-height: 96px !important;
+        border-radius: 4px !important;
+        right:-10px !important;
+        color: #fff!important;
+        top:0px !important;
+        margin-top: 0!important;
+      }
+    }
+  }
+}
+
+
+/deep/ .van-tabs {
+
+  .van-tabs__nav {
+    background: none;
+    background-color: transparent;
+  }
+  .van-ellipsis {
+    font-weight: 700;
+    font-size: 30px;
+    color: #888888;
+  }
+  .van-tab{
+    font-size: 28px;
+    &:nth-child(3){
+      overflow: visible;
+    }
+  }
+  .van-tab--active {
+    font-size: 32px;
+    .van-tab__text--ellipsis {
+      color: #FFFFFF;
+      overflow: visible;
+    }
+  }
+  .van-tabs__wrap{
+    border-bottom: 0!important;
+  }
+
+}
+.line {
+  height:4px;
+  background:rgba(255,255,255,0.08);
+}
+.fill {
+  padding:0 30px;
+  margin-top: 100px;
+  /*background-color: #ffffff;*/
+}
+.fill-register {
+  margin-top: 28px;
+}
+.aagames-form {
+  position: relative;
+  padding:0;
+  margin-top: 32px;
+  /deep/.register-info {
+    color: #fff;
+    font-size: 28px;
+  }
+  /deep/ .label {
+    color: #fff;
+  }
+  /deep/ .input {
+    height: 96px;
+    color: #999999;
+    background:rgba(0,0,0,0.4) !important;
+    border-radius:4px;
+    border:2px solid rgba(80,81,82,1);
+    .img {
+      width: 40px;
+      margin-left: 26px;
+    }
+    .phone{
+      position: relative;
+    }
+    > input {
+      background:rgba(0,0,0,0.4) !important;
+      padding: 0 32px;
+      color: #fff;
+      &::placeholder{
+        color: #bbb;
+      }
+    }
+    .areaNum {
+      font-size: 24px!important;
+      font-weight: 500;
+      color: #fff!important;
+      padding: 0;
+      width: 170px;
+      text-align: center;
+      border-right: 0.02667rem solid rgba(255, 255, 255, 0.3) !important;
+    }
+    .xiala {
+      // width: 30px;
+      // height: 20px;
+      // margin: 0 10px;
+    }
+    &:after {
+      background-color: #FFFFFF;
+      opacity: 0.06;
+    }
+  }
+}
+.register-info {
+  color: #fff;
+  font-size: 28px;
+}
+.function {
+  .aagames-button-box {
+    margin-bottom: 0;
+    .register{
+      margin-top: 20px;
+    }
+    .sign-in {
+      margin-top: 42px;
+      border-radius: 90px;
+      height: 90px;
+      background: @bg-gradient-color;
+    }
+    .line{
+      margin-top: 40px;
+    }
+    .dark {
+      margin-top: 40px;
+      background: #353435;
+      color:#fff;
+      border:0;
+    }
+  }
+  .register-btn {
+    text-align: center;
+    .register{
+      margin-top: 50px !important;
+      width:360px !important;
+      height:80px !important;
+      line-height: 80px !important;
+      background:rgba(236,236,236,1) !important;
+      border-radius: 5px !important;
+      color:rgba(51,51,51,1) !important;
+    }
+  }
+  .funDiv {
+    margin-top: 40px !important;
+    color: #fff !important;
+    font-size: 28px !important;
+    text-align: center;
+    padding-left: 24px;
+    a {
+      color: #fff !important;
+    }
+    .left {
+      float: left;
+    }
+    .right {
+      float: right;
+      color: #fff;
+    }
+    .rem-pass{
+      display: flex;
+      align-items: center;
+      .van-icon{
+        font-size: 28px;
+        margin-right: 10px;
+      }
+      img {
+        width: 28px;
+        height: 28px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+.forget-pass {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  a {
+    &:first-child {
+      color: rgba(255,255,255,0.6);
+    }
+    &:last-child {
+      text-decoration:underline;
+      color: rgba(255,255,255,0.8);
+    }
+    
+  }
+}
+.register-pass {
+  margin-top: 20px;
+}
+.customer {
+  padding: 42px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0%;
+  left: 22%;
+  .cut-up {
+    width: 2px;
+    height: 40px;
+    background: rgba(245, 245, 245, 1);
+    border-radius: 5px;
+    margin: 0 20px;
+  }
+
+  .wait, .kefu {
+    height: 42px;
+    font-size: 28px;
+    font-weight: 400;
+    color: @text-color-light;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 42px;
+      height: 42px;
+      margin-right: 20px;
+    }
+  }
+}
+
+.clearfix:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  /* 触发 hasLayout */
+  zoom: 1;
+}
+.home-regist-btn{
+  width: 100px;
+  background: rgba(0,0,0,.5);
+  text-align: center;
+  border-radius: 0 20px 20px 0;
+  vertical-align: middle;
+  display: table-cell;
+  img{
+    width: 52px;
+  }
+  span{
+    font-size: 28px;
+    color: #fff;
+    display: block;
+    padding: 0 30px;
+    line-height: 50px;
+  }
+}
+.bgvideo{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+#register, .login {
+  /deep/.aagames-form .iphone {
+    width: 386px;
+  }
+}
+

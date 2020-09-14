@@ -1,0 +1,186 @@
+.container.login {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+  background-color: @bg-color;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  /deep/.aagames-nav-bar{
+    background:transparent;
+  }
+  .main#home {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    // min-height: calc(100vh - 600px);
+    // overflow: hidden;
+    // overflow-y: auto;
+    // overflow: hidden;
+    height: calc(100vh - 600px);
+    position: absolute;
+    bottom:0;
+    flex: 1;
+    // margin-top: 200px;
+    padding: 0;
+    // position: absolute;
+    // bottom:0;
+    background-color:@bg-card-color;
+    .home{
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      overflow: hidden;
+    }
+    /deep/.aagames-form{
+      .right-button{
+        right:0 !important;
+        // top:10px !important;
+      }
+    }
+  }
+}
+
+
+/deep/ .van-tabs {
+
+  .van-tabs__nav {
+    background: none;
+  }
+  .van-ellipsis {
+    font-weight: 700;
+    font-size: 30px;
+    color: #888888;
+  }
+  .van-tab--active {
+    .van-ellipsis {
+      color: #FFFFFF;
+    }
+  }
+}
+
+.fill {
+  // margin-top: .22222rem;
+  padding:0 30px;
+  /*background-color: #ffffff;*/
+}
+.aagames-form {
+  // border-bottom: 2px solid #323232;
+  position: relative;
+  // margin: 0 30px;
+  padding:0;
+  margin-top: 10px;
+  .right-button{
+    // top:10px;
+    // right:0;
+  }
+  .input,input {
+    height: 96px;
+    color: #999999;
+    background: @bg-card-color;
+    border-bottom: 2px solid @border-color;
+    border-radius: 0;
+    .img {
+      width: 50px;
+    }
+    .phone{
+      width: 36px;
+      position: relative;
+      margin-left: 10px;
+    }
+    > input {
+      background: none;
+    }
+    .areaNum {
+      font-size: 28px;
+      font-weight: 500;
+      color: #CCCCCC;
+    }
+    .xiala {
+      // width: 30px;
+      // height: 20px;
+      // margin: 0 10px;
+    }
+    &:after {
+      background-color: #FFFFFF;
+      opacity: 0.06;
+    }
+  }
+}
+.function {
+  background-color: @bg-card-color;
+  .aagames-button-box {
+    margin-bottom: 0;
+    .register{
+      margin-top: 42px;
+    }
+    .sign-in {
+      margin-top: 68px;
+    }
+    .line{
+      margin-top: 40px;
+    }
+    .dark {
+      margin-top: 40px;
+      background: #353435;
+      color:#fff;
+      border:0;
+    }
+  }
+  .funDiv {
+    margin-top: 30px;
+    color: #999999;
+    font-size: 30px;
+    .left {
+      float: left;
+    }
+    .right {
+      float: right;
+    }
+  }
+}
+.customer {
+  padding: 100px 0;
+  background-color: @bg-card-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .cut-up {
+    width: 2px;
+    height: 40px;
+    background: rgba(245, 245, 245, 1);
+    border-radius: 5px;
+    margin: 0 20px;
+  }
+
+  .wait, .kefu {
+    height: 42px;
+    font-size: 28px;
+    font-weight: 400;
+    color: @text-color-light;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 42px;
+      height: 42px;
+      margin-right: 20px;
+    }
+  }
+  .kefu {
+    color:#7C86E9;
+  }
+}
+
+.clearfix:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  /* 触发 hasLayout */
+  zoom: 1;
+}

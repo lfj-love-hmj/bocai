@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="143px" height="110px" viewBox="0 0 143 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>会员统计@2x</title>
+    <desc>Created with Sketch.</desc>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="代理h5" transform="translate(-25.000000, -1019.000000)">
+            <g id="会员统计" transform="translate(25.000000, 1019.000000)">
+                <rect id="矩形" fill="#353435" x="3" y="0" width="1" height="91" rx="0.5"></rect>
+                <rect id="矩形备份-32" fill="#353435" x="27" y="15.7" width="1" height="76" rx="0.5"></rect>
+                <rect id="矩形备份-33" fill="#353435" x="51" y="15.7" width="1" height="76" rx="0.5"></rect>
+                <rect id="矩形备份-34" fill="#353435" x="75" y="15.7" width="1" height="76" rx="0.5"></rect>
+                <rect id="矩形备份-35" fill="#353435" x="99" y="15.7" width="1" height="76" rx="0.5"></rect>
+                <rect id="矩形备份-36" fill="#353435" x="123" y="15.7" width="1" height="76" rx="0.5"></rect>
+                <rect id="矩形" fill="#353435" x="3" y="91" width="140" height="1" rx="0.5"></rect>
+                <rect id="矩形备份-27" fill="#353435" x="3.68985941" y="76" width="120" height="1" rx="0.5"></rect>
+                <rect id="矩形备份-28" fill="#353435" x="3.68985941" y="61" width="120" height="1" rx="0.5"></rect>
+                <rect id="矩形备份-29" fill="#353435" x="3.68985941" y="46" width="120" height="1" rx="0.5"></rect>
+                <rect id="矩形备份-30" fill="#353435" x="3.68985941" y="31" width="120" height="1" rx="0.5"></rect>
+                <rect id="矩形备份-31" fill="#353435" x="3.68985941" y="16" width="120" height="1" rx="0.5"></rect>
+                <text id="A" font-family="PingFangSC-Regular, PingFang SC" font-size="9.8" font-weight="normal" fill="#CCCCCC">
+                    <tspan x="24.2807" y="108.7">A</tspan>
+                </text>
+                <text id="B" font-family="PingFangSC-Regular, PingFang SC" font-size="9.8" font-weight="normal" fill="#CCCCCC">
+                    <tspan x="48.1827" y="108.7">B</tspan>
+                </text>
+                <text id="C" font-family="PingFangSC-Regular, PingFang SC" font-size="9.8" font-weight="normal" fill="#CCCCCC">
+                    <tspan x="72.4328" y="108.7">C</tspan>
+                </text>
+                <text id="D" font-family="PingFangSC-Regular, PingFang SC" font-size="9.8" font-weight="normal" fill="#CCCCCC">
+                    <tspan x="95.5406" y="108.7">D</tspan>
+                </text>
+                <text id="E" font-family="PingFangSC-Regular, PingFang SC" font-size="9.8" font-weight="normal" fill="#CCCCCC">
+                    <tspan x="120.3787" y="108.7">E</tspan>
+                </text>
+                <path d="M139.160023,93.7285527 C138.983293,93.8705676 138.947476,94.1391945 139.080023,94.3285476 C139.212571,94.5179008 139.46329,94.5562761 139.64002,94.4142612 L142.840001,91.8428543 C143.053333,91.6714271 143.053333,91.3285729 142.840001,91.1571457 L139.64002,88.5857388 C139.46329,88.4437239 139.212571,88.4820992 139.080023,88.6714524 C138.947476,88.8608055 138.983293,89.1294324 139.160023,89.2714473 L141.93334,91.5 L139.160023,93.7285527 Z" id="路径-10" fill="#353435" fill-rule="nonzero"></path>
+                <path d="M3.5,1.06666039 L5.72855269,3.8399774 C5.87056758,4.01670748 6.13919447,4.05252449 6.32854765,3.91997693 C6.51790083,3.78742937 6.5562761,3.53671031 6.41426121,3.35998023 L3.84285426,0.159999058 C3.67142713,-0.0533330195 3.32857287,-0.0533330195 3.15714574,0.159999058 L0.585738787,3.35998023 C0.443723902,3.53671031 0.482099173,3.78742937 0.671452352,3.91997693 C0.860805532,4.05252449 1.12943242,4.01670748 1.27144731,3.8399774 L3.5,1.06666039 Z" id="路径-12" fill="#353435" fill-rule="nonzero"></path>
+                <polyline id="路径-16" stroke="#C8A77F" stroke-width="0.7" points="27 76 52 31 76 46 99 17 124 77"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

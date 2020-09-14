@@ -1,0 +1,198 @@
+.income{
+    background-color: #fff !important;
+    box-shadow:0px 4px 17px 0px rgba(92,96,150,0.16);
+    .total-amount{
+        .item{
+            >div{
+                &:first-child{
+                    color: #000 !important;
+                }
+            }
+        }
+    }
+    .incom-btn{
+        >div{
+            &:first-child{
+                background-color: @bg-color-2;
+                color: #fff !important;
+            }
+        }
+    }
+}
+.moneyBox{
+    .account{
+        >div{
+            border: 0 !important;
+            background-color: @bg-color-2;
+            color: #fff !important;
+        }
+    }
+}
+.list{
+    .item {
+        &::after{
+            height: 0 !important;
+        }
+        >div{
+            >span{
+                color: #666 !important;
+            }
+        }
+    }
+}
+.van-popup .list > p.active{
+    color: #fff !important;
+}
+#wallet{
+    background-color: #F5F6FA;
+    .container{
+        height: auto;
+        overflow: auto;
+        background: url(~@assets/img3_0/common/head-blue-bg@2x.png) center top no-repeat;
+        background-size: 100% auto;
+        background-color: #fff;
+        &.walletEmpty{
+            background-color: transparent;
+        }
+        .main{
+            display: block;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            width: 100%;
+            .empty{
+                margin-top: 100px;
+            }
+        }
+    }
+
+    .record-title{
+        background-color: transparent!important;
+    }
+    .aagames-header{
+        background-color: transparent;
+    }
+    .main{
+        .total-box{
+            background-color: transparent;
+            height: auto;
+            .total-amount{
+                padding-top: 0;
+                margin: 0;
+                height: 172px;
+            }
+            .income{
+                height: 370px;
+                margin: 0 auto;
+                width: 690px;
+                padding-top: 40px;
+                .total-amount{
+                    height: auto;
+                    margin-bottom: 24px;
+                }
+            }
+        }
+        .lists{
+            margin-top: 0;
+            .list{
+                padding: 30px 30px 0;
+                margin: 0;
+                .item{
+                    border-bottom: 2px solid #E6EAEF;
+                    padding: 18px 0;
+                    .blod{
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+        .emptyWallet{
+            background-image: url(~@assets/img3_0/memberCenter/Personal_center_wallet_Empty2@2x.png);
+        }
+        .incom-btn{
+            div:first-child{
+                border: 2px solid @bg-gradient-color;
+                color: @bg-gradient-color!important;
+                background: none;
+            }
+            div:last-child{
+                background-color: @bg-gradient-color!important;
+            }
+        }
+        .lists{
+            .van-list{
+                color: #ccc;
+                .blod{
+                    span:last-child{
+                        color: @bg-gradient-color!important;
+                    }
+                }
+            }
+        }
+    }
+
+    .list{
+        p{
+            width: 176px;
+            margin-left: 20px;
+            border-color: #E6EAEF;
+            color: #333;
+            &.active{
+                background-color: @bg-gradient-color;
+            }
+        }
+
+    }
+    .moneyBox{
+        background-color: transparent!important;
+        > div{
+            .account{
+                padding: 0 30px;
+                div{
+                    background-color: #EDEFF6;
+                    color: #333!important;
+                    width: 240px!important;
+                }
+            }
+            .tranfer_amount{
+                margin-top: 0!important;
+                > div{
+                    background-color: #EDEFF6;
+                    height: 88px!important;
+                    line-height: 88px!important;
+                    padding-bottom: 0!important;
+                    border-bottom: 0!important;
+                    border-radius:8px;
+                    display: flex;
+                    align-items: center;
+                    margin-top: 20px;
+                    .all{
+                        color: @bg-gradient-color!important;
+                        padding-right: 20px;
+                        font-size: 28px!important;
+                    }
+                    input{
+                        background-color: transparent!important;
+                        height: 100%!important;
+                        width: auto;
+                        flex: 1;
+                        color: #333!important;
+                    }
+                    .icon{
+                        color: #333!important;
+                        margin-left: 20px;
+                    }
+                }
+                > .btn{
+                    width: 100%!important;
+                    background-color: @bg-gradient-color!important;
+                    border: 0!important;
+                }
+                p{
+                    color: #666!important;
+                }
+            }
+        }
+
+    }
+}

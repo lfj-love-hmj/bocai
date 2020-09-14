@@ -1,0 +1,1042 @@
+//[class*=van-hairline]::after{
+//  border:0 !important;
+//}
+
+.van-image{
+  .van-image__error,
+  .van-image__loading{
+    background-color: transparent;
+    border-radius: 8px;
+  }
+  .van-image__error-icon{
+    color: #fff;
+    font-size: 60px;
+  }
+  .van-image__loading{
+    background-image: url(../img3_0/common/loading.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    z-index: 10;
+    .van-icon{
+      opacity: 0;
+    }
+  }
+}
+
+.van-toast {
+  width: auto;
+  min-width: 1.2rem;
+  min-width: 400px;
+  height: 100px;
+  line-height: 100px;
+  background-color: #fff;
+  color: @bg-gradient-color;
+  z-index:9999 !important;
+  box-shadow: 0 8px 20px 0px rgba(0,0,0,0.3);
+  // box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.5);
+  // height:50px;
+  // line-height: 50px;
+  border-radius: 8px;
+  &.van-toast--fail{
+    background-color: #C55055;
+    box-shadow:0px 8px 20px 0px rgba(0,0,0,0.3);
+    .van-toast__text{
+      color: #fff;
+    }
+  }
+  .van-toast__text {
+    color:@bg-gradient-color;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 40px;
+  }
+  &.toast-loading {
+    background: rgba(0,0,0,0.6);
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    .van-loading {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      &:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: transparent url(../img3_0/common/loading-1.png) center center no-repeat;
+        background-size: 45%;
+      }
+      .van-loading__spinner {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+        background: transparent url(../img3_0/common/loading-2.png);
+        background-size: contain;
+        svg,
+        > i {
+          display: none;
+        }
+      }
+    }
+
+    .van-toast__text {
+      font-size: @font-size-15;
+      font-weight: 400;
+      color: @primary-color;
+      line-height: 1.6;
+    }
+  }
+}
+.toast-loading{
+  height: auto;
+  box-shadow:none;
+}
+.van-toast--fail {
+  background-color: #C55055;
+  box-shadow:0px 8px 20px 0px rgba(0,0,0,0.3);
+  .van-icon-fail {
+    display: none;
+  }
+  .van-toast__text {
+    color: #FFFFFF;
+  }
+}
+
+// 重写dialog
+.van-dialog {
+  width: 90%;
+  border-radius: 28px;
+  padding: 0 40px;
+  background-color: @bg-color;
+  overflow: initial;
+  .van-dialog__header {
+    line-height: 80px;
+    color: #000;
+  }
+  .van-dialog__content {
+    font-size: 28px;
+    color: #ccc;
+  }
+  /deep/ .protocol {
+    text-align: left;
+    font-size: 24px;
+    li {
+      list-style: decimal-leading-zero;
+      margin-left: 40px;
+      margin-bottom: 20px;
+    }
+  }
+  .van-dialog__footer {
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .van-dialog__footer--buttons {
+    justify-content: space-between;
+    .van-button {
+      flex: none;
+      width: 290px;
+    }
+  }
+  /deep/.van-dialog__confirm{
+    border: 0 !important;
+  }
+  .van-dialog__confirm.van-button--default{
+    background: @bg-gradient-color!important;
+    color: #fff;
+    border: 0;
+  }
+  .van-icon-cross{
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font-size: 30px;
+    top: -120px;
+    color: #fff;
+    padding: 10px;
+    right: -30px!important;
+  }
+}
+
+.van-switch {
+  width: 86px;
+  height: 50px;
+  background-color: #ccc!important;
+  .van-switch__node {
+    height: 40px;
+    width: 40px;
+    top: 3px;
+    background-color: @bg-color-white;
+    z-index:0;
+  }
+}
+
+.van-switch--on {
+  background-color: #30A4FE!important;
+
+  .van-switch__node {
+    background-color: #98D4FF;
+    transform: translateX(100%);
+  }
+}
+
+.van-picker {
+  background-color: @bg-color-white;
+  .van-picker__title {
+    color: #fff;
+  }
+  .van-picker__cancel, .van-picker__confirm, .van-picker__title {
+    height: 98px;
+    line-height: 98px;
+    color: #fff;
+  }
+  .van-picker__mask {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, .9), rgba(255, 255, 255, 0.4)), linear-gradient(0deg, rgba(255, 255, 255, .9), rgba(255, 255, 255, 0.4));
+  }
+  .van-picker-column__item {
+    color: #fff;
+  }
+  .van-picker__cancel:active, .van-picker__confirm:active {
+    background:transparent;
+  }
+  .van-picker__toolbar{
+    background-color: @bg-gradient-color;
+    color: @bg-color-white;
+  }
+}
+.van-cell:not(:last-child)::after{
+  border:0;
+}
+.van-popup {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: @bg-card-color;
+  &.custom {
+    max-height: 80%;
+    background-color: @bg-color-white;
+    .van-popup__close-icon {
+      font-size: 40px;
+      color: #333;
+      top: @space-gap;
+      //left: @space-gap;
+    }
+    h4 {
+      text-align: center;
+      font-size: 28px;
+      color: #666;
+      line-height: 40px;
+    }
+    .footer-tips {
+      width: 100%;
+      height: 40px;
+      font-size: 28px;
+      font-weight: 400;
+      color: rgba(82, 81, 82, 1);
+      line-height: 40px;
+      text-align: center;
+      margin-bottom: 30px;
+      span {
+        color: #ccc;
+        text-decoration: underline;
+      }
+    }
+    .pop-head {
+      color: #333;
+      position: relative;
+      // border-bottom: 2px solid #4a4a4a;
+      h2 {
+        margin: 0;
+        text-align: center;
+        line-height: 100px;
+        font-size: 32px;
+      }
+      .van-icon-arrow-left {
+        position: absolute;
+        font-size: 40px;
+        margin-top: -20px;
+        left: 10px;
+        top:50%;
+        color: #333;
+      }
+    }
+    .pop-body {
+      padding: @space-gap;
+      font-size: 28px;
+      color: #999;
+      .ui-buttons{
+        display: flex;
+        align-items: center;
+        height: 100px;
+        position: relative;
+        .van-button.van-button--primary{
+          position: absolute;
+          right: 0;
+          width: 330px;
+        }
+        .van-button.van-button--cancel{
+          position: absolute;
+          left: 0;
+          width: 330px;
+          border: 2px solid @bg-gradient-color;
+          color: @bg-gradient-color;
+        }
+      }
+      .btn{
+        .aagames-button-box{
+          button{
+            width: 100%!important;
+          }
+          width: 330px;
+          padding: 0;
+          &:first-child button{
+            border: 2px solid @bg-gradient-color!important;
+            color: @bg-gradient-color!important;
+            background-color: transparent!important;
+          }
+        }
+      }
+      &.payStatus{
+        text-align: center;
+        .pay-title{
+          color: #666;
+        }
+        .aagames-button-box.fail-button{
+          width: 100%;
+          .aagames-button{
+            width: 330px!important;
+            color: #fff;
+          }
+          .aagames-button-default{
+            border: 2px solid @bg-gradient-color!important;
+            color: @bg-gradient-color!important;
+            background-color: transparent!important;
+          }
+        }
+      }
+      .aagames-button{
+        &.line{
+          background: @bg-card-color;
+        }
+      }
+      .pay-title{
+        font-size: 32px;
+        color:#fff;
+        text-align: center;
+        line-height: 80px;
+      }
+    }
+    .input-field {
+      margin-bottom: @space-gap;
+      > label {
+        display: block;
+        line-height: 60px;
+      }
+      .input-box {
+        width: 100%;
+        background-color: @bg-color-input;
+        height: 96px;
+        line-height: 96px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 8px;
+        .placeholderColor(@primary-text-color);
+        > * {
+          margin: 0 15px;
+          background-color: transparent;
+          border: none;
+          align-self: stretch;
+        }
+        input,
+        select {
+          width: 100%;
+        }
+        .areaNum {
+          font-size: 28px;
+          font-weight: 500;
+          color: #CCCCCC;
+          border-right:2px solid @bg-card-color;
+          min-width:140px;
+          display: block;
+          line-height: 1;
+        }
+        .xiala {
+          width: 30px;
+          height: 20px;
+          margin: 0 10px;
+          float: right;
+        }
+        .iconfont {
+          color: #999;
+          margin-right: 15px;
+        }
+        .areaNum {
+          // flex: 1.5;
+          font-size: 24px;
+          padding: 0 10px 0 10px;
+        }
+        .select{
+          background-color: @bg-color-2;
+          border-radius: 8px;
+        }
+        .van-dropdown-menu {
+          height: auto;
+          .van-dropdown-menu__title {
+            font-size: 28px;
+            color: #fff;
+            padding: 0 20px;
+            line-height: 40px;
+            &:after {
+              border-width: 6px;
+            }
+          }
+          .van-dropdown-item {
+            // position: absolute;
+            .van-popup,
+            .van-cell {
+              background-color: @bg-color;
+            }
+            .van-cell {
+              color: #ccc;
+            }
+            .van-cell__title {
+              padding-left: 60px;
+              line-height: 40px;
+              font-size: 28px;
+            }
+            .van-cell__value {
+              padding-right: 60px;
+            }
+            .van-icon {
+              font-size: 30px;
+            }
+          }
+        }
+      }
+      .submit {
+        width: 100%;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        background-color: @primary-color;
+        color: #1e1e1e;
+        font-size: 32px;
+        font-weight: 500;
+        border-radius: 8px;
+        border: none;
+      }
+    }
+  }
+}
+
+// 自定义tab（活动，品牌）
+@custom_tab_height: 80px;
+.van-tabs__line{
+  background-color: @bg-gradient-color;
+}
+.van-tab.van-tab--active{
+  font-weight: bold;
+}
+.van-tabs--card.custom-card-tabs {
+  background-color: @bg-color;
+  /deep/ .van-tab,
+  /deep/ .van-tabs__wrap,
+  /deep/ .van-tabs__nav {
+    height: @custom_tab_height;
+    line-height: @custom_tab_height;
+    font-size: 28px;
+  }
+  /deep/ .van-tabs__nav--card {
+    border: none;
+  }
+  /deep/ .van-tab {
+    background: transparent;
+    padding: 5px 10px;
+    border: none;
+    color: #999 !important;
+    // height: @custom_tab_height - 16px;
+    // line-height: @custom_tab_height - 16px;
+    // C8A77F
+    .van-ellipsis {
+      border: 2px solid rgba(#4D4C4D,.3);
+      border-radius: 8px;
+      height: @custom_tab_height - 16px;
+      line-height: @custom_tab_height - 16px;
+    }
+    &.van-ellipsis {
+      .van-tab__text{
+        border: 2px solid rgba(#4D4C4D,.3);
+        border-radius: 8px;
+        height: @custom_tab_height - 16px;
+        line-height: @custom_tab_height - 16px;
+        display: block;
+      }
+    }
+  }
+  /deep/ .van-tab--active {
+    .van-ellipsis {
+      border-color: @primary-color;
+      color: @primary-color;
+    }
+    &.van-ellipsis {
+      .van-tab__text{
+        border-color: @primary-color;
+        color: @primary-color;
+      }
+    }
+  }
+  /deep/ .van-tabs__content {
+    .page-linear-gradient();
+    .van-tab__pane-wrapper {
+      padding: @space-gap;
+    }
+  }
+}
+
+.ui-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // padding: 0 @space-gap;
+  margin-top: @space-gap;
+  flex-wrap: wrap;
+  &.gap {
+    padding-left: @space-gap;
+    padding-right: @space-gap;
+  }
+  &.fixed {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 120px;
+  }
+  button{
+    margin-bottom: 30px;
+  }
+}
+
+.van-button {
+  width: 100%;
+  border-radius: 8px;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 100px;
+  border: none;
+  //margin-bottom: @space-gap;
+  &:last-child {
+    margin: 0;
+  }
+  .van-icon {
+    font-size: 40px;
+  }
+  &.van-button--primary {
+    background-color: @bg-gradient-color;
+    color: #fff;
+    &.dark{
+      color: #fff;
+      border-radius: 90px;
+    }
+  }
+  &.van-button--default {
+    border: 2px solid @bg-gradient-color;
+    background: none;
+    color: @bg-gradient-color;
+  }
+  &.van-button--cancel {
+    background-color: transparent;
+    color: #666;
+    border: 2px solid rgba(#fff, .1);
+  }
+  &.van-button--disabled {
+    background-color: #666;
+    color: #1E1E1E;
+  }
+  /deep/ .van-button__text {
+    vertical-align: middle;
+  }
+}
+
+.van-cell-group {
+  background-color: transparent;
+  padding-left: @space-gap;
+  margin: @space-gap 0;
+  .van-cell {
+    align-items: center;
+    height: 100px;
+    background-color: transparent;
+    border-bottom: 2px solid @border-color;
+    padding: 0 @space-gap/2 0 0;
+    font-size: 32px;
+    .van-cell__title {
+      color: #666;
+    }
+    .van-cell__value {
+      background-color: transparent;
+      border: none;
+      text-align: right;
+      font-size: 28px;
+      color: #333;
+
+      span{
+        color: #333;
+      }
+      .van-icon:last-child {
+        margin-right: -@space-gap;
+      }
+      input,
+      textarea {
+        background-color: transparent;
+        border: none;
+        text-align: right;
+        font-size: 28px;
+        color: #333;
+        &::placeholder{
+          color: #999;
+        }
+      }
+      .list-cells {
+        padding: 0;
+        .cell {
+          font-size: 32px;
+        }
+        .cell-body{
+          color: #666;
+        }
+      }
+    }
+  }
+}
+
+// 重置密码组件
+.van-password-input {
+  margin: 0;
+  .van-password-input__security {
+    height: auto;
+    i{
+      background-color: @primary-color;
+    }
+  }
+  li {
+    background-color: @bg-color-input;
+    border-radius: 8px;
+    height: 96px;
+    width: 96px;
+  }
+  /deep/.van-password-input__cursor{
+    background-color:@primary-color;
+    width:4px;
+  }
+}
+.van-key__wrapper{
+  text-align: center;
+}
+// 底部弹窗
+.van-popup--bottom {
+  background-color: @bg-color;
+  // .van-picker .van-picker__mask {
+  //   // background-image:none;
+  // }
+  .van-icon,.nav-center{
+    color:#fff;
+  }
+  .van-picker .van-picker-column__item {
+    color: #333;
+    height: 88px;
+  }
+  .van-picker__frame{
+    height: 88px!important;
+  }
+  .van-picker .van-picker__mask {
+    background-image: linear-gradient(180deg, rgba(255, 255 255, .9), rgba(255, 255, 255, 0.1)), linear-gradient(0deg, rgba(255, 255, 255, .9), rgba(255, 255, 255, 0.1));
+  }
+  //覆盖区域选择
+  .aagames-login-header{
+    background-color: #FF7C67;
+  }
+  .index-bar{
+    .index-anchor{
+      color: @bg-gradient-color!important;
+      border-bottom: 2px solid #E6EAEF;
+    }
+    .cell{
+      color: #333!important;
+    }
+    .select{
+      color: #fff!important;
+      background-color: #D2B79C!important;
+    }
+  }
+  #phoneArea{
+    .aagames-nav-bar{
+      background-color: transparent!important;
+    }
+  }
+}
+
+// 倒计时
+.van-count-down{
+  display: inline-block;
+}
+.van-count-down.processing-time-deposit{
+  font-size: 32px;
+  color:@primary-color;
+  display: block;
+}
+
+.van-nav-bar__text:active{
+  background-color: transparent;
+}
+
+// 数字键盘
+.van-number-keyboard{
+  box-shadow:0px 30px 80px -30px #000;
+  .van-key{
+    width: 55%;
+    height: 80px;
+    line-height: 80px;
+  }
+  // background:#353435;
+  // i{
+  //   color:#ccc;
+  //   &.van-key--gray{
+  //     background:@bg-color;
+  //   }
+  // }
+}
+
+.van-loading{
+  text-align: center;
+}
+
+.van-sticky--fixed{
+  background-color: @bg-color;
+  background-size:100%;
+  background-position:0 0;
+  background-repeat: no-repeat;
+}
+
+.aagames-nav-bar{
+  background-color: #fff!important;
+  .van-icon-question-o{
+    color: #333;
+  }
+}
+
+.aagames-input-password .input p{
+  color: #333!important;
+}
+.van-password-input li{
+  background-color: #EDEFF6;
+}
+.aagames-input-password .van-password-input i{
+  background-color: #333!important;
+}
+.van-popup.custom .footer-tips span{
+  color: @bg-gradient-color!important;
+  text-decoration: underline;
+}
+.aagames-form{
+  .select,
+  .input{
+    background-color: #EDEFF6!important;
+    input{
+      background-color: #EDEFF6!important;
+    }
+
+  }
+}
+.aagames-button-box .aagames-button{
+  background: @bg-gradient-color!important;
+}
+.aagames-button-box .line{
+  background: none!important;
+  color: @bg-gradient-color!important;
+}
+.van-popup--center.close-top{
+  overflow: visible;
+  border-radius: 24px;
+  width: 90%;
+  padding: 0 30px;
+  background-color: #fff;
+  .container .aagames-form .input > span{
+    border-right: 0;
+  }
+  .van-popup__close-icon{
+    top: -70px!important;
+    font-size: 24px!important;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 10px;
+    color: #fff!important;
+    right: 0;
+  }
+  .van-popup{
+    position: fixed;
+    bottom: 0;
+    .aagames-nav-bar{
+      background-color: @bg-gradient-color!important;
+    }
+  }
+  &.callBack {
+    /*padding: 40px;*/
+    /*width: 640px;*/
+    .title {
+      color: #333;
+      font-size: 36px;
+      font-weight: 700;
+      .right {
+        float: right;
+        color: #e5e5e5;
+        font-size: 36px;
+      }
+    }
+    .fanhui {
+      position: absolute;
+      height: 40px;
+      top: @space-gap;
+      left: @space-gap;
+    }
+    .aagames-button-box {
+      display: flex;
+      justify-content: space-between;
+
+      .aagames-button {
+        // flex: 1;
+        width:48%;
+      }
+    }
+    .title {
+      text-align: center;
+      height: 40px;
+      font-size: 28px;
+      font-weight: 400;
+      color: @primary-text-color;
+      line-height: 40px;
+      margin: 50px auto 40px;
+    }
+
+    .input {
+      margin-bottom: 30px;
+      // min-height: 200px;
+      &.t-input {
+        min-height: 200px;
+      }
+      input{
+        text-align: right;
+      }
+      textarea {
+        min-height: 200px;
+        background: #EDEFF6!important;
+      }
+    }
+    .feedbackList{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .imgBack{
+        background:#EDEFF6;
+        border-radius: 8px;
+        position: relative;
+        margin-bottom: @space-gap;
+        p{
+          width:318px;
+          line-height: 66px;
+          color:#333;
+          overflow: hidden;
+          text-overflow:ellipsis;
+          white-space: nowrap;
+          padding:0 30px;
+          box-sizing: border-box;
+        }
+        .van-icon-cross{
+          position: absolute;
+          color:@bg-gradient-color;
+          top:50%;
+          right:10px;
+          margin-top: -16px;
+        }
+      }
+    }
+
+  }
+  .cells{
+    width: 100%;
+  }
+  .aagames-button-box{
+    padding: 0;
+    justify-content: space-between;
+    .aagames-button{
+      flex: 1;
+      &.aagames-button-default{
+        margin-right: 30px;
+      }
+
+    }
+  }
+  .select-title{
+    color: #333;
+
+    img{
+      left: auto;
+      right: 0;
+      top: -60px;
+    }
+  }
+  .list{
+    .select-button{
+      background-color: @bg-gradient-color;
+    }
+    .active_selected{
+      background-color: @bg-gradient-color;
+    }
+    .select-bar{
+      color: #333;
+      font-weight: bold;
+      padding: 0.25rem 0;
+      margin: 0;
+    }
+    .select-bar-i{
+      margin: 20px 0 0 0;
+      justify-content: space-between;
+      > div{
+        border-color: #E6EAEF;
+        color: #333;
+        border-radius: 8px;
+        margin: 0 0 20px 0;
+        width: 176px;
+        &.active_selected{
+          background: url(~@assets/img3_0/otherIcon/iaoyijilu_select@2x.png) right bottom no-repeat;
+          border-color: @bg-gradient-color;
+          color: @bg-gradient-color!important;
+          background-size: 32px auto;
+        }
+      }
+    }
+
+    .select .van-row{
+      border-color: #E6EAEF;
+      border-radius: 8px;
+      width: 100%;
+      margin: 0!important;
+      .data-time-picker{
+        color: #333;
+      }
+    }
+
+  }
+  .select-button{
+    background-color: @bg-gradient-color;
+    width: 100%;
+  }
+  .input-cells{
+    .aagames-form{
+      padding: 0;
+    }
+  }
+  .aagames-input-password{
+    padding: 0;
+    .input{
+      width: 100%;
+    }
+  }
+
+}
+// 手机选择
+.yabo-phoneselect{
+  max-height: 60%;
+  padding-top: 88px;
+  #phoneArea{
+    position: relative;
+    height: 88px!important;
+    margin-top: -88px;
+    .aagames-nav-bar{
+      position: initial!important;
+      background-color: @bg-gradient-color!important;
+    }
+  }
+  .index-bar {
+    flex: 1;
+    display: flex;
+    height: 100%!important;
+    .index-anchor {
+      padding: 0 20px;
+      font-size: 28px;
+      font-weight: 400;
+      color: @primary-text-color;
+      line-height: 80px;
+    }
+    .wrapper {
+      height: 100%!important;
+      flex: 1;
+      overflow: scroll;
+      -webkit-overflow-scrolling: touch;
+    }
+    .cell {
+      padding: 0 20px;
+      font-size: 28px;
+      font-weight: 400;
+      color: #CCCCCC;
+      line-height: 80px;
+      display: flex;
+      .left {
+        flex: 1;
+      }
+    }
+    .select {
+      color: rgba(245, 245, 245, 1);
+    }
+    .index-bar__sidebar {
+      width: 40px;
+      position: static;
+      transform: none;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      padding-top: 0;
+      .index-bar__index {
+        text-align: right;
+        padding-right: 15px;
+        box-sizing: border-box;
+        font-size: 20px;
+        font-weight: 400;
+        color: rgba(82, 81, 82, 1);
+        line-height: 33px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.yabo-bank{
+  .pop-head{
+    background-color: @bg-gradient-color;
+    h2{
+      color: #fff;
+    }
+  }
+  .van-popup__close-icon{
+    color: #fff!important;
+  }
+}
+.van-toast.toast-loading{
+  border-radius: 0;
+  transform: translate(0,0);
+  left: 0;
+  top: 0;
+  .van-toast__text{
+    color: #fff;
+  }
+}
+.van-popup.topPass{
+  height: 75%;
+}

@@ -1,0 +1,120 @@
+.operating{
+    :nth-child(1) {
+        background: @primary-color;
+    }
+
+    // :nth-child(2) {
+    //     background-image: linear-gradient(90deg, #13b1d7 0%, #1c7588 99%) !important;
+    // }
+
+    // :nth-child(3) {
+    //     background-image: linear-gradient(90deg, #da8b45 0%, #b04d25 99%) !important;
+    // }
+}
+.operating {
+    :nth-child(1) {
+      background: @primary-color;
+    }
+
+    :nth-child(2) {
+      background:none !important;
+      border:2px solid @primary-color !important;
+      color:@primary-color !important;
+    }
+
+    :nth-child(3) {
+        background:none !important;
+        border:2px solid @primary-color !important;
+        color:@primary-color !important;
+    }
+
+}
+.user-info{
+    position: relative;
+    z-index: 2;
+    .person-info{
+    .right {
+        .bottom {
+            color: #fff !important;
+        }
+    }
+    }
+}
+// .member-page {
+//     background: #07101D url(/img/bg@2x.4b8a40e5.png) no-repeat !important;
+//     background-size:contain !important;
+//     .balance {
+//         background:#0F192F !important;
+//     }
+// }
+.m-body{
+    background:#07101D !important;
+}
+.member-page {
+    // background: #07101D url(/img/bg@2x.4b8a40e5.png) no-repeat !important;
+    // background-size:contain !important;
+    .balance {
+        position: relative;
+        z-index: 2;
+        background:#fff !important;
+        box-shadow:0px 4px 17px 0px rgba(92,96,150,0.16);
+        &::before{
+            position: absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            content:'';
+            background:#fff;
+            border-radius: 8px;
+            z-index:-1;
+        }
+        .operating{
+            border-top: none !important;
+        }
+        .other-balance {
+            .info-area {
+                span{
+                    &:last-child{
+                        color: #000 !important;
+                    }
+                }
+            }
+        }
+    }
+    &::before{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:35%;
+        content:'';
+        background:#700046;
+        z-index:0;
+    }
+    .latest{
+        .newest-info-detail{
+            border-bottom: none !important;
+        }
+        h2 {
+            span {
+                color: #000 !important;
+            }
+        }
+    }
+}
+.m-body{
+    background:#fff !important;
+    border-radius:14px 14px 0px 0px;
+}
+.member-page .person-entr .menu > i{
+    width:1rem !important;
+    height:1rem !important;
+}
+/deep/ .m-header{
+    z-index:3;
+    background:#700046 !important;
+}
+.container .main .info{
+    background: #700046 !important;
+}

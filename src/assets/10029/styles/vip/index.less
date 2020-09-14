@@ -1,0 +1,154 @@
+.m-header{
+    /deep/&.van-nav-bar{
+        background-color: #fff !important;
+    }
+    /deep/.van-icon-arrow-left{
+        color: #000 !important;
+    }
+    /deep/.van-nav-bar__right{
+        .van-nav-bar__text{
+            color: #666 !important;
+        }
+    }
+}
+.m-body{
+    background-color: #fff;
+    // background-image:url('~@assets/img3_0/home/esports/bg@2x.png');
+    background-size: 100%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    /deep/.button{
+        color: #fff !important;
+    }
+    /deep/.vip-info{
+        span, h3{
+            color: #666;
+        }
+        .my-bets{
+            border-color: #666 !important;
+            .item{
+                h3,p{
+                    color: #666 !important; 
+                }
+                border-color: #666 !important; 
+            }
+        }
+    }
+    /deep/ .days{
+        label{
+            color: #fff;
+            &.active{
+                color: #fff;
+            }
+        }
+    }
+    /deep/.platform{
+        label{
+            color:#fff;
+        }
+    }
+    /deep/.section{
+        >h2{
+            color: #666;
+            &::before{
+                background-color: #666;
+            }
+            &::after{
+                background-color: #666;
+            }
+        }
+        .item{
+            border: 0;
+        }
+        .custom{
+            p{
+                color:#fff;
+            }
+        }
+    }
+    /deep/.events{
+        .tabs{
+            label{
+                color: #000;
+                border-color: #000;
+                &.active{
+                    color: @primary-color;
+                    border-color: @primary-color;
+                }
+            }
+        }
+        .section{
+            .empty{
+                color: #666;
+            }
+        }
+    }
+}
+/deep/ .privilege{
+    .head{
+        background-position: center bottom;
+    }
+    .van-progress__portion{
+        background-color: @bg-gradient-color!important;
+        &:after{
+            content: '';
+            position: absolute;
+            width: 58px;
+            height: 32px;
+            background: url(~@assets/img3_0/vip/newLevel/vip_jindu@2x.png);
+            background-size: 100% auto;
+            right: -45px;
+            top: -8px;
+        }
+    }
+    .vip-progeress .vip-progeress1{
+        background:linear-gradient(124deg,rgba(217,196,174,1) 0%,rgba(180,154,129,1) 100%)!important;
+    }
+    .newvip-level .van-tabs .van-tabs__wrap .van-tab.van-tab--active{
+        border-color: #D8CBBF!important;
+    }
+    .newvip-level-info{
+        height: 276px!important;
+    }
+    .vip0zx h2 i{
+        background:linear-gradient(360deg,rgba(255,237,219,1) 0%,rgba(210,183,156,1) 100%);
+    }
+    .newvip-fs{
+        display: flex;
+        align-items: flex-start;
+        padding: 0 30px;
+        flex-wrap: wrap;
+        div{
+            width: 33.33%;
+            text-align: center;
+            margin-bottom: 40px;
+            p:first-child{
+                color: #C2A788;
+                font-size: 44px;
+                font-weight: bold;
+            }
+            p:last-child{
+                color: #666;
+                font-size: 24px;
+                margin-top: 16px;
+            }
+        }
+    }
+    .qb-vip-tit01{
+        position: absolute;
+        top: 150px;
+        left: 46px;
+        font-size: 28px;
+        color: rgba(255,255,255,.6);
+    }
+    .qb-vip-tit02{
+        position: absolute;
+        top: 200px;
+        left: 46px;
+        font-size: 24px;
+        color: rgba(255,255,255,1);
+    }
+}
+/deep/ .events{
+
+}

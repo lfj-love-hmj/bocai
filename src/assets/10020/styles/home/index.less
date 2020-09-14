@@ -1,0 +1,140 @@
+.m-body{
+    // background-color: #1B1826;
+    // background-image:url('~@assets/img3_0/home/esports/bg@2x.png');
+    // background-size: 100%;
+    // background-position: 0 0;
+    // background-repeat: no-repeat;
+    background:#fff;
+    /deep/ .sports{
+        .matches{
+            background:rgba(0, 0, 0, 0.4) !important;
+            .prev{
+                background:rgba(0, 0, 0, 0.4) !important;
+            }
+            .next{
+                background:rgba(0, 0, 0, 0.4) !important;
+            }
+        }
+    }
+    /deep/ .esports{
+        .matches{
+            background:rgba(0, 0, 0, 0.4) !important;
+            .prev{
+                background:rgba(0, 0, 0, 0.4) !important;
+            }
+            .next{
+                background:rgba(0, 0, 0, 0.4) !important;
+            }
+        }
+    }
+    /deep/ .slots{
+        .jackpot{
+            background-image:url('../../img3_0/home/slots/jackpot-bg_1@2x.png');
+            background-repeat: no-repeat;
+            background-size:contain;
+            background-position: center;
+            .jackpot-text{
+                h3{
+                    color:@primary-color !important;
+                }
+                p{
+                    color:#fff !important;
+                }
+            }
+        }
+        .games{
+            .van-cell{
+                background: #700046 !important;
+                border: none !important;
+            }
+        }
+        .filter-nav{
+            border-bottom-color: @border-color !important;
+            .van-tabs__nav{
+                background: #fff !important;
+            }
+            .search-trigger{
+                background: #fff !important;
+                color: #CCCCCC !important;
+                border: 1px solid @border-color !important;
+            }
+        }
+    }
+    /deep/ .profit-swipe .van-swipe-item .tag{
+        background:@primary-color !important;
+        color:#fff !important;
+    }
+    /deep/ .van-tabs__content{
+        .van-tab__pane-wrapper{
+            &:first-child{
+                padding:0 !important;
+                #banner{
+                    margin:0 auto 24px !important;
+                }
+                .van-tab__pane>.van-image{
+                    padding:0 0.4rem;
+                }
+                .notice{
+                    margin:0.4rem 0.4rem 0;
+                    width:auto;
+                    border-color:rgba(255,255,255,0.06) !important;
+                    > .van-icon{
+                        color:rgba(255, 255, 255, 0.14) !important;
+                    }
+                    .van-swipe .van-swipe-item{
+                        color:rgba(153, 153, 153, 0.8) !important;
+                    }
+                    .action{
+                        color:rgba(153, 153, 153, 0.8) !important;
+                        &::before{
+                            background:rgba(255, 255, 255, 0.1) !important;
+                        }
+                        .van-icon{
+                            color:rgba(255, 255, 255, 0.1) !important;
+                        }
+                    }
+                }
+                .featured{
+                    .app-index-3{
+                        .gameList{
+                            padding:45px 0.4rem 25px;
+                        }
+                        .groupInfo{
+                            background:#fff !important;
+                            overflow:hidden;
+                        }
+                        .buss{
+                            padding-top:40px;
+                            background:#fff !important;
+                            .title_zh{
+                                .title_top{
+                                    color:#000 !important;
+                                }
+                            }
+                            .list .list_item .item_box p{
+                                color:#000 !important;
+                            }
+                            .list .list_item{
+                                width:30% !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /deep/ .nav-center .member-info{
+        // background:none !important;
+        // border:3px solid @primary-color !important;
+        .deposit{
+            background: #E30168 !important;
+            height:51px !important;
+        }
+    }
+    /deep/ .van-list.games{
+        justify-content: space-between !important;
+    }
+    /deep/ .van-tabs .van-tabs__nav{
+        background: #000 !important;
+    }
+}

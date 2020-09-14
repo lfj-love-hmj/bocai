@@ -1,0 +1,20 @@
+#app .container{
+    // background-image: url('~@assets/img3_0/login/login-bg@2x.png');
+    /deep/.van-tabs .van-tabs__nav{
+        //background-color: @bg-card-color !important;
+    }
+    /deep/ .main{
+        background-color: #333333;
+        .van-tabs .van-tabs__nav .van-tab--active{
+            color: @primary-color;
+        }
+    }
+
+}
+/deep/.submit-form{
+    .reset{
+        &::after{
+            background-color: rgba(153,153,153,1) !important;
+        }
+    }
+}

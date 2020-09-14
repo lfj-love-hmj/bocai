@@ -1,0 +1,253 @@
+.container.login, .container.regContainer, .container.registerSuccess {
+  // background-image: url('~@assets/img3_0/login/login-bg@2x.png');
+  .aagames-nav-bar .nav-center, .aagames-nav-bar .nav-left{
+    color: #fff !important;
+  }
+  /deep/ #g-code {
+    .send-sms {
+      border: 0 !important;
+      background-color: @primary-color !important;
+      color: #fff;
+    }
+  }
+
+  .van-tabs {
+    .van-tabs__nav {
+      background-color: #000000 !important;
+
+      /deep/ .van-tab--active {
+        color: #fff !important;
+      }
+    }
+  }
+
+  .line {
+    background-color: #353435 !important;
+    color: #CCCCCC !important;
+
+  }
+
+  .main {
+    #register {
+      background-color: #000000 !important;
+      height: 100%;
+      border-radius: 0 !important;
+      .aagames-form {
+        .input {
+          background-color: #000000 !important;
+
+          input {
+            background-color: #000000 !important;
+          }
+        }
+      }
+
+
+    }
+  }
+
+  /deep/ .customer {
+    .wait, .kefu {
+      color: #ccc !important;
+    }
+  }
+
+  /deep/ .van-tabs__nav {
+    background-color: #000000 !important;
+  }
+}
+
+.main /deep/ .aagames-form .input {
+  color: #999999;
+
+  .img {
+    width: 44px !important;
+    margin-left: 0 !important;
+  }
+}
+
+#app .login .aagames-form .input > input, #app .aagames-form .input > input {
+  color: #fff;
+
+}
+
+#register.main {
+  background-color: #000000 !important;
+
+  > .register {
+    background-color: #000000 !important;
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    overflow: hidden;
+    .aagames-form{
+      background-color: transparent !important;
+    }
+  }
+
+  .fill {
+    border: none;
+    background-color: #000000 !important;
+
+    .input {
+      border: none;
+      background-color: #000000 !important;
+      border-bottom: 2Px solid rgba(255, 255, 255, 0.06) !important;
+
+      input {
+        color: #fff;
+        background-color: #000000 !important;
+      }
+    }
+  }
+
+  .function {
+    border: none;
+    background-color: #000000 !important;
+  }
+
+  .customer {
+    border: none;
+    background-color: #000000 !important;
+  }
+
+
+  .van-tabs .van-tabs__nav {
+    background-color: #000000 !important;
+  }
+
+  .line {
+    background: none !important;
+    border: 2px solid @primary-color;
+  }
+
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+}
+
+#home.main {
+  background-color: #000000 !important;
+
+  .function, .customer, /deep/ .input {
+    background-color: #000000 !important;
+  }
+}
+
+/deep/ .function {
+  background-color: #000000;
+
+  .aagames-button-box {
+    .line {
+      margin-top: 40px;
+      // border: 2px solid @border-color-base;
+      background: none !important;
+      color: #fff;
+      border: 2px solid @primary-color;
+    }
+  }
+}
+
+.container.registerSuccess {
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  .aagames-nav-bar {
+    background: transparent;
+  }
+
+  .input {
+    input {
+      background-color: @bg-card-color !important;
+    }
+
+    span {
+      border: 0;
+    }
+
+    background-color: @bg-card-color !important;
+  }
+
+  .line {
+    background-color: #353435 !important;
+  }
+}
+
+.van-popup {
+  /deep/ .forgerPassword {
+    background-color: #fff !important;
+
+    .lheader.aagames-nav-bar {
+      .nav-left, .nav-center, .nav-right {
+        color: #000 !important;
+      }
+
+      background-color: #fff !important;
+
+    }
+    .steps ul li{
+      color: #666;
+      &.active{
+        color: #000;
+      }
+    }
+    input {
+      //background-color: @bg-card-color !important;
+    }
+  }
+}
+
+.rocket {
+  .ship {
+    background-image: url('../../img3_0/login/onekey_bg@2x.png');
+    background-size: 100%;
+    background-color: #1C1A1D;
+  }
+}
+
+.container.regContainer {
+  .register {
+      .fill{
+          .onekey{
+              .rocket{
+                  width:220px !important;
+                  height:220px !important;
+                  .circle,
+                  .ship{
+                      width:80% !important;
+                      height:80% !important;
+                      left:50% !important;
+                      top:50% !important;
+                      transform:translateX(-50%) translateY(-50%);
+                  }
+              }
+          }
+      }
+      .function{
+          padding-top:0 !important;
+          .aagames-button-box{
+              .register{
+                  margin-top:25px !important;
+              }
+              .line{
+                  margin-top:25px !important;
+              }
+          }
+      }
+      .customer{
+          padding:40px 0;
+      }
+  }
+  .main#register {
+  //   height:calc(100vh - 5.7rem) !important;
+      height:65% !important;
+  }
+}
+
+.login{
+  .main#home{
+      height: 60% !important;
+  }
+  .customer{
+      padding:40px 0 !important;
+  }
+}

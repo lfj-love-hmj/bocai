@@ -1,0 +1,51 @@
+.Join{
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    padding-top: 600px !important;
+    h2,h3{
+        color: #fff !important;
+    }
+    h2{
+        text-align: center;
+        width: 100% !important;
+    }
+}
+.title-h2{
+    color: @primary-color !important;
+    &::before, &::after{
+        background-color: @primary-color !important;
+    }
+}
+.step{
+    .item{
+        &:nth-child(2n) {
+            background-color: @primary-color !important;
+        }
+        .text{
+            color: #fff !important;
+        }
+    }
+}
+/deep/ .container .statistics .item{
+    background:rgba(0,0,0,0.2) !important;
+}
+/deep/ .container .commission-plan table th {
+    background: #251B4D !important;
+}
+/deep/ .container .proxy .item .member{
+    color: rgba(255,255,255,0.4) !important;
+}
+/deep/ .container .step .item{
+    background: #3C2E74 !important;
+}
+/deep/ .step .item:nth-child(2n) {
+    background: #B38A58 !important;
+}
+/deep/ .van-collapse-item__content{
+    p{
+        text-align: left !important;
+    }
+}
+/deep/ .container .contract .van-collapse .van-collapse-item .van-cell .van-cell__title {
+    text-align: left !important;
+}

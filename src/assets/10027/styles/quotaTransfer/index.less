@@ -1,0 +1,104 @@
+.shareImg{
+    transform: rotate(270deg);
+}
+.automatic,.input_{
+    border-bottom:2px solid rgba(153,153,153,.1) !important;
+    span{
+        color: #666 !important;
+    }
+}
+.transfer_out{
+    p{
+        color:#000 !important;
+    }
+}
+.trans-in,.note{
+    color: #000 !important;
+}
+.transfer{
+    >p{
+        color: #000 !important;  
+    }
+}
+.accout{
+    li.active{
+        p{
+            color: #fff !important;
+        }
+    }
+}
+.quota{
+    background: #fff;
+    /deep/ .aagames-nav-bar{
+        box-shadow:0px 4px 8px 0px rgba(0,0,0,0.06);
+    }
+    /deep/ .main{
+        border-top: 20px solid #F5F6FA;
+    }
+    /deep/ .accout .transfer_out .content > .content_l > .wallet{
+        color: #333!important;
+    }
+    /deep/ .accout .transfer_out .content > .content_l .num{
+        color: @bg-gradient-color!important;
+    }
+    /deep/ .accout .transfer_out .content{
+        border-bottom: 2px solid #E6EAEF;
+    }
+    /deep/ .accout > .transfer > .input_ > input{
+        color: #333!important;
+        &::placeholder{
+            color: #999!important;
+        }
+    }
+    /deep/ .accout > .transfer > .input_ > span{
+        color: #999!important;
+    }
+    /deep/ .aagames-button-box{
+        padding: 0;
+        justify-content: space-between!important;
+        div{
+            width: 330px!important;
+        }
+        .line{
+            border: 2px solid @bg-gradient-color;
+            color: @bg-gradient-color;
+            background: none;
+        }
+        div:last-child{
+            background-color: @bg-gradient-color!important;
+        }
+    }
+    /deep/ .accout ul > li{
+        background-color: #EDEFF6!important;
+        p:first-child{
+            color: #666!important;
+        }
+        p:last-child,p:nth-child(2){
+            color: #333!important;
+        }
+
+    }
+    /deep/ .van-popup{
+        .head{
+            background-color: @bg-gradient-color;
+            .quote-close{
+                position: absolute;
+                right: 30px;
+                font-size: 40px;
+                top: 30px;
+            }
+            p{
+                color: #fff;
+            }
+        }
+        .list ul li{
+            border-bottom: 1px solid #E6EAEF;
+            .name,.money{
+                color: #333;
+                &.on{
+                    color: @bg-gradient-color;
+                }
+            }
+        }
+    }
+}

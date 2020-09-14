@@ -1,0 +1,89 @@
+.m-header{
+    /deep/&.van-nav-bar{
+        background-color: #fff !important;
+    }
+    /deep/.van-icon-arrow-left{
+        color: #000 !important;
+    }
+    /deep/.van-nav-bar__right{
+        .van-nav-bar__text{
+            color: #666 !important;
+        }
+    }
+}
+.m-body{
+    background-color: #fff;
+    // background-image:url('~@assets/img3_0/home/esports/bg@2x.png');
+    background-size: 100%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    /deep/.button{
+        color: #fff !important;
+    }
+    /deep/.vip-info{
+        span, h3{
+            color: #666;
+        }
+        .my-bets{
+            border-color: #666 !important;
+            .item{
+                h3,p{
+                    color: #666 !important; 
+                }
+                border-color: #666 !important; 
+            }
+        }
+    }
+    /deep/ .days{
+        label{
+            color: #fff;
+            &.active{
+                color: #fff;
+            }
+        }
+    }
+    /deep/.platform{
+        label{
+            color:#fff;
+        }
+    }
+    /deep/.section{
+        >h2{
+            color: #666;
+            &::before{
+                background-color: #666;
+            }
+            &::after{
+                background-color: #666;
+            }
+        }
+        .item{
+            border: 0;
+        }
+        .custom{
+            p{
+                color:#fff;
+            }
+        }
+    }
+    /deep/.events{
+        .tabs{
+            label{
+                color: #000;
+                border-color: #000;
+                &.active{
+                    color: @primary-color;
+                    border-color: @primary-color;
+                }
+            }
+        }
+        .section{
+            .empty{
+                color: #666;
+            }
+        }
+    }
+}
+/deep/ .vip-progeress1{
+    background:linear-gradient(131deg,rgba(138,133,242,1) 0%,rgba(86,102,255,1) 100%)!important;
+}

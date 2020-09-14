@@ -1,0 +1,115 @@
+.record-title{
+    color:#000 !important;
+}
+.businessRecord .container /deep/ .vanTabs .van-tab--active{
+    background:#11358E !important;
+    color:#fff !important;
+}
+/deep/ .van-tabs .van-tabs__nav{
+    background: #022069!important;
+    .van-tab{
+        background:@primary-color !important;
+        color:#fff !important;
+    }
+}
+.container .tab_top{
+    margin-top: 0!important;
+    .note{
+        color: #666;
+        padding: 0;
+    }
+    > div > p:first-child{
+        color:#000 !important;
+    }
+}
+.container .access .main li .header > span:first-child{
+    color:#000 !important;
+}
+/deep/ .drawer .main{
+    background:#fff !important;
+}
+/deep/ .drawer{
+    .main{
+        .select-title{
+            color:#000 !important;
+        }
+        .select-bar{
+            color:#000 !important;
+            display: none;
+        }
+        .select .van-row{
+            border-color:@primary-color !important;
+            border-radius: 8px;
+            .data-time-picker{
+                color:#000 !important;
+                font-size: 32px;
+            }
+        }
+        .select-bar-i > div{
+            border-color:@primary-color !important;
+            color:@primary-color !important;
+            &.active_selected{
+                border-color:@primary-color !important;
+                background:@primary-color !important;
+                color:#fff !important;
+            }
+        }
+        .select-button{
+            color:#fff !important;
+        }
+    }
+}
+.container .tab_top{
+    border-bottom: 2px solid rgba(0,0,0,.06);
+    &::after{
+        background:rgba(255,255,255,0.06) !important;
+    }
+    > div p:first-child{
+        font-weight: bold;
+    }
+}
+.container .access .main li .turn{
+    color: #fff!important;
+}
+.container .access .main .van-list{
+    li{
+        align-items: flex-start!important;
+        padding: 20px 0 0;
+        .list_content{
+            padding-bottom: 20px;
+            .status{
+                margin-top: 10px;
+            }
+            .remark .time{
+                margin-top: 10px;
+            }
+        }
+        &.turn_list{
+            align-items: center!important;
+            padding-top: 20px;
+            .trans-header{
+                margin-top: 0;
+            }
+            .trans-status{
+                margin-top: 0;
+                .note,.time{
+                    margin-top: 10px;
+                }
+            }
+        }
+        .width100{
+            .wallet-header{
+                > div{
+                    font-size: 32px;
+                    span{
+                        color: #000!important;
+                        font-weight: normal;
+                    }
+                }
+                span{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

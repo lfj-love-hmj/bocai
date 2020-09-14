@@ -1,0 +1,121 @@
+
+.casino{
+    .main,/deep/.game-item{
+        border:0;
+    }
+}
+.slots{
+    /deep/.van-cell{
+        border: 0 !important;
+    }
+    /deep/.filter-nav{
+        border-bottom: 2px solid rgba(165, 154, 154,.1) !important;
+    }
+    /deep/.search-trigger{
+        color: #fff;
+    }
+    /deep/.login-name{
+        color: #fff !important;
+    }
+    /deep/.ui-title{
+        color: #000;
+    }
+    /deep/.jackpot{
+        background-image:url('../../img3_0/home/slots/jackpot-bg_1@2x.png');
+        background-repeat: no-repeat;
+        background-size:contain;
+        background-position: center;
+    }
+}
+.lottery{
+    /deep/h2{
+        color: #000 !important;
+    }
+    /deep/.lotteries{
+        h3{
+            color: #000 !important;
+        }
+    }
+}
+.featured{
+    padding-top: 40px;
+    /deep/ .lottery {
+        .games-wrap .game-item {
+                width: calc(33.33% - 0.4rem);
+        }
+        .games-wrap .game-item {
+             width: calc(33.33% - 30px);
+        }
+        .ui-title {
+            width:690px;
+            height:56px;
+            background:rgba(244,244,244,1);
+            border-radius:26px;
+            display: flex;
+            justify-content: flex-start !important;
+            margin-bottom: 40px;
+            &>div {
+                width: 115px;
+                text-align: center;
+                font-size:28px;
+                color: #666666;
+                height: 100%;
+                line-height: 56px;
+                 border-radius:28px;
+            }
+            &>div.active {
+                color: #FFFFFF;
+                background:rgba(253,144,42,1);
+                border-radius:28px;
+            }
+        }
+        .games-wrap.lottery.mb-gap {
+            justify-content: flex-start !important;
+            .game {
+                margin-bottom: 50px;
+                .title_desc {
+                    font-size:21px;
+                    padding-top: 17px;
+                    text-align: center;
+                    color: #333333;
+                }
+            }
+            .van-image {
+                border-radius: 50%;
+                width:120px;
+                height:120px;
+                overflow: hidden;
+            }
+        }
+    }
+}
+/deep/.aa-footer{
+    position: absolute !important;
+    bottom: @space-gap - 24px !important;
+    padding: @space-gap !important;
+    border-radius: 0 !important;
+    left: 0;
+}
+
+.search-page{
+    background-color: #fff !important;
+    .game-item{
+        background-color: @bg-card-color;
+    }
+}
+.m-body>.van-tabs /deep/ .van-sticky.van-sticky--fixed  .van-tabs__wrap {
+        border-bottom: none !important;
+}
+#home /deep/ .nav-center .member-info {
+    background-color: #595B6E;
+}
+.sports {
+    .matches  .match li span {
+        color: #ccc;
+    }
+    .matches .match li.vs,
+    .matches .match li
+     {
+        color: #ccc;
+    }
+}

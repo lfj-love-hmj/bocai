@@ -1,0 +1,1169 @@
+.m-header{
+  ~ .bg-img{
+    background-color: @bg-color;
+    background-image:url('~@assets/img3_0/home/esports/bg@2x.png');
+    background-size:100%;
+    background-position:0 0;
+    background-repeat: no-repeat;
+  }
+}
+/deep/ .van-tabs {
+  &.nav-type-1{
+    .van-tabs__nav {
+      background-color: #fff !important;
+      .van-tab{
+        color: #000 !important;
+      }
+      .van-tab--active {
+        color: #000 !important;
+      }
+    }
+  }
+  .van-tabs__wrap{
+    border-bottom: 2px solid rgba(165, 154, 154,.1) !important;
+  }
+}
+
+
+// 交易记录
+
+
+/deep/ .drawer{
+  .main{
+    background-color: @bg-color-white!important;
+    //width: 630px!important;
+    .select-title{
+      color: #333;
+    }
+    //&.main-show{
+    //    bottom: 50%!important;
+    //    transform: rotateY(50%)!important;
+    //}
+  }
+  .select-button{
+    background-color: @bg-gradient-color;
+  }
+  .active_selected{
+    background-color: @bg-gradient-color;
+  }
+  .select-bar{
+    color: #333;
+    font-weight: bold;
+  }
+  .select-bar-i > div{
+    border-color: #E6EAEF;
+    color: #333;
+    border-radius: 8px;
+    &.active_selected{
+      background: url('~@assets/img3_0/otherIcon/iaoyijilu_select@2x.png') right bottom no-repeat;
+      border-color: @bg-gradient-color;
+      color: @bg-gradient-color!important;
+      background-size: 32px auto;
+    }
+  }
+  .select .van-row{
+    border-color: #E6EAEF;
+    border-radius: 8px;
+    .data-time-picker{
+      color: #333;
+    }
+  }
+}
+
+
+//关于我们
+/deep/ .aboutWe{
+  .main img{
+    margin: 20px auto 108px!important;
+    width: 280px!important;
+  }
+}
+/deep/ .bankcard-page{
+  &.bankcard-manage{
+    .van-button.van-button--primary{
+      background-color: @bg-color-white;
+      color: #333;
+      i{
+        color: @bg-gradient-color;
+      }
+    }
+  }
+  .m-header.transparent{
+    background-color: @bg-color-white;
+  }
+  .van-cell-group{
+    padding: 0!important;
+    .van-cell{
+      background-color: @bg-color-white;
+      padding: 0 30px;
+      .van-cell__title{
+        font-weight: normal!important;
+      }
+      &:nth-child(3){
+        margin-bottom: 20px;
+      }
+      .van-cell__value{
+        padding-right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        span{
+          line-height: 1;
+          font-size: 28px;
+        }
+        .cell-body{
+          font-size: 28px;
+        }
+        .van-icon{
+          margin: 0;
+          color: #999;
+        }
+      }
+      .van-cell__title{
+        color: #333;
+        font-weight: bold;
+      }
+    }
+  }
+  .van-button.van-button--primary{
+    background-color: @bg-gradient-color;
+    height: 100px;
+    border-radius: 100px;
+    color: #fff;
+  }
+
+}
+/deep/ .verify{
+  .aagames-nav-bar{
+    background-color: @bg-gradient-color;
+  }
+}
+/deep/ .agent-form-10024{
+  .mid-line-10024{
+    display: block;
+  }
+  .list .item .left{
+    color: #333;
+  }
+  .item .p1{
+    font-weight: bold!important;
+  }
+  .list{
+    margin: 0 0 0 30px!important;
+    .item .p1 .right{
+      color: @bg-gradient-color!important;
+    }
+    .van-list{
+      border-bottom: 2px solid #E6EAEF;
+      padding-right: 30px;
+    }
+    .item .p2 span:last-child{
+      text-align: right;
+      color: #666;
+    }
+    .item .p3 .left{
+      color: #999;
+    }
+  }
+}
+/deep/ .list-cells{
+  .cell-foot .van-icon-success{
+    color: @bg-gradient-color;
+  }
+  .cell{
+    border-bottom: 2px solid #E6EAEF;
+    color: #333;
+  }
+}
+/deep/ .van-popup.van-popup--round.van-popup--bottom.custom{
+  //bottom: 50%;
+  //transform: translate(-50%,-50%);
+  //width: 630px;
+  //left: 50%;
+}
+/deep/ .select{
+  .select-button{
+    background-color: @bg-gradient-color;
+  }
+  .active_selected{
+    background-color: @bg-gradient-color;
+  }
+  .select-bar{
+    color: #333;
+    font-weight: bold;
+  }
+  .days .day{
+    border: 2px solid #E6EAEF!important;
+  }
+  .days .active{
+    background: #fff url(~@assets/img3_0/otherIcon/iaoyijilu_select@2x.png) right bottom no-repeat!important;
+    border-color: @bg-gradient-color!important;
+    color: @bg-gradient-color!important;
+    background-size: 32px auto!important;
+  }
+
+  .van-row{
+    border: 2px solid #E6EAEF!important;
+    border-radius: 8px;
+    margin: 20px!important;
+    padding: 0!important;
+    .col-s,.col-e{
+      color: #333!important;
+    }
+  }
+  .title{
+    color: #333!important;
+  }
+}
+/deep/ .agMemberList{
+  .aagames-nav-bar{
+    box-shadow:0px 4px 8px 0px rgba(0,0,0,0.06);
+  }
+
+  .list{
+    border-top: 20px solid #F5F6FA;
+    margin: 0!important;
+    width: 100%!important;
+    padding: 0 30px;
+    .item{
+      border-bottom: 2px solid #E6EAEF;
+      .p1{
+        color: #999!important;
+        font-size: 24px!important;
+        .left{
+          font-size: 32px;
+          color: #333;
+          font-weight: bold;
+        }
+        .right{
+          font-weight: bold;
+          color: @bg-gradient-color!important;
+        }
+      }
+    }
+  }
+}
+/deep/ .reportForm{
+  background: @bg-color-white;
+  .main{
+    background: @bg-color-white;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 88px;
+      height: 20px;
+      background: #F5F6FA;
+      width: 100%;
+    }
+    .item .p1,.item .p2{
+      font-weight: bold!important;
+    }
+  }
+  .aagames-nav-bar{
+    box-shadow:0px 4px 8px 0px rgba(0,0,0,0.06);
+  }
+  .list{
+    width: auto!important;
+    margin: 0 0 0 30px!important;
+    .table{
+      margin: 0!important;
+      border-bottom: 2px solid #E6EAEF;
+      padding-right: 30px;
+      .p1 .left,.p2 .left{
+        color: #333;
+      }
+      .p3 .left{
+        color: #999;
+      }
+      .right{
+        color: @bg-gradient-color!important;
+      }
+    }
+  }
+
+}
+/deep/ .agpsw{
+  background: #F5F6FA!important;
+  .reseter{
+    background-color: @bg-color-white;
+  }
+  .aagames-button{
+    color: #fff!important;
+    border-radius: 90px!important;
+  }
+  .reset{
+    div{
+      border-bottom-color: #E6EAEF!important;
+    }
+    p,input{
+      color: #333!important;
+    }
+  }
+}
+/deep/ .list-cells{
+  .cell{
+    border-bottom-color: #E6EAEF!important;
+  }
+  .cell-foot .van-icon-success{
+    color: @bg-gradient-color!important;
+  }
+}
+/deep/ .agbankbind{
+  background: none!important;
+  .main{
+    background: none;
+  }
+  .bank-card-label{
+    display: none;
+  }
+  .tisp{
+    color: #333!important;
+  }
+  .aagames-button-box .aagames-button{
+    border-radius: 90px;
+  }
+}
+/deep/ .van-picker{
+  .van-ellipsis{
+    font-size: 28px;
+    img{
+      width: 48px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+  }
+}
+/deep/ .carrycash{
+  .aagames-nav-bar{
+    box-shadow:0px 4px 8px 0px rgba(0,0,0,0.06);
+  }
+  .main{
+    padding-left: 0!important;
+    padding-right: 0!important;
+    .reset{
+      background: #fff;
+      margin-bottom: 20px;
+      padding: 24px 18px 24px 30px!important;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+    .amount .mt{
+      border-bottom: none!important;
+    }
+    .name{
+      color: #333;
+    }
+    .tx{
+      margin-bottom: 0!important;
+      p{
+        margin-top: 0!important;
+        color: #333!important;
+      }
+    }
+    .btn{
+      background: #fff;
+      margin: 0!important;
+      p{
+        margin: 0!important;
+        padding: 0 0 28px 30px!important;
+      }
+    }
+  }
+  .aagames-button-box .aagames-button{
+    border-radius: 90px;
+  }
+}
+/deep/ .van-key__wrapper{
+  text-align: center;
+}
+/deep/ .deposit-page{
+  .m-body{
+    background-color: #F5F6FA;
+  }
+  .deposit-main .quick-select .board{
+    background: #fff!important;
+    border-radius: 24px!important;
+  }
+  .list-cells .cell .card-like li > span{
+    color: #333;
+  }
+  .list-cells .cell .card-like li a{
+    border-color: @bg-gradient-color;
+    color: @bg-gradient-color;
+  }
+  .deposit-main > li.quick-select .cell .cell-foot{
+    color: #999!important;
+  }
+  .van-nav-bar .van-nav-bar__left .van-icon-arrow-left,.van-nav-bar .van-nav-bar__title{
+    color: #fff;
+  }
+  .deposit-main > li.quick-select .cell input{
+    color: #333!important;
+  }
+}
+/deep/ .van-count-down.processing-time-deposit{
+  color: @bg-gradient-color;
+}
+/deep/ .pay-mark .money-text{
+  color: #333!important;
+  margin-bottom: 20px;
+}
+/deep/ .wallet{
+  height: 100%;
+  overflow: auto;
+}
+/deep/ .cell-body{
+  color: #333;
+}
+
+
+/deep/ .cells{
+  &.cells-1{
+    background-color: #EDEFF6;
+    color: #333;
+    border: 2px solid #EDEFF6;
+    .border{
+      background-color: #fff;
+    }
+  }
+  &.cells-2{
+    color: #333;
+    border: 2px solid #EDEFF6;
+    div{
+      color: #333;
+    }
+    .border{
+      background-color: #E6EAEF;
+    }
+  }
+}
+/deep/ .input-cells .aagames-button-default{
+  background-color: transparent!important;
+  color: @bg-gradient-color;
+  border: 2px solid @bg-gradient-color;
+}
+
+/deep/ #g-code .right-button{
+  background-color: transparent;
+  color: @bg-gradient-color;
+  border-left: 2px solid rgba(255,255,255,.3);
+  border-radius: 0;
+}
+/deep/ .aagames-form .input .areaNum{
+  border-right-color: #fff!important;
+  color: #333!important;
+}
+/deep/ .washcode{
+  background: url(~@assets/img3_0/common/head-blue-bg@2x.png) center top no-repeat;
+  background-size: 100% auto;
+
+  .aagames-nav-bar{
+    background: none;
+    background-color: transparent!important;
+    color: #fff;
+  }
+
+  .container{
+    position: static;
+    .main{
+      .wash-money{
+        background-color: transparent;
+        .van-icon{
+          color: #fff!important;
+          font-size: 30px!important;
+        }
+        .btn-wash{
+          width:320px;
+          height:88px;
+          background:rgba(255,255,255,1);
+          box-shadow:0px 12px 20px 0px rgba(32,86,196,0.5);
+          border-radius:50px;
+          color: @bg-gradient-color;
+          font-weight: bold;
+        }
+      }
+      .list{
+        background-color: #fff;
+        padding: 0 30px;
+        .detail{
+          .wash{
+            border-bottom: 2px solid #E6EAEF;
+            .wash-top{
+              margin-bottom: 20px;
+            }
+            .wash-top div p:nth-child(1),.wash-bottom div p:nth-child(1){
+              color: #999;
+            }
+            .wash-top div p:nth-child(2),.wash-bottom div p:nth-child(2){
+              color: #333;
+              font-weight: bold;
+            }
+            .wash-top div .primary-color{
+              color: @bg-gradient-color!important;
+            }
+            .wash-top div:nth-child(3){
+              border-left: 2px solid #E6EAEF;
+              padding-left: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.empty{
+    background: none;
+    .aagames-nav-bar{
+      background-color: #fff!important;
+      color: #333;
+      box-shadow:0px 4px 8px 0px rgba(0,0,0,0.06);
+    }
+    .empty{
+      width: 100%;
+      padding: 0 30px;
+      height: calc(100vh - 200px);
+    }
+  }
+}
+/deep/ .pop-body{
+  >div{
+    color: #333!important;
+  }
+  .btn{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 90px;
+    button:nth-child(1){
+      position: absolute;
+      right: 0;
+      width: 330px;
+    }
+    button:nth-child(2){
+      position: absolute;
+      left: 0;
+      width: 330px;
+    }
+  }
+}
+/deep/ .privilege{
+  .van-progress__portion{
+    background-color: @bg-gradient-color!important;
+    &:after{
+      content: '';
+      position: absolute;
+      width: 58px;
+      height: 32px;
+      background: url(~@assets/img3_0/vip/newLevel/vip_jindu@2x.png);
+      background-size: 100% auto;
+      right: -45px;
+      top: -8px;
+    }
+  }
+}
+/deep/ .app-install{
+  display: none!important;
+}
+/deep/ .contactinfo{
+  .main .submit-form .input:nth-child(2) img{
+    margin-left: 0!important;
+  }
+  .main .submit-form .input input{
+    font-size: 28px;
+    &::placeholder{
+      font-size: 28px;
+    }
+  }
+}
+/deep/ .duty{
+  display: none;
+}
+.recharge-bottom .btn-group .van-button--default{
+  background: none!important;
+  border-color: @bg-gradient-color!important;
+}
+/deep/ .aboutWe{
+  .main .list{
+    color: #333!important;
+  }
+}
+.guide{display: none}
+
+.serviceSubscription{
+  background: #F5F6FA;
+  min-height: auto!important;
+}
+/deep/ .callWe{
+  .aagames-nav-bar{
+    box-shadow:0px 4px 8px 0px rgba(0,0,0,0.06);
+  }
+  .main{
+    padding: 0!important;
+    margin-top: 108px!important;
+    .list{
+      background: #fff;
+      margin: 0!important;
+      padding: 20px 0 24px 30px;
+      position: relative;
+      &:after{
+        content: '';
+        position: absolute;
+        left: 30px;
+        right: 0;
+        bottom: 0;
+        height: 2px;
+        background-color: #EDEFF6;
+      }
+      .title{
+        border-left-color: @bg-gradient-color!important;
+        color: #333!important;
+        font-weight: bold;
+      }
+      span{
+        color: #333!important;
+        padding-left: 20px;
+        font-size: 28px;
+        font-family: "PingFang SC", "Microsoft Yahei", sans-serif, arial;
+      }
+    }
+  }
+}
+/deep/ .privilege{
+  .vip-progeress .vip-progeress1{
+    background:linear-gradient(135deg,rgba(131,167,255,1) 0%,rgba(75,101,222,1) 100%)!important;
+  }
+  .newvip-level .van-tabs .van-tabs__wrap .van-tab.van-tab--active{
+    border-color: #83A7FF!important;
+  }
+  .to-vipdet{
+    color: #4080FF!important;
+  }
+}
+/deep/ .events{
+  .container .main-block .venueStyle__tab .venueStyle__wbTable .venueStyle__content li ul > li{
+    color: @bg-gradient-color!important;
+    &:first-child{
+      color: #333!important;
+    }
+  }
+  .container .main-block .block-tit b{
+    background:linear-gradient(179deg,rgba(64,128,255,1) 0%,rgba(151,212,251,1) 100%)!important;
+  }
+}
+
+/deep/ .appdown_logo{
+  text-align: center;
+  img{
+    display: inline-block!important;
+    vertical-align: middle;
+    margin: 0 10px!important;
+    &:last-child{
+      width: 286px;
+    }
+  }
+}
+/deep/ .steps ul li.active p:before,/deep/ .steps ul li.active p:after{
+  background-color: @bg-gradient-color!important;
+}
+/deep/ .kfPage{
+  .van-button--info{
+    background:linear-gradient(135deg,rgba(131,167,255,1) 0%,rgba(75,101,222,1) 100%);
+  }
+}
+/deep/.app-install  .install-btn{
+  background:linear-gradient(135deg,rgba(131,167,255,1) 0%,rgba(75,101,222,1) 100%);
+  width: 150px;
+  height: 52px;
+  border-radius: 52px;
+
+  color: #fff;
+  line-height: 52px;
+  padding: 0;
+  .van-button__text{
+    font-size: 24px;
+  }
+}
+
+/deep/ .regContainer{
+  .bg-login{
+    padding-top: 8vh!important;
+  }
+}
+
+/deep/ .brand{
+  background: none!important;
+  padding-bottom: 1rem;
+  .m-header.van-nav-bar{
+    box-shadow:0px 4px 8px 0px rgba(0,0,0,0.06);
+  }
+  .main{
+    padding: 20px;
+  }
+  .brand-list{
+    margin-bottom: 10px;
+    img{
+      width: 100%;
+      display: block;
+    }
+  }
+}
+/deep/ .vip-page{
+  .van-tabs__content{
+    .van-tab__pane-wrapper{
+      padding: 0!important;
+    }
+  }
+
+  .events{
+    .m-header{
+      display: none;
+    }
+  }
+  .vip-tab-head{
+    height: 88px;
+    background: #3A4256;
+    display: flex;
+    position: relative;
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+    .van-icon-arrow-left{
+      position: absolute;
+      width: 76px;
+      height: 100%;
+      top: 0;
+      left: 0;
+      color: #fff;
+      text-align: center;
+      line-height: 88px;
+      font-size: 40px;
+    }
+    span{
+      height: 100%;
+      position: relative;
+      line-height: 88px;
+      margin: 0 49px;
+      font-size: 32px;
+      color: rgba(255,255,255,.5);
+      &.on{
+        color: #fff;
+        font-size: 36px;
+      }
+      &.on:after{
+        content: '';
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        left: 0;
+        background: #CFB698;
+        height: 4px;
+      }
+    }
+  }
+  .privilege{
+    background-color: #fff;
+  }
+  .newvip-head{
+    background: #3A4256;
+    padding-top: 62px;
+    .newvip-head-finish{
+      text-align: center;
+      font-size: 24px;
+      color: #ccc;
+      padding: 0 0 60px;
+      span{
+        color: #fff;
+      }
+    }
+    .newvip-level{
+      margin-top: 0!important;
+      .vip-progeress{
+        margin-top: 78px;
+        .newvip-level-icon{
+          width: 36px;
+        }
+        .vip-progeress1,.vip-progeress2{
+          background: none!important;
+        }
+        .van-progress__portion:after{
+          background: none;
+        }
+        .van-progress__pivot{
+          color: #fff;
+          top: -20px;
+          &:after{
+            content: none;
+          }
+        }
+      }
+    }
+    .swiper-container01{
+      margin-top: 0!important;
+      border-bottom: 0!important;
+      padding-bottom: 0!important;
+      .swiper-slide{
+        width: 550px;
+      }
+      .newvip-level-info{
+        height: 310px;
+        width: 100%;
+      }
+    }
+  }
+  .vip0zx{
+    h2{
+      margin: 40px 30px!important;
+      i{
+        width:6px;
+        height:32px;
+        background:linear-gradient(360deg,rgba(255,229,206,1) 0%,rgba(255,124,103,1) 100%);
+        border-radius:3px;
+        margin-right: 16px;
+      }
+    }
+    .newvip-fs{
+      display: flex;
+      align-items: flex-start;
+      padding: 0 30px;
+      flex-wrap: wrap;
+      div{
+        width: 33.33%;
+        text-align: center;
+        margin-bottom: 40px;
+        p:first-child{
+          color: #C2A788;
+          font-size: 44px;
+          font-weight: bold;
+        }
+        p:last-child{
+          color: #666;
+          font-size: 24px;
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+  .events-title{
+    display: flex;
+    height: 120px;
+    padding: 0 30px;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin:0;
+    i{
+      width:6px;
+      height:32px;
+      background:linear-gradient(360deg,rgba(255,237,219,1) 0%,rgba(210,183,156,1) 100%);
+      border-radius:3px;
+      margin-right: 16px;
+      margin-right: 16px;
+    }
+  }
+
+  .events-rules-item{
+    display: flex;
+    padding: 0 30px;
+    align-items: flex-start;
+    margin-bottom: 60px;
+    i{
+      width:32px;
+      height:32px;
+      background:rgba(210,183,156,1);
+      font-size: 24px;
+      color: #fff;
+      text-align: center;
+      line-height: 32px;
+      border-radius: 50%;
+    }
+    div{
+      flex: 1;
+      margin-left: 16px;
+      h3{
+        font-size: 28px;
+        color: #B2987A;
+        font-weight: bold;
+        margin: 0;
+      }
+      p{
+        font-size: 28px;
+        color: #566178;
+        line-height: 48px;
+      }
+    }
+  }
+}
+/deep/ .events .m-header{
+  z-index: 20;
+}
+/deep/ .hlEvents{
+  background: #F6EDD7 url(~@assets/img3_0/vip/hlevents/bet_vip_top_image@2x.png) center top no-repeat;
+  padding: 784px 0 70px;
+  background-size: 100% auto;
+  .hlEvents-main-t{
+    background: url(~@assets/img3_0/vip/hlevents/bet_vip_bk_rectangle@2x.png) center top no-repeat;
+    padding: 60px 16px 120px;
+    background-size: 100% 100%;
+  }
+  .hlEvents-logo{
+    display: block;
+    width: 578px;
+    margin: 0 auto;
+  }
+  .hlCopyright{
+    text-align: center;
+    font-size: 24px;
+    color: #785F39;
+    margin-top: 60px;
+  }
+  .hl-img{
+    display: block;
+    width: 640px;
+    margin: -80px auto -80px;
+    position: relative;
+    z-index: 2;
+  }
+  .swiper-rank{
+    .swiper-slide{
+      height: 268px;
+      line-height: 268px;
+      img{
+        width: 190px;
+        transform: scale(0.5);
+        transition: .3s;
+        opacity: .4;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+    .swiper-slide-active{
+      img{
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  }
+  .rank-items{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 16px;
+    flex-wrap: wrap;
+    li{
+      position: relative;
+      width: 336px;
+      margin-bottom: 16px;
+      img{
+        display: block;
+        width: 100%;
+      }
+      .rank-items-info{
+        position: absolute;
+        left: 140px;
+        top: 54px;
+        color: #936C41;
+        h2{
+          margin: 0;
+          font-size: 28px;
+        }
+        p{
+          font-size: 32px;
+          color: #FF7C67;
+          font-weight: bold;
+          margin-top: 8px;
+        }
+      }
+      &:nth-child(5),&:nth-child(6),&:nth-child(7),&:nth-child(8){
+        .rank-items-info{
+          position: absolute;
+          left: 0;
+          top: 160px;
+          width: 100%;
+          color: #936C41;
+          text-align: center;
+          h2{
+            margin: 0;
+            font-size: 28px;
+            span{
+              font-size: 32px;
+              color: #FF7C67;
+              font-weight: bold;
+            }
+          }
+          p{
+            font-size: 24px;
+            color: rgba(147,108,65,.6);
+            margin-top: 10px;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+  .rank-block{
+    padding: 0 16px;
+    margin-bottom: 40px;
+    h2{
+      margin: 0;
+      height:80px;
+      background:linear-gradient(90deg,rgba(217,186,153,1) 0%,rgba(212,164,112,1) 100%);
+      font-size: 36px;
+      color: #fff;
+      text-align: center;
+      line-height: 80px;
+      font-weight: bold;
+    }
+    .newfs-wrap-vert{
+      flex-wrap: wrap;
+      background: #FCF9EE;
+      li{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        &:first-child{
+          div.on{
+            background:linear-gradient(96deg,rgba(255,211,164,1) 0%,rgba(217,168,115,1) 100%);
+            border-left: 0;
+          }
+        }
+        div{
+          flex: 1;
+          border-left: 2px solid #E6D8BA;
+          border-bottom: 2px solid #E6D8BA;
+          text-align: center;
+          line-height: 68px;
+          height: 68px;
+          font-weight: bold;
+          color: #785F39;
+          &:last-child{
+            border-right: 2px solid #E6D8BA;
+          }
+          span{
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 1;
+          }
+          &:first-child{
+            flex: 2;
+            width: 96px;
+          }
+          &.on{
+            background: #D4A46F;
+            color: #fff;
+            box-shadow:6px 0px 12px 0px rgba(220,150,72,0.6);
+            border-color: #D4A46F;
+          }
+        }
+      }
+    }
+    .newfs-wrap{
+      display: flex;
+      background: #FCF9EE;
+      border-top: 0;
+      li{
+        flex: 1;
+        border-right: 2px solid #E6D8BA;
+        color: #785F39;
+        font-weight: bold;
+        &.newfs-wrap-tit{
+          font-size: 20px;
+          color: #785F39;
+        }
+        &.on{
+          background: #D4A46F;
+          color: #fff;
+          box-shadow:6px 0px 12px 0px rgba(220,150,72,0.6);
+          border-right-color: #D4A46F;
+          div{
+            border-bottom-color: #D4A46F;
+            &:first-child{
+              background:linear-gradient(96deg,rgba(255,211,164,1) 0%,rgba(217,168,115,1) 100%);
+            }
+          }
+        }
+        div{
+          height: 66px;
+          text-align: center;
+          line-height: 66px;
+          border-bottom: 2px solid #E6D8BA;
+          img{
+            width: 27px;
+            top: 8px;
+            position: relative;
+          }
+          span{
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 1;
+          }
+        }
+        &:first-child{
+          width: 96px;
+          border-left: 2px solid #E6D8BA;
+        }
+      }
+    }
+  }
+}
+/deep/ .kefu .m-body{
+  padding-bottom: 0;
+}
+/deep/ .help-detail{
+  height: 100%;
+  overflow: auto;
+}
+/deep/ .loading{
+  background: rgba(0,0,0,.7);
+  .title{
+    color: #fff!important;
+  }
+}
+/deep/ .carrycash{
+  min-height: 100%!important;
+}
+/deep/ #invitation{
+  .box{
+    .title,.content{
+      color: #333;
+    }
+  }
+  .btn{color: #fff;background-color: @bg-gradient-color}
+  .cumulative div{
+    height: 90px!important;
+    border-radius: 90px!important;
+    padding: 0!important;
+    line-height: 90px;
+    background: #fff;
+  }
+}
+/deep/ .aboutMore{
+  height: 100%;
+  min-height: auto!important;
+  .main{
+    .reset .aagames-select-box .select{
+      &:after{
+        background-color: #EDEFF6!important;
+        bottom: 0;
+        left: 0;
+        right: 30px;
+        opacity: 1!important;
+      }
+      span{
+        font-weight: bold;
+      }
+      .right-text{
+        color: #333;
+        font-weight: normal;
+      }
+    }
+    .login-out{
+      font-weight: bold;
+    }
+  }
+}
+

@@ -1,0 +1,74 @@
+.Join{
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    padding-top: 780px !important;
+    h2,h3{
+        color: #000 !important;
+    }
+    h2{
+        text-align: center;
+        width: 100% !important;
+    }
+}
+.statistics:not(.proxy){
+    justify-content: space-around !important;
+    ._item{
+        width: 330px !important;
+        margin-bottom: 30px;
+        box-shadow:0px 8px 34px 0px rgba(92,96,150,0.16);
+        .item{
+            background-color:  #fff !important;
+        }
+    }
+}
+table{
+    border-color: #666 !important;
+    tr{
+        th,td{
+            border-color: #666 !important;  
+        }
+        th{
+            background-color: @bg-card-color;
+            color: #fff !important;
+        }
+        td{
+            color: #666 !important;
+        }
+    }
+}
+/deep/.contract{
+    .van-cell{
+        .van-cell__title{
+            color: #000 !important;
+        }
+    }
+    &.footer {
+        margin: 60px 0 0 0 !important;
+        .items{
+            background-color: @bg-card-color !important;
+        }
+    }
+}
+.proxy{
+    ._item{
+        .item{
+            border-radius: 8px;
+        }
+    }  
+}
+.title-h2{
+    color: @primary-color !important;
+    &::before, &::after{
+        background-color: @primary-color !important;
+    }
+}
+.step{
+    .item{
+        &:nth-child(2n) {
+            background-color: @primary-color !important;
+        }
+        .text,p{
+            color: #fff !important;
+        }
+    }
+}

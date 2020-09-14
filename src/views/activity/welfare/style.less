@@ -1,0 +1,194 @@
+#welfare {
+  .content {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-top: @main-top;
+    background: #fff;
+    > div {
+      > .top {
+        width: 100%;
+        height: 11.2533rem;
+        background-size: 100% 100%;
+        overflow: hidden;
+        // background-image: url("./assets/banner.png");
+        &.top-wanqu{
+          background-image: url("./assets/banner.png");
+        }
+        &.top-other{
+          background-image: url("./assets/banner1.png");
+        }
+      }
+      > .center {
+        width: 100%;
+        overflow: hidden;
+        background-image: url("./assets/Layer 1.png");
+        > .Witty {
+          width: 100%;
+          margin-bottom: 0.7467rem;
+          padding: 0.5rem 0 0 0;
+          > img {
+            display: block;
+            width: 6.16rem;
+            height: 0.6133rem;
+            margin: 0 auto 0.5867rem;
+          }
+          > .list {
+            padding: 0 0.48rem 0 0.2667rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            > div {
+              width: 2.6667rem;
+              height: 2.5333rem;
+              border: 0.08rem solid #ec5074;
+              text-align: center;
+              margin-bottom: 0.5333rem;
+              > p:first-child {
+                position: relative;
+                padding: 0.4267rem 0 0.24rem 0;
+                color: #ec5074;
+                font-size: 0.4267rem;
+                font-weight: 600;
+                &::after {
+                  position: absolute;
+                  display: block;
+                  content: "";
+                  width: 1.2rem;
+                  height: 0.0267rem;
+                  background: rgba(236, 80, 116, 1);
+                  left: 24%;
+                  bottom: 0;
+                }
+              }
+              > p:nth-child(2) {
+                color: #9a1f3a;
+                font-size: 0.32rem;
+                line-height: 0.5333rem;
+              }
+              > p:nth-child(3) {
+                color: #9a1f3a;
+                font-size: 0.32rem;
+                line-height: 0.5333rem;
+              }
+            }
+            > img {
+              width: 0.3467rem;
+              height: 0.5867rem;
+              margin: 0.8rem 0.2667rem 0 0.2667rem;
+            }
+          }
+        }
+        // 星级特权福利
+        .privilege {
+          width: 100%;
+          > img {
+            display: block;
+            width: 5.8933rem;
+            height: 0.6133rem;
+            margin: 0 auto 0.5333rem;
+          }
+          .privilege-table {
+            padding: 0 0.2667rem;
+            > table {
+              width: 100%;
+              tr {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                height: 0.6133rem;
+                line-height: 0.6133rem;
+                th,
+                td {
+                  color: #ffffff;
+                  font-size: 0.32rem;
+                  display: flex;
+                  justify-content: center;
+                  width: 25%;
+                  text-align: center;
+                  border-bottom: 0.0267rem solid #ffffff;
+                  border-right: 0.0267rem solid #ffffff;
+                  &:nth-child(3) {
+                    width: 35%;
+                  }
+                  &:nth-child(1),
+                  &:nth-child(2),
+                  &:nth-child(4) {
+                    width: 20%;
+                  }
+                }
+              }
+              tr:nth-child(2n + 1) {
+                background: #ec5074;
+              }
+              tr:nth-child(2n) {
+                background-color: #f49eb3;
+              }
+            }
+            > .text {
+              width: 100%;
+              padding: 0.2667rem;
+              > p {
+                color: #972036;
+                font-size: 0.32rem;
+                text-align: left;
+                margin-bottom: 0.2667rem;
+                line-height: 0.4rem;
+              }
+            }
+          }
+        }
+        // 活动规则
+        .rulesActivity {
+          width: 100%;
+          padding-top: 1.0667rem;
+          > img {
+            display: block;
+            width: 4.56rem;
+            height: 0.6133rem;
+            margin: 0 auto;
+          }
+          > .text {
+            margin-top: 0.5333rem;
+            p {
+              padding: 0 0.32rem;
+
+              margin-bottom: 0.4933rem;
+
+              &:after {
+                content: "";
+                display: block;
+                clear: both;
+              }
+              > span:first-child {
+                float: left;
+                margin: 0.1rem 0.1333rem 0 0;
+                color: #ffffff;
+                text-align: center;
+                display: block;
+                width: 0.4rem;
+                height: 0.4rem;
+                line-height: 0.4rem;
+                border-radius: 50%;
+                background-color: #ec5074;
+              }
+              > span:last-child {
+                float: left;
+                color: #ff3d72;
+                font-size: 0.32rem;
+                display: block;
+                line-height: 0.6rem;
+                width: calc(100% - 1.04rem - 0.13333rem);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .no-header {
+    padding-top: 0;
+  }
+}
